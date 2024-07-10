@@ -25,7 +25,7 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: century-gothic, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

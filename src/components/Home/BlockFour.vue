@@ -18,7 +18,7 @@
       >
         <v-card class="rounded-0">
           <v-parallax>
-            <v-img :src="card.image" width="400"> </v-img>
+            <v-img :src="card.image" width="600"> </v-img>
           </v-parallax>
           <v-card-text>{{ card.smallText }}</v-card-text>
           <v-card-text class="large-text">{{ card.largeText }}</v-card-text>

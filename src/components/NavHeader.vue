@@ -1,26 +1,31 @@
 <template>
-  <v-container fluid class="d-flex align-center justify-center pa-0 ma-0">
-    <v-img alt="logo" :src="require('../assets/bespellbound_logo.jpg')"></v-img>
+  <v-container fluid class="d-flex align-center pa-0 ma-0">
+    <v-img
+      alt="logo"
+      :src="require('../assets/bespellbound_logo.jpg')"
+      height="50"
+      class="custom-img"
+    ></v-img>
+    <div class="d-flex justify-space-around">
+      <v-menu v-for="link in links" :key="link.id" open-on-hover>
+        <template v-slot:activator="{ props }">
+          <v-btn
+            v-bind="props"
+            :text="link.label"
+            variant="text"
+            size="small"
+            rounded="0"
+            class="nav-link text-none"
+          ></v-btn>
+        </template>
 
-    <v-menu v-for="link in links" :key="link.id" open-on-hover>
-      <template v-slot:activator="{ props }">
-        <v-btn
-          v-bind="props"
-          :text="link.label"
-          variant="text"
-          size="x-large"
-          rounded="0"
-          class="nav-link"
-        ></v-btn>
-      </template>
-
-      <v-list>
-        <v-list-item v-for="item in link.menuItems" :key="item.id">
-          <v-list-item-title>{{ item.label }}</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-menu>
-
+        <v-list>
+          <v-list-item v-for="item in link.menuItems" :key="item.id">
+            <v-list-item-title>{{ item.label }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </div>
     <v-spacer></v-spacer>
 
     <v-responsive max-width="160">
@@ -38,7 +43,7 @@ export default {
     const links = ref([
       {
         id: 1,
-        label: "Architectures",
+        label: "Spellbinding Spaces",
         menuItems: [
           { id: 1, label: "1 Item 1" },
           { id: 2, label: "Item 2" },
@@ -48,7 +53,7 @@ export default {
       },
       {
         id: 2,
-        label: "Interiors",
+        label: "Insights",
         menuItems: [
           { id: 1, label: "2 Item 1" },
           { id: 2, label: "Item 2" },
@@ -58,7 +63,7 @@ export default {
       },
       {
         id: 3,
-        label: "Adaptive-Reuse",
+        label: "Our Story",
         menuItems: [
           { id: 1, label: "3 Item 1" },
           { id: 2, label: "Item 2" },
@@ -68,19 +73,9 @@ export default {
       },
       {
         id: 4,
-        label: "News and Views",
+        label: "Contact Us",
         menuItems: [
           { id: 1, label: "4 Item 1" },
-          { id: 2, label: "Item 2" },
-          { id: 3, label: "Item 3" },
-          { id: 4, label: "Item 4" },
-        ],
-      },
-      {
-        id: 5,
-        label: "About",
-        menuItems: [
-          { id: 1, label: "5 Item 1" },
           { id: 2, label: "Item 2" },
           { id: 3, label: "Item 3" },
           { id: 4, label: "Item 4" },
@@ -97,7 +92,10 @@ export default {
 
 <style lang="scss" scoped>
 .nav-link {
-  font-size: 14px;
   font-weight: 400;
+  width: 40%;
+}
+:deep(.v-img__img) {
+  width: auto;
 }
 </style>
