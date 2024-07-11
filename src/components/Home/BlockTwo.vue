@@ -1,16 +1,12 @@
 <template>
   <v-parallax class="custom-parallax">
-    <v-container fluid class="pa-10 pt-12 pb-12">
+    <v-container fluid class="pa-10 pt-16 pb-16">
       <v-row justify="center">
-        <v-col cols="8" v-for="it in items" :key="it.id">
+        <v-col cols="10" v-for="it in items" :key="it.id">
           <div class="my-text parallax-content text-left">
             <h1 class="font-weight-bold mb-4">
               {{ it.sLabel }}
-              <span
-                class="font-weight-bold text-capitalize text"
-                :class="`text-${it.id}`"
-                >{{ it.mLabel }}</span
-              >
+              <span :class="`text-${it.id}`">{{ it.mLabel }}</span>
             </h1>
             <p
               v-for="sIt in it.subItems"
@@ -34,42 +30,22 @@ export default {
     const items = ref([
       {
         id: 1,
-        sLabel: "We believe in",
-        mLabel: "INTERIOR",
+        sLabel: "We believe in the power of spaces that",
+        mLabel: "'Indulge'.",
         subItems: [
           {
             id: 11,
             label:
-              "A conviction that the values of people and the values of design are one and the same.",
-          },
-          {
-            id: 12,
-            label: "A celebration of diversity and prosperity across cultures.",
-          },
-          {
-            id: 13,
-            label:
-              "A shared sense of empathy that is inclusive of flexibility and built to adapt.",
-          },
-          {
-            id: 14,
-            label: "A responsibility to generate impact beyond design.",
+              "Indulgence is us weaving your stories into your homes Introducing narratives.",
           },
         ],
       },
       {
         id: 2,
-        sLabel: "We are",
-        mLabel: "SPELLBOUND HOMES",
-        subItems: [
-          { id: 21, label: "We span 17 studios across 6 regions." },
-          { id: 22, label: "We do not adhere to a signature style." },
-          { id: 23, label: "We are a multi-authorship practice." },
-          {
-            id: 24,
-            label: "We specialize in Architecture, Interiors & Masterplanning.",
-          },
-        ],
+        sLabel:
+          "Presenting a magical twist to interiors, we're Spellbound - a studio crafting beyond",
+        mLabel: "designs.",
+        subItems: [{ id: 21, label: "We span 17 studios across 6 regions." }],
       },
     ]);
 
@@ -129,11 +105,11 @@ export default {
       }
 
       const phrases1 = [
-        "INTERIOR",
-        "BRANDING",
-        "DESIGN",
-        "STRATEGY",
-        "EXPERIENCE",
+        "'Indulge'.",
+        "'Quench'.",
+        "'Pampers'.",
+        "'Nourish'.",
+        "'Satisfy'.",
       ];
 
       const el1 = document.querySelector(".text-1");
@@ -149,12 +125,7 @@ export default {
 
       next1();
 
-      const phrases2 = [
-        "SPELLBOUND HOMES",
-        "EXPERIENCED",
-        "BEST IN BUSINESS",
-        "OLDEST",
-      ];
+      const phrases2 = ["designs.", "creativity.", "imagination."];
 
       const el2 = document.querySelector(".text-2");
       const fx2 = new TextScramble(el2);

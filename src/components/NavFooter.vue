@@ -1,35 +1,115 @@
 <template>
-  <v-footer class="bg-indigo-lighten-1 text-center d-flex flex-column">
-    <div>
-      <v-btn
-        v-for="icon in icons"
-        :key="icon"
-        :icon="icon"
-        class="mx-4"
-        variant="text"
-      ></v-btn>
-    </div>
+  <v-footer>
+    <v-container fluid>
+      <v-row class="hidden-sm-and-down">
+        <v-col cols="2" class="text-left">
+          <img
+            alt="logo"
+            :src="require('../assets/bespellbound_logo.jpg')"
+            height="50"
+          />
+        </v-col>
 
-    <div class="pt-0">
-      Phasellus feugiat arcu sapien, et iaculis ipsum elementum sit amet. Mauris
-      cursus commodo interdum. Praesent ut risus eget metus luctus accumsan id
-      ultrices nunc. Sed at orci sed massa consectetur dignissim a sit amet dui.
-      Duis commodo vitae velit et faucibus. Morbi vehicula lacinia malesuada.
-      Nulla placerat augue vel ipsum ultrices, cursus iaculis dui sollicitudin.
-      Vestibulum eu ipsum vel diam elementum tempor vel ut orci. Orci varius
-      natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    </div>
+        <v-col col="8">
+          <v-row>
+            <v-col
+              cols="3"
+              sm="4"
+              md="3"
+              v-for="link in links"
+              :key="link.id"
+              class="text-left"
+            >
+              <h4>{{ link.label }}</h4>
+              <v-list dense>
+                <v-list-item
+                  v-for="item in link.menuItems"
+                  :key="item.id"
+                  link
+                  class="pl-0 pr-0"
+                >
+                  {{ item.label }}
+                </v-list-item>
+              </v-list>
+            </v-col>
+          </v-row>
+        </v-col>
 
-    <v-divider></v-divider>
+        <v-col cols="2" class="d-flex">
+          <v-btn
+            v-for="icon in icons"
+            :key="icon"
+            :icon="icon"
+            class="rounded-0"
+            variant="text"
+          ></v-btn>
+        </v-col>
+      </v-row>
 
-    <div>{{ new Date().getFullYear() }} — <strong>Vuetify</strong></div>
+      <v-expansion-panels elevation="0" class="d-md-none rounded-0">
+        <v-expansion-panel
+          v-for="link in links"
+          :key="link.id"
+          class="rounded-0"
+        >
+          <v-expansion-panel-title
+            expand-icon="mdi-plus"
+            collapse-icon="mdi-minus"
+          >
+            {{ link.label }}
+          </v-expansion-panel-title>
+          <v-expansion-panel-text>
+            <v-list dense class="text-left">
+              <v-list-item
+                v-for="item in link.menuItems"
+                :key="item.id"
+                link
+                class="custom-exp-list-item"
+              >
+                {{ item.label }}
+              </v-list-item>
+            </v-list>
+          </v-expansion-panel-text>
+        </v-expansion-panel>
+      </v-expansion-panels>
+    </v-container>
   </v-footer>
 </template>
+
 <script>
+import { links } from "@/config";
+
 export default {
-  name: "NavFooter",
-  data: () => ({
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-  }),
+  setup() {
+    const icons = [
+      "mdi-facebook",
+      "mdi-twitter",
+      "mdi-linkedin",
+      "mdi-instagram",
+    ];
+    return {
+      links,
+      icons,
+    };
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+.custom-exp-list-item {
+  font-size: 12px;
+  padding-left: 22px;
+  padding-inline: 0 !important;
+}
+:deep(.v-expansion-panel) {
+  margin-top: 0 !important;
+  min-height: auto !important;
+}
+:deep(.v-expansion-panel) .v-expansion-panel-title {
+  min-height: auto !important;
+}
+:deep(.v-expansion-panels) .v-expansion-panel--active:not(:first-child)::after,
+.v-expansion-panel--active + .v-expansion-panel::after {
+  opacity: 1 !important;
+}
+</style>
