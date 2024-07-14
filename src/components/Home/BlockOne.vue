@@ -6,7 +6,7 @@
     <div
       class="d-flex flex-column fill-height justify-center align-center text-white"
     >
-      <div class="font-weight-bold mb-4 custom-text">
+      <div class="font-weight-bold mb-4 custom-text text-center">
         Revealing Spatially Whimsical Tales
       </div>
     </div>
