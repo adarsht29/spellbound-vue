@@ -1,9 +1,9 @@
 <template>
   <v-app id="inspire">
     <NavHeader>
-      <v-container fluid class="pa-0 ma-0">
+      <template v-slot:navigationContent>
         <router-view />
-      </v-container>
+      </template>
     </NavHeader>
     <NavFooter />
   </v-app>
