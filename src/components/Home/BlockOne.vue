@@ -24,7 +24,7 @@ export default {
         Math.max(
           document.documentElement.clientHeight || 0,
           window.innerHeight || 0
-        ) - 50;
+        ) + 50;
     });
     return {
       customHeight,

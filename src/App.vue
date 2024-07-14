@@ -1,11 +1,10 @@
 <template>
   <v-app id="inspire">
-    <NavHeader />
-    <v-main class="bg-grey-lighten-3">
+    <NavHeader>
       <v-container fluid class="pa-0 ma-0">
         <router-view />
       </v-container>
-    </v-main>
+    </NavHeader>
     <NavFooter />
   </v-app>
 </template>
@@ -24,12 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: century-gothic, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html * {
+  font-family: century-gothic, sans-serif !important;
 }
 
 nav {

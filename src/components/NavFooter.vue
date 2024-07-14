@@ -3,11 +3,7 @@
     <v-container fluid>
       <v-row class="hidden-sm-and-down">
         <v-col cols="2" class="text-left">
-          <img
-            alt="logo"
-            :src="require('../assets/bespellbound_logo.jpg')"
-            height="50"
-          />
+          <img alt="logo" :src="require('../assets/logo.png')" height="50" />
         </v-col>
 
         <v-col col="8">

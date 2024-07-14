@@ -1,113 +1,128 @@
 <template>
-  <div style="position: relative">
-    <v-app-bar color="white" dark class="fixed-bar" height="50">
-      <router-link to="/"
-        ><img
-          alt="logo"
-          :src="require('../assets/bespellbound_logo.jpg')"
-          height="50"
-          class="custom-img ml-3 mr-3"
-      /></router-link>
-      <v-tabs v-model="tab" grow class="d-none d-md-flex ml-3 mr-3" height="50">
-        <v-menu
-          v-for="link in links"
-          :key="link.id"
-          open-on-hover
-          transition="fade-transition"
-        >
-          <template v-slot:activator="{ props }">
-            <v-tab
-              :text="link.label"
-              v-bind="props"
-              class="custom-tab text-none"
-            ></v-tab>
-          </template>
+  <!-- Desktop Navigation -->
 
-          <v-list class="rounded-0">
-            <v-list-item v-for="item in link.menuItems" :key="item.id">
-              <v-list-item-title>{{ item.label }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </v-tabs>
-      <v-spacer class="d-md-none"></v-spacer>
-      <v-app-bar-nav-icon
-        @click="drawer = !drawer"
-        class="d-md-none"
-      ></v-app-bar-nav-icon>
-    </v-app-bar>
-  </div>
+  <v-container fluid class="pa-0 ma-0 custom-desktop-navigation d-none">
+    <v-row no-gutters>
+      <v-col cols="2" class="text-left">
+        <a href="javascript:void(0);" class="logo-btn">
+          <img alt="logo" :src="require('../assets/logo.png')" class="logo" />
+        </a>
+      </v-col>
+      <v-col cols="10" class="text-left">
+        <v-row no-gutters class="h-100">
+          <v-col v-for="link in links" :key="link.id">
+            <v-menu open-on-hover>
+              <template v-slot:activator="{ props }">
+                <v-sheet
+                  class="pa-2 text-caption h-100 align-center d-flex cursor-pointer"
+                  v-bind="props"
+                >
+                  {{ link.label }}
+                </v-sheet>
+              </template>
 
-  <!-- Navigation drawer -->
-  <v-navigation-drawer
-    v-model="drawer"
-    absolute
-    temporary
-    class="custom-nav-drawer"
-  >
-    <v-list v-model:opened="open">
-      <v-list-group v-for="link in links" :key="link.id" :value="link.label">
-        <template v-slot:activator="{ props }">
-          <v-list-item v-bind="props" :title="link.label"></v-list-item>
-        </template>
+              <v-list class="rounded-0 pa-0">
+                <v-list-item v-for="item in link.menuItems" :key="item.id">
+                  <v-list-item-title class="text-caption">{{
+                    item.label
+                  }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 
-        <v-list-item
-          v-for="item in link.menuItems"
-          :key="item.id"
-          :title="item.label"
-          :value="item.label"
-        ></v-list-item>
-      </v-list-group>
-    </v-list>
-  </v-navigation-drawer>
+  <!-- Mobile Navigation -->
+
+  <v-container fluid class="pa-0 ma-0 custom-mobile-navigation">
+    <v-card class="rounded-0" flat>
+      <v-layout>
+        <v-app-bar color="primary" prominent density="compact">
+          <v-toolbar-title class="ma-auto">
+            <a href="javascript:void(0);" class="logo-btn">
+              <img
+                alt="logo"
+                :src="require('../assets/logo.png')"
+                class="logo"
+              />
+            </a>
+          </v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-app-bar-nav-icon
+            variant="text"
+            @click.stop="drawer = !drawer"
+            class="rounded-0 ma-auto"
+          ></v-app-bar-nav-icon>
+        </v-app-bar>
+
+        <v-navigation-drawer v-model="drawer" temporary>
+          aaaa
+        </v-navigation-drawer>
+
+        <v-main>
+          <v-card-text>
+            <slot></slot>
+          </v-card-text>
+        </v-main>
+      </v-layout>
+    </v-card>
+  </v-container>
+
+  <!-- <v-container fluid class="pa-0 ma-0 custom-mobile-navigation">
+    <v-card rounded="0" flat variant="elevated">
+      <v-layout>
+        <v-toolbar density="compact" color="white">
+          <a href="javascript:void(0);" class="logo-btn">
+            <img alt="logo" :src="require('../assets/logo.png')" class="logo" />
+          </a>
+          <v-spacer></v-spacer>
+          <v-app-bar-nav-icon
+            variant="text"
+            @click.stop="drawer = !drawer"
+            class="rounded-0"
+          ></v-app-bar-nav-icon>
+        </v-toolbar>
+        <v-navigation-drawer v-model="drawer" temporary>
+          <v-list :items="items"></v-list>
+        </v-navigation-drawer>
+
+        <v-main style="height: 500px">
+          <v-card-text>
+            The navigation drawer will appear from the bottom on smaller size
+            screens.
+          </v-card-text>
+        </v-main>
+      </v-layout>
+    </v-card>
+  </v-container> -->
 </template>
 
 <script>
 import { ref } from "vue";
-import { links } from "@/config";
 
 export default {
   name: "NavHeader",
-  data() {
-    return {
-      drawer: false,
-      tab: null,
-      items: ["web", "shopping", "videos", "images"],
-    };
-  },
   setup() {
-    const open = ref([]);
-    const isDivOutOfViewport = ref(true);
+    const drawer = ref(false);
 
     return {
-      links,
-      open,
-      isDivOutOfViewport,
+      drawer,
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.nav-link {
-  font-weight: 400;
-  width: 40%;
+.logo-btn {
+  display: block;
+  max-height: 48px;
+  height: auto;
 }
-:deep(.v-img__img) {
-  width: auto;
-}
-.fixed-bar {
-  position: absolute !important;
-  width: 100%;
-}
-.custom-tab :deep(.v-tab__slider) {
-  opacity: 0;
-}
-.custom-tab :deep(.v-btn__content) {
-  font-size: 12px;
-}
-.custom-nav-drawer.v-navigation-drawer--active {
-  width: 100% !important;
-  height: max-content !important;
+.logo {
+  height: auto;
+  max-height: inherit;
 }
 </style>
