@@ -3,28 +3,32 @@
     <!-- Common Header -->
     <v-row>
       <v-col cols="12">
-        <div class="text-h5 ma-6 text-left">
+        <div class="text-h4 ma-6 mt-2 mb-1 text-center font-weight-bold">
           See how global cities are adapting to the future
         </div>
       </v-col>
     </v-row>
 
-    <!-- Scrollable Cards -->
-    <v-slide-group>
-      <v-slide-item
-        v-for="(card, index) in cards"
-        :key="index"
-        class="custom-slide-group"
+    <v-sheet elevation="0">
+      <v-slide-group
+        v-model="model"
+        class="pa-4"
+        center-active
+        show-arrows="false"
       >
-        <v-card class="rounded-0">
-          <v-parallax>
-            <v-img :src="card.image" width="600"> </v-img>
-          </v-parallax>
-          <v-card-text>{{ card.smallText }}</v-card-text>
-          <v-card-text class="large-text">{{ card.largeText }}</v-card-text>
-        </v-card>
-      </v-slide-item>
-    </v-slide-group>
+        <v-slide-group-item v-for="(card, index) in cards" :key="index">
+          <v-card class="ma-2 rounded-0" width="470">
+            <v-img :src="card.image" cover></v-img>
+            <div class="pa-2">
+              <p class="font-weight-black small-text">
+                {{ card.smallText }}
+              </p>
+              <p class="large-text">{{ card.largeText }}</p>
+            </div>
+          </v-card>
+        </v-slide-group-item>
+      </v-slide-group>
+    </v-sheet>
   </v-container>
 </template>
 
@@ -97,8 +101,11 @@ export default {
 </script>
 
 <style scoped>
+.small-text {
+  font-size: 11px;
+}
 .large-text {
-  font-size: 18px;
+  font-size: 20px;
 }
 .custom-slide-group {
   margin: 0 10px;

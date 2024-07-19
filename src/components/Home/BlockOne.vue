@@ -1,16 +1,12 @@
 <template>
-  <v-parallax
-    src="https://gallery.streamlinevrs.com/units-gallery/00/06/88/image_164809180.jpeg"
-    :height="customHeight"
+  <video
+    :key="require('@/assets/Homepage_blockOne.mp4')"
+    width="100%"
+    controls
+    autoplay
   >
-    <div
-      class="d-flex flex-column fill-height justify-center align-center text-white"
-    >
-      <div class="font-weight-bold mb-4 custom-text text-center">
-        Revealing Spatially Whimsical Tales
-      </div>
-    </div>
-  </v-parallax>
+    <source :src="require('@/assets/Homepage_blockOne.mp4')" type="video/mp4" />
+  </video>
 </template>
 
 <script>
@@ -33,8 +29,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.custom-text {
-  font-size: 46px;
-}
-</style>
+<style lang="scss" scoped></style>

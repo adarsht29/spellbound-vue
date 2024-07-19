@@ -3,12 +3,7 @@ module.exports = {
     {
       id: 1,
       label: "Interior Narratives’",
-      menuItems: [
-        { id: 1, label: "1 Item 1" },
-        { id: 2, label: "Item 2" },
-        { id: 3, label: "Item 3" },
-        { id: 4, label: "Item 4" },
-      ],
+      menuItems: [{ id: 1, label: "All" }],
     },
     {
       id: 2,
@@ -24,10 +19,8 @@ module.exports = {
       id: 3,
       label: "Our Story",
       menuItems: [
-        { id: 1, label: "3 Item 1" },
-        { id: 2, label: "Item 2" },
-        { id: 3, label: "Item 3" },
-        { id: 4, label: "Item 4" },
+        { id: 1, label: "Spellbound" },
+        { id: 2, label: "Our Design Culture" },
       ],
     },
     {
