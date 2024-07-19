@@ -1,25 +1,23 @@
 <template>
-  <v-parallax class="custom-parallax">
-    <v-container fluid class="pa-10 pt-16 pb-16">
-      <v-row justify="center">
-        <v-col cols="10" v-for="it in items" :key="it.id">
-          <div class="my-text parallax-content text-left">
-            <h1 class="font-weight-bold mb-4">
-              {{ it.sLabel }}
-              <span :class="`text-${it.id}`">{{ it.mLabel }}</span>
-            </h1>
-            <p
-              v-for="sIt in it.subItems"
-              :key="sIt.id"
-              class="font-weight-regular mb-1 custom-p"
-            >
-              {{ sIt.label }}
-            </p>
-          </div>
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-parallax>
+  <v-container fluid class="pa-10 block-two base-black">
+    <v-row justify="center">
+      <v-col cols="10" v-for="it in items" :key="it.id">
+        <div class="my-text parallax-content text-left">
+          <h1 class="font-weight-bold mb-4">
+            {{ it.sLabel }}
+            <span :class="`text-${it.id}`">{{ it.mLabel }}</span>
+          </h1>
+          <p
+            v-for="sIt in it.subItems"
+            :key="sIt.id"
+            class="font-weight-regular mb-1 custom-p"
+          >
+            {{ sIt.label }}
+          </p>
+        </div>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -154,13 +152,14 @@ export default {
   color: #333;
   margin-bottom: 20px;
 }
-.custom-parallax {
-  background-color: #000;
-}
 .parallax-content {
   color: white !important;
 }
 .custom-p {
   font-size: 18px;
+}
+.block-two {
+  padding-top: 85px !important;
+  padding-bottom: 85px !important;
 }
 </style>

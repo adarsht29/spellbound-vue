@@ -9,47 +9,30 @@
     </v-row>
 
     <v-sheet elevation="0">
-      <v-slide-group
-        v-model="model"
-        class="pa-4"
-        center-active
-        show-arrows="false"
-      >
+      <v-slide-group class="pa-4" center-active show-arrows="false">
         <v-slide-group-item v-for="(card, index) in slides" :key="index">
-          <v-card class="ma-2 rounded-0" width="470">
-            <v-img :src="card.image" cover></v-img>
-          </v-card>
+          <v-hover>
+            <template v-slot:default="{ isHovering, props }">
+              <v-img
+                v-bind="props"
+                :src="card.image"
+                cover
+                width="470"
+                :class="[
+                  index !== 0 ? 'ml-4' : '',
+                  isHovering ? 'hovered' : '',
+                ]"
+              ></v-img>
+            </template>
+          </v-hover>
         </v-slide-group-item>
       </v-slide-group>
     </v-sheet>
-
-    <v-carousel show-arrows="hover" cycle hide-delimiters height="auto">
-      <v-carousel-item v-for="(slide, sIndex) in slides" :key="sIndex">
-        <v-sheet>
-          <v-row>
-            <v-col
-              cols="12"
-              md="6"
-              class="pr-5"
-              v-for="(item, iIndex) in slide.slide"
-              :key="iIndex"
-            >
-              <span class="title">{{ item.text }}</span>
-              <v-card class="rounded-0">
-                <v-parallax>
-                  <v-img :src="item.image" class="align-end"></v-img>
-                </v-parallax>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-sheet>
-      </v-carousel-item>
-    </v-carousel>
   </v-container>
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 export default {
   name: "BlockThree",
   setup() {
@@ -85,8 +68,16 @@ export default {
           "https://media.istockphoto.com/id/1373329869/photo/modern-living-room-interior-3d-render.jpg?s=612x612&w=0&k=20&c=VBzd-UExnctNDY9rfqUc5Ys8IUyBmELYT0R2SSZ1_L4=",
       },
     ]);
+    const customWidth = ref(470);
+
+    onMounted(() => {
+      // const myDivWidth = this.$refs.myDiv.clientWidth;
+      // console.log(`Width of myDiv: ${myDivWidth}px`);
+    });
+
     return {
       slides,
+      customWidth,
     };
   },
 };
@@ -103,5 +94,10 @@ export default {
 .title {
   font-family: "Allura" !important;
   font-size: 50px !important;
+}
+.hovered {
+  opacity: 0.7 !important;
+  cursor: pointer;
+  transform: scale(0.99);
 }
 </style>

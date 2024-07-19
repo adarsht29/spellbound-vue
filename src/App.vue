@@ -24,7 +24,11 @@ export default {
 
 <style lang="scss">
 html * {
-  font-family: century-gothic, sans-serif !important;
+  font-family: "Montserrat" !important;
+}
+.base-black {
+  background: #000 !important;
+  color: #fafafa !important;
 }
 .base-primry-black {
   background: #1d1d1d !important;

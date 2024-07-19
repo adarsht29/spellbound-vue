@@ -1,12 +1,19 @@
 <template>
-  <video
-    :key="require('@/assets/Homepage_blockOne.mp4')"
-    width="100%"
-    controls
-    autoplay
-  >
-    <source :src="require('@/assets/Homepage_blockOne.mp4')" type="video/mp4" />
-  </video>
+  <v-container fluid class="ma-0 pa-0">
+    <video
+      :key="require('@/assets/Homepage_blockOne.mp4')"
+      autoplay
+      muted="true"
+      width="100%"
+      class="d-block"
+      loop
+    >
+      <source
+        :src="require('@/assets/Homepage_blockOne.mp4')"
+        type="video/mp4"
+      />
+    </video>
+  </v-container>
 </template>
 
 <script>

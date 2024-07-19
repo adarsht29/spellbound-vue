@@ -29,13 +29,13 @@
                 </v-sheet>
               </template>
 
-              <v-list class="rounded-0 pa-0">
+              <v-list class="rounded-0 pa-0 base-primry-black">
                 <v-list-item
                   v-for="item in link.menuItems"
                   :key="item.id"
                   class="base-primry-black"
                 >
-                  <v-list-item-title class="text-caption">{{
+                  <v-list-item-title class="text-caption base-primry-black">{{
                     item.label
                   }}</v-list-item-title>
                 </v-list-item>
