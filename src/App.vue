@@ -26,17 +26,12 @@ export default {
 html * {
   font-family: century-gothic, sans-serif !important;
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.base-primry-black {
+  background: #1d1d1d !important;
+  color: #fafafa !important;
+}
+.base-primry-white {
+  background: #fafafa !important;
+  color: #1d1d1d !important;
 }
 </style>
