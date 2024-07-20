@@ -8,26 +8,32 @@
       </v-col>
     </v-row>
 
-    <v-sheet elevation="0">
-      <v-slide-group class="pa-4" center-active show-arrows="false">
-        <v-slide-group-item v-for="(card, index) in slides" :key="index">
-          <v-hover>
-            <template v-slot:default="{ isHovering, props }">
-              <v-img
-                v-bind="props"
-                :src="card.image"
-                cover
-                width="470"
-                :class="[
-                  index !== 0 ? 'ml-4' : '',
-                  isHovering ? 'hovered' : '',
-                ]"
-              ></v-img>
-            </template>
-          </v-hover>
-        </v-slide-group-item>
-      </v-slide-group>
-    </v-sheet>
+    <div ref="slider">
+      <v-sheet elevation="0">
+        <v-slide-group
+          class="pa-4 custom-slide-group"
+          center-active
+          show-arrows="false"
+        >
+          <v-slide-group-item v-for="(card, index) in slides" :key="index">
+            <v-hover>
+              <template v-slot:default="{ isHovering, props }">
+                <v-img
+                  v-bind="props"
+                  :src="card.image"
+                  cover
+                  :width="customWidth"
+                  :class="[
+                    index !== 0 ? 'ml-8' : '',
+                    isHovering ? 'hovered' : '',
+                  ]"
+                ></v-img>
+              </template>
+            </v-hover>
+          </v-slide-group-item>
+        </v-slide-group>
+      </v-sheet>
+    </div>
   </v-container>
 </template>
 
@@ -36,6 +42,7 @@ import { ref, onMounted } from "vue";
 export default {
   name: "BlockThree",
   setup() {
+    const slider = ref(null);
     const slides = ref([
       {
         url: "Interior",
@@ -71,11 +78,16 @@ export default {
     const customWidth = ref(470);
 
     onMounted(() => {
-      // const myDivWidth = this.$refs.myDiv.clientWidth;
-      // console.log(`Width of myDiv: ${myDivWidth}px`);
+      const width = slider.value
+        ?.querySelector(".v-slide-group__container")
+        ?.getBoundingClientRect()?.width;
+      if (width) {
+        customWidth.value = width / 2.5;
+      }
     });
 
     return {
+      slider,
       slides,
       customWidth,
     };
@@ -98,6 +110,13 @@ export default {
 .hovered {
   opacity: 0.7 !important;
   cursor: pointer;
-  transform: scale(0.99);
+  transform: scale(1.05);
+  overflow: visible;
+}
+.custom-slide-group {
+  :deep(.v-slide-group__prev),
+  :deep(.v-slide-group__next) {
+    display: none;
+  }
 }
 </style>

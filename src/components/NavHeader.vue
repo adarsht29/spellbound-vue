@@ -57,8 +57,17 @@
           </template>
         </v-app-bar>
 
-        <v-navigation-drawer v-model="drawer" temporary>
-          <v-expansion-panels elevation="0" class="d-md-none rounded-0">
+        <v-navigation-drawer
+          v-model="drawer"
+          temporary
+          class="custom-nav-drawer"
+        >
+          <v-expansion-panels
+            elevation="0"
+            class="d-md-none rounded-0 custom-exp-panels"
+            variant="accordion"
+            static="true"
+          >
             <v-expansion-panel
               v-for="link in links"
               :key="link.id"
@@ -67,16 +76,17 @@
               <v-expansion-panel-title
                 expand-icon="mdi-plus"
                 collapse-icon="mdi-minus"
+                class="text-caption"
               >
                 {{ link.label }}
               </v-expansion-panel-title>
-              <v-expansion-panel-text>
-                <v-list dense class="text-left">
+              <v-expansion-panel-text class="base-primry-black">
+                <v-list class="text-left pa-0">
                   <v-list-item
                     v-for="item in link.menuItems"
                     :key="item.id"
                     link
-                    class="custom-exp-list-item"
+                    class="text-caption pa-0"
                   >
                     {{ item.label }}
                   </v-list-item>
@@ -136,5 +146,14 @@ export default {
 .logo {
   height: auto;
   max-height: inherit;
+}
+.custom-nav-drawer {
+  border: 0 !important;
+}
+.custom-exp-panels {
+  :deep(.v-expansion-panel-title--active) {
+    background-color: #1d1d1d !important;
+    color: #fafafa !important;
+  }
 }
 </style>
