@@ -2,7 +2,7 @@
   <v-container fluid class="block-three pa-10">
     <v-row>
       <v-col cols="12">
-        <div class="text-h3 ma-6 mt-2 mb-1 text-center font-weight-bold">
+        <div class="text-h3 ma-6 mt-2 mb-3 text-center font-weight-bold">
           Interior
         </div>
       </v-col>

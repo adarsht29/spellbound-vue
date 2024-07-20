@@ -42,7 +42,12 @@
         </v-col>
       </v-row>
 
-      <v-expansion-panels elevation="0" class="d-md-none rounded-0">
+      <v-expansion-panels
+        elevation="0"
+        class="d-md-none rounded-0 custom-exp-panels"
+        variant="accordion"
+        static="true"
+      >
         <v-expansion-panel
           v-for="link in links"
           :key="link.id"
@@ -51,16 +56,17 @@
           <v-expansion-panel-title
             expand-icon="mdi-plus"
             collapse-icon="mdi-minus"
+            class="text-caption"
           >
             {{ link.label }}
           </v-expansion-panel-title>
-          <v-expansion-panel-text>
-            <v-list dense class="text-left">
+          <v-expansion-panel-text class="base-primry-black">
+            <v-list class="text-left pa-0">
               <v-list-item
                 v-for="item in link.menuItems"
                 :key="item.id"
                 link
-                class="custom-exp-list-item"
+                class="text-caption pa-0 base-primry-black"
               >
                 {{ item.label }}
               </v-list-item>
@@ -107,5 +113,11 @@ export default {
 :deep(.v-expansion-panels) .v-expansion-panel--active:not(:first-child)::after,
 .v-expansion-panel--active + .v-expansion-panel::after {
   opacity: 1 !important;
+}
+.custom-exp-panels {
+  :deep(.v-expansion-panel-title--active) {
+    background-color: #1d1d1d !important;
+    color: #fafafa !important;
+  }
 }
 </style>
