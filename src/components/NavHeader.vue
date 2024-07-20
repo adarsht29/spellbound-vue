@@ -27,15 +27,18 @@
             </template>
 
             <v-list class="rounded-0 pa-0 base-primry-black">
-              <v-list-item
+              <router-link
                 v-for="item in link.menuItems"
                 :key="item.id"
-                class="base-primry-black"
+                :to="item.url"
+                class="text-decoration-none"
               >
-                <v-list-item-title class="text-caption base-primry-black">{{
-                  item.label
-                }}</v-list-item-title>
-              </v-list-item>
+                <v-list-item class="base-primry-black">
+                  <v-list-item-title class="text-caption base-primry-black">
+                    {{ item.label }}
+                  </v-list-item-title>
+                </v-list-item>
+              </router-link>
             </v-list>
           </v-menu>
         </v-app-bar>
