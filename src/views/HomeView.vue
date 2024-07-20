@@ -9,7 +9,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import BlockOne from "@/components/Home/BlockOne.vue";
 import BlockTwo from "@/components/Home/BlockTwo.vue";
 import BlockThree from "@/components/Home/BlockThree.vue";

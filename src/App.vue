@@ -5,7 +5,7 @@
         <router-view />
       </template>
     </NavHeader>
-    <NavFooter />
+    <NavFooter class="mt-16" />
   </v-app>
 </template>
 
