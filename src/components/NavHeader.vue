@@ -6,13 +6,13 @@
           <v-sheet
             class="text-caption h-100 align-center d-flex cursor-pointer w-100"
           >
-            <a href="javascript:void(0);" class="logo-btn">
+            <router-link to="/" class="logo-btn">
               <img
                 alt="logo"
                 :src="require('../assets/logo.png')"
                 class="logo"
               />
-            </a>
+            </router-link>
           </v-sheet>
 
           <v-menu open-on-hover v-for="link in links" :key="link.id">
@@ -47,13 +47,13 @@
           <v-sheet
             class="text-caption h-100 align-center d-flex cursor-pointer w-100"
           >
-            <a href="javascript:void(0);" class="logo-btn">
+            <router-link to="/" class="logo-btn">
               <img
                 alt="logo"
                 :src="require('../assets/logo.png')"
                 class="logo"
               />
-            </a>
+            </router-link>
           </v-sheet>
 
           <v-spacer></v-spacer>
