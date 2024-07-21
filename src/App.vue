@@ -41,4 +41,7 @@ html * {
 .inter-font {
   font-family: "Inter" !important;
 }
+.text-primary-green {
+  color: #003d33 !important;
+}
 </style>

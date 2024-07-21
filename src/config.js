@@ -25,13 +25,8 @@ module.exports = {
     },
     {
       id: 4,
-      label: "Contact Us",
-      menuItems: [
-        { id: 1, label: "Sub menu 1", url: "/" },
-        { id: 2, label: "Sub menu 2", url: "/" },
-        { id: 3, label: "Sub menu 3", url: "/" },
-        { id: 4, label: "Sub menu 4", url: "/" },
-      ],
+      label: "About",
+      menuItems: [{ id: 1, label: "Contact Us", url: "/contact" }],
     },
   ],
   blocks: [

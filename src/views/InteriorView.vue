@@ -1,5 +1,7 @@
 <template>
-  <ImageBlockContainer :blocks="blocks" />
+  <div class="interior">
+    <ImageBlockContainer :blocks="blocks" />
+  </div>
 </template>
 
 <script>

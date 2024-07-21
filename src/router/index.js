@@ -27,6 +27,11 @@ const routes = [
     name: "interior-all-raas",
     component: () => import("../views/Interior/AllRaas.vue"),
   },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () => import("../views/ContactView.vue"),
+  },
 ];
 
 const router = createRouter({
