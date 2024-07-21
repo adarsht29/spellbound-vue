@@ -2,12 +2,12 @@
   <v-container fluid>
     <v-row>
       <v-col cols="8">
-        <CommonImageBlock :block="subBlocks[0]" />
+        <ImageBlock :block="subBlocks[0]" />
       </v-col>
       <v-col cols="4">
         <v-row>
-          <v-col cols="12"><CommonImageBlock :block="subBlocks[1]" /> </v-col>
-          <v-col cols="12"><CommonImageBlock :block="subBlocks[2]" /> </v-col>
+          <v-col cols="12"><ImageBlock :block="subBlocks[1]" /> </v-col>
+          <v-col cols="12"><ImageBlock :block="subBlocks[2]" /> </v-col>
         </v-row>
       </v-col>
     </v-row>
@@ -16,11 +16,11 @@
 
 <script>
 import { useDisplay } from "vuetify";
-import CommonImageBlock from "@/components/common/CommonImageBlock.vue";
+import ImageBlock from "@/components/common/ImageBlock.vue";
 export default {
   name: "ThreeImageBlock",
   components: {
-    CommonImageBlock,
+    ImageBlock,
   },
   props: {
     subBlocks: {

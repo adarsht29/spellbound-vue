@@ -1,14 +1,14 @@
 <template>
-  <ImageBlock :blocks="blocks" />
+  <ImageBlockContainer :blocks="blocks" />
 </template>
 
 <script>
 import { blocks } from "@/config";
-import ImageBlock from "@/components/common/ImageBlock.vue";
+import ImageBlockContainer from "@/components/common/ImageBlockContainer.vue";
 export default {
   name: "InteriorView",
   components: {
-    ImageBlock,
+    ImageBlockContainer,
   },
   setup() {
     return {

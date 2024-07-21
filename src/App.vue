@@ -38,4 +38,7 @@ html * {
   background: #fafafa !important;
   color: #1d1d1d !important;
 }
+.inter-font {
+  font-family: "Inter" !important;
+}
 </style>
