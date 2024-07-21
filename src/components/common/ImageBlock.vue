@@ -51,9 +51,17 @@
           <p class="text-subtitle-2 text-uppercase font-weight-thin">
             {{ block.subtitle }}
           </p>
-          <p class="text-body mt-5">
+          <p class="text-body mt-6">
             {{ block.body }}
           </p>
+          <div class="mt-6">
+            <v-btn
+              variant="outlined"
+              class="rounded-0 text-overline text-uppercase"
+            >
+              View Project
+            </v-btn>
+          </div>
         </div>
       </v-col>
     </v-row>
