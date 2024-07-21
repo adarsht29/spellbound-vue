@@ -1,5 +1,16 @@
 <template>
-  <v-container fluid class="pa-0" v-for="block in blocks" :key="block.id">
+  <v-container
+    fluid
+    class="pa-0"
+    v-for="block in blocks"
+    :key="block.id"
+    v-intersect="{
+      handler: onIntersect,
+      options: {
+        threshold: [0, 0.5, 1.0],
+      },
+    }"
+  >
     <component :is="block.component" :sub-blocks="block.subBlocks" />
   </v-container>
 </template>
@@ -21,6 +32,16 @@ export default {
       required: false,
       default: () => [],
     },
+  },
+  setup() {
+    const isIntersecting = false;
+    const onIntersect = (isIntersecting, entries) => {
+      isIntersecting = entries[0].intersectionRatio >= 0.5;
+    };
+    return {
+      isIntersecting,
+      onIntersect,
+    };
   },
 };
 </script>
