@@ -10,18 +10,27 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: () => import("../views/AboutView.vue"),
   },
   {
     path: "/interior",
     name: "interior",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/InteriorView.vue"),
+    component: () => import("../views/InteriorView.vue"),
+  },
+  {
+    path: "/interior/all",
+    name: "interior-all",
+    component: () => import("../views/InteriorView.vue"),
+  },
+  {
+    path: "/interior/all/raas",
+    name: "interior-all-raas",
+    component: () => import("../views/Interior/AllRaas.vue"),
   },
 ];
 
 const router = createRouter({
+  mode: "history",
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });

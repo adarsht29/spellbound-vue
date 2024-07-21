@@ -3,7 +3,7 @@ module.exports = {
     {
       id: 1,
       label: "Interior Narratives’",
-      menuItems: [{ id: 1, label: "All", url: "/interior" }],
+      menuItems: [{ id: 1, label: "All", url: "/interior/all" }],
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ module.exports = {
           title: "interiors",
           subtitle: "",
           body: "We follow a deeply contextual approach to our work and combine this with a strong focus on building the tactile and sensory qualities and experiential nature of the space through an in-depth understanding of methodologies, materials and story-telling.",
-          url: "/",
+          url: "",
           image: "BlockImage11.jpg",
         },
       ],
@@ -58,7 +58,7 @@ module.exports = {
           title: "RAAS Chhatrasagar",
           subtitle: "Hospitality",
           body: "A wildlife camping experience that reinterprets the historical, and weaves in the biodiversity of its setting with resilient ways of building, RAAS Chhatrasagar seeks to stand out from the crowd by blending in with its environment.",
-          url: "/",
+          url: "/interior/all/raas",
           image: "BlockImage21.jpg",
         },
         {

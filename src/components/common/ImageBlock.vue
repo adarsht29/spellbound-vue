@@ -1,33 +1,4 @@
 <template>
-  <!-- <v-parallax
-    :src="require(`@/assets/${block.image}`)"
-    class="parallax-image text-white"
-    height="100%"
-  >
-    <v-hover v-slot="{ isHovering, props }">
-      <v-row
-        v-bind="props"
-        v-if="singleBlock"
-        class="flex-column fill-height justify-center align-left"
-      >
-        <template v-if="isHovering">
-          <div class="text-h3 font-weight-thin mb-4">{{ block.title }}</div>
-          <div class="text-h5 font-weight-thin mb-4">{{ block.body }}</div>
-          <div>
-            <v-btn class="rounded-0" variant="outlined"> View Project </v-btn>
-          </div>
-        </template>
-      </v-row>
-      <v-row
-        v-bind="props"
-        v-else
-        class="flex-column fill-height justify-center align-left"
-      >
-        <template v-if="isHovering"> jkj </template>
-      </v-row>
-    </v-hover>
-  </v-parallax> -->
-
   <v-parallax
     :src="require(`@/assets/${block.image}`)"
     class="text-white"
@@ -55,12 +26,17 @@
             {{ block.body }}
           </p>
           <div class="mt-6">
-            <v-btn
-              variant="outlined"
-              class="rounded-0 text-overline text-uppercase"
+            <router-link
+              :to="block.url"
+              class="text-decoration-none router-btn"
             >
-              View Project
-            </v-btn>
+              <v-btn
+                variant="outlined"
+                class="rounded-0 text-overline text-uppercase"
+              >
+                View Project
+              </v-btn>
+            </router-link>
           </div>
         </div>
       </v-col>
@@ -87,7 +63,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.title {
-  letter-spacing: -1px;
+.router-btn {
+  color: inherit;
 }
 </style>
