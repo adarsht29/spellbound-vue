@@ -5,7 +5,7 @@
         <router-view />
       </template>
     </NavHeader>
-    <NavFooter class="mt-16" />
+    <NavFooter class="footer" />
   </v-app>
 </template>
 
@@ -43,5 +43,11 @@ html * {
 }
 .text-primary-green {
   color: #003d33 !important;
+}
+</style>
+
+<style lang="scss" scoped>
+.footer {
+  margin-top: 80px;
 }
 </style>

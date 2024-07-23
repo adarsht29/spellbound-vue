@@ -1,13 +1,13 @@
 <template>
   <v-parallax
-    :src="require(`@/assets/${block.image}`)"
+    :src="block.image"
     class="text-white custom-parallax"
     height="100%"
   >
     <v-hover>
       <template v-slot:default="{ isHovering, props }">
         <v-row
-          class="fill-height custom-parallax-content"
+          class="fill-height custom-parallax-content ma-0"
           :class="[
             singleBlock ? 'single-block' : '',
             isHovering ? 'hovered' : '',
@@ -22,9 +22,7 @@
               :class="isHovering ? '' : 'text-transparent'"
             >
               <p class="text-h2">{{ block.title }}</p>
-              <p class="text-h6 mt-4">
-                {{ block.body }}
-              </p>
+              <p class="text-h6 mt-4" v-html="block.body"></p>
             </div>
           </v-col>
 
@@ -40,9 +38,7 @@
               <p class="text-subtitle-2 text-uppercase font-weight-thin">
                 {{ block.subtitle }}
               </p>
-              <p class="text-body mt-6">
-                {{ block.body }}
-              </p>
+              <p class="text-body mt-6" v-html="block.body"></p>
               <div class="mt-6">
                 <router-link
                   :to="block.url"

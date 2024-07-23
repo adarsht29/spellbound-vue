@@ -1,5 +1,7 @@
 <template>
-  <v-parallax :src="require('@/assets/BlockImage21.jpg')">
+  <v-parallax
+    src="https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000"
+  >
     <div
       class="d-flex flex-column fill-height justify-center align-center text-white"
     >

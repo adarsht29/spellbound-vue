@@ -3,7 +3,10 @@
     <v-row>
       <v-col cols="12">
         <div class="text-h3 ma-6 mt-2 mb-3 text-center font-weight-bold">
-          Interior
+          Interior Narratives
+        </div>
+        <div class="text-h5 ma-6 mt-2 mb-3 text-center">
+          The Stories of Spaces
         </div>
       </v-col>
     </v-row>
@@ -27,7 +30,15 @@
                     index !== 0 ? 'ml-8' : '',
                     isHovering ? 'hovered' : '',
                   ]"
-                ></v-img>
+                >
+                  <v-row class="fill-height ma-0" align="end">
+                    <div
+                      class="text-title-1 text-white ma-12 mb-8 pa-1 pl-2 pr-2 custom-title"
+                    >
+                      {{ card.title }}
+                    </div>
+                  </v-row>
+                </v-img>
               </template>
             </v-hover>
           </v-slide-group-item>
@@ -38,58 +49,68 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
+import { useDisplay } from "vuetify";
+import { ref, computed } from "vue";
 export default {
   name: "BlockThree",
   setup() {
+    const { smAndUp } = useDisplay();
     const slider = ref(null);
     const slides = ref([
       {
-        url: "Interior",
+        url: "",
+        title: "Ishavasya",
         image:
-          "https://media.istockphoto.com/id/1357529184/photo/3d-render-of-a-contemporary-living-room-interior.jpg?s=612x612&w=0&k=20&c=YuMefC7wfoc6Qitx7iyjmnjFBdtb94CyuITVCDrHTB8=",
+          "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
       },
       {
         url: "",
+        title: "The Pavilion",
         image:
-          "https://media.istockphoto.com/id/1373329869/photo/modern-living-room-interior-3d-render.jpg?s=612x612&w=0&k=20&c=VBzd-UExnctNDY9rfqUc5Ys8IUyBmELYT0R2SSZ1_L4=",
-      },
-      {
-        url: "Interior",
-        image:
-          "https://media.istockphoto.com/id/1357529184/photo/3d-render-of-a-contemporary-living-room-interior.jpg?s=612x612&w=0&k=20&c=YuMefC7wfoc6Qitx7iyjmnjFBdtb94CyuITVCDrHTB8=",
+          "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
       },
       {
         url: "",
+        title: "The Holy Abode",
         image:
-          "https://media.istockphoto.com/id/1373329869/photo/modern-living-room-interior-3d-render.jpg?s=612x612&w=0&k=20&c=VBzd-UExnctNDY9rfqUc5Ys8IUyBmELYT0R2SSZ1_L4=",
-      },
-      {
-        url: "Interior",
-        image:
-          "https://media.istockphoto.com/id/1357529184/photo/3d-render-of-a-contemporary-living-room-interior.jpg?s=612x612&w=0&k=20&c=YuMefC7wfoc6Qitx7iyjmnjFBdtb94CyuITVCDrHTB8=",
+          "https://lh3.googleusercontent.com/d/1nYLppCs29wcI0vyB1bURULXa8kbrAeH0=w1000",
       },
       {
         url: "",
+        title: "Beach House",
         image:
-          "https://media.istockphoto.com/id/1373329869/photo/modern-living-room-interior-3d-render.jpg?s=612x612&w=0&k=20&c=VBzd-UExnctNDY9rfqUc5Ys8IUyBmELYT0R2SSZ1_L4=",
+          "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+      },
+      {
+        url: "",
+        title: "Godrej N17",
+        image:
+          "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
+      },
+      {
+        url: "",
+        title: "Essentia Wellness",
+        image:
+          "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
       },
     ]);
-    const customWidth = ref(470);
-
-    onMounted(() => {
+    const customWidth = computed(() => {
       const width = slider.value
         ?.querySelector(".v-slide-group__container")
         ?.getBoundingClientRect()?.width;
-      if (width) {
-        customWidth.value = width / 2.5;
+      if (width && smAndUp.value) {
+        return width / 2.5;
+      } else if (width) {
+        return width;
       }
+      return 470;
     });
 
     return {
       slider,
       slides,
       customWidth,
+      smAndUp,
     };
   },
 };
@@ -118,5 +139,8 @@ export default {
   :deep(.v-slide-group__next) {
     display: none;
   }
+}
+.custom-title {
+  background: #000000b6;
 }
 </style>

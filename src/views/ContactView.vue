@@ -1,7 +1,10 @@
 <template>
   <div class="contact">
     <v-container fluid class="pl-0 pr-0 pt-0">
-      <v-parallax :src="require('@/assets/BlockImage21.jpg')" height="500">
+      <v-parallax
+        src="https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000"
+        height="500"
+      >
       </v-parallax>
       <v-container fluid class="overlay-container">
         <v-row align="center" justify="center">
@@ -10,8 +13,11 @@
               <v-row>
                 <v-col cols="7" class="pr-0">
                   <v-card class="pa-6 rounded-0 h-100 elevation-0">
-                    <div class="text-h5 mb-6 text-primary-green">
+                    <div class="text-h5 mb-4 text-primary-green">
                       Contact Us
+                    </div>
+                    <div class="text-subtitle mb-6">
+                      Let’s bring your story to life.
                     </div>
                     <div class="form">
                       <form @submit.prevent="submit">
@@ -323,5 +329,8 @@ export default {
 }
 .overlay-container {
   margin-top: -18%;
+}
+.text-subtitle {
+  font-size: 18px;
 }
 </style>

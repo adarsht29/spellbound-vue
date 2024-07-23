@@ -2,7 +2,7 @@
   <v-footer>
     <v-container fluid>
       <v-row class="hidden-sm-and-down">
-        <v-col cols="2" class="text-left align-center d-flex">
+        <v-col cols="2" class="text-left d-flex pt-10 pl-10">
           <img alt="logo" :src="require('../assets/logo.png')" height="50" />
         </v-col>
 
@@ -16,7 +16,7 @@
               :key="link.id"
               class="text-left"
             >
-              <h4 class="pl-4 pr-4">{{ link.label }}</h4>
+              <h4 class="pl-4 pr-4 font-weight-medium">{{ link.label }}</h4>
               <v-list dense>
                 <router-link
                   v-for="item in link.menuItems"
@@ -32,14 +32,43 @@
           </v-row>
         </v-col>
 
-        <v-col cols="2" class="d-flex pt-0">
-          <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            :icon="icon"
-            class="rounded-0"
-            variant="text"
-          ></v-btn>
+        <v-col cols="2" class="pt-0">
+          <div class="d-flex">
+            <v-btn
+              v-for="icon in icons"
+              :key="icon"
+              :icon="icon"
+              class="rounded-0"
+              variant="text"
+            ></v-btn>
+          </div>
+
+          <div class="d-flex text-subtitle-2 mb-4 mt-3 text-primary-green">
+            Let’s bring your story to life.
+          </div>
+
+          <div class="d-flex">
+            <v-text-field
+              label="E-mail ID"
+              variant="underlined"
+              density="compact"
+              class="custom-input"
+            ></v-text-field>
+          </div>
+          <div class="d-flex">
+            <v-hover>
+              <template v-slot:default="{ isHovering, props }">
+                <v-btn
+                  class="me-4 elevation-1"
+                  type="submit"
+                  v-bind="props"
+                  :color="isHovering ? '#003D33' : ''"
+                >
+                  submit
+                </v-btn>
+              </template>
+            </v-hover>
+          </div>
         </v-col>
       </v-row>
 

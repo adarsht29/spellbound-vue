@@ -6,12 +6,14 @@
 
 <script>
 import OneImageBlock from "@/components/common/OneImageBlock.vue";
+import TwoImageBlock from "@/components/common/TwoImageBlock.vue";
 import ThreeImageBlock from "@/components/common/ThreeImageBlock.vue";
 import FourImageBlock from "@/components/common/FourImageBlock.vue";
 export default {
   name: "ImageBlockContainer",
   components: {
     OneImageBlock,
+    TwoImageBlock,
     ThreeImageBlock,
     FourImageBlock,
   },

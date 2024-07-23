@@ -4,7 +4,7 @@
     <v-row>
       <v-col cols="12">
         <div class="text-h4 ma-6 mt-2 mb-2 text-center font-weight-bold">
-          See how global cities are adapting to the future
+          Spicing up the stories – take our word for it!
         </div>
       </v-col>
     </v-row>
@@ -29,7 +29,7 @@
                   ]"
                 >
                   <v-img :src="card.image" cover></v-img>
-                  <div class="pa-2">
+                  <div class="pa-4 pl-6 pr-6">
                     <p class="font-weight-black small-text">
                       {{ card.smallText }}
                     </p>
@@ -46,84 +46,76 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
+import { useDisplay } from "vuetify";
+import { ref, computed } from "vue";
 export default {
   name: "BlockFour",
   setup() {
+    const { smAndUp } = useDisplay();
     const slider = ref(null);
     const cards = ref([
       {
         title: "Card 1",
         image:
-          "https://www.sa.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities-1080x720.jpg",
-        smallText: "Journal",
-        largeText: "Adaptive Reuse: Dahua 1935",
+          "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+        smallText: "Our Chronicles",
+        largeText:
+          "5 Luxury Interior Design Trends that will be leading in 2025",
       },
       {
         title: "Card 2",
         image:
-          "https://www.sa.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities-1080x720.jpg",
-        smallText: "Journal",
-        largeText: "Adaptive Reuse: Funan",
+          "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+        smallText: "Our Chronicles",
+        largeText: "A Day in the Life of an Interior Designer",
       },
       {
         title: "Card 3",
         image:
-          "https://www.sa.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities-1080x720.jpg",
-        smallText: "Journal",
-        largeText: "Adaptive Reuse: Dahua 1935",
+          "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
+        smallText: "Our Chronicles",
+        largeText: "Curating the Art of Space: Top 5 Signature Projects",
       },
       {
         title: "Card 4",
         image:
-          "https://www.sa.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities-1080x720.jpg",
-        smallText: "Journal",
-        largeText: "Adaptive Reuse: Funan",
+          "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
+        smallText: "Our Chronicles",
+        largeText: "Designing for All Senses",
       },
       {
         title: "Card 5",
         image:
-          "https://www.sa.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities-1080x720.jpg",
-        smallText: "Journal",
-        largeText: "Adaptive Reuse: Dahua 1935",
+          "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
+        smallText: "Our Chronicles",
+        largeText: "Designing for All Senses",
       },
       {
         title: "Card 6",
         image:
-          "https://www.sa.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities-1080x720.jpg",
-        smallText: "Journal",
-        largeText: "Adaptive Reuse: Funan",
-      },
-      {
-        title: "Card 7",
-        image:
-          "https://www.sa.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities-1080x720.jpg",
-        smallText: "Journal",
-        largeText: "Adaptive Reuse: Dahua 1935",
-      },
-      {
-        title: "Card 8",
-        image:
-          "https://www.sa.photojaanic.com/blog/wp-content/uploads/sites/2/2017/08/inspiring-indian-photography-communities-1080x720.jpg",
-        smallText: "Journal",
-        largeText: "Adaptive Reuse: Funan",
+          "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+        smallText: "Our Chronicles",
+        largeText: "Designing for All Senses",
       },
     ]);
-    const customWidth = ref(470);
 
-    onMounted(() => {
+    const customWidth = computed(() => {
       const width = slider.value
         ?.querySelector(".v-slide-group__container")
         ?.getBoundingClientRect()?.width;
-      if (width) {
-        customWidth.value = width / 2.5;
+      if (width && smAndUp.value) {
+        return width / 2.5;
+      } else if (width) {
+        return width - 10;
       }
+      return 470;
     });
 
     return {
       slider,
       cards,
       customWidth,
+      smAndUp,
     };
   },
 };

@@ -5,7 +5,7 @@
       autoplay
       muted="true"
       width="100%"
-      class="d-block"
+      class="d-block video"
       loop
     >
       <source
@@ -27,7 +27,7 @@ export default {
         Math.max(
           document.documentElement.clientHeight || 0,
           window.innerHeight || 0
-        ) + 50;
+        ) - 50;
     });
     return {
       customHeight,

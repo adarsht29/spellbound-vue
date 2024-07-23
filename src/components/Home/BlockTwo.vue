@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="pa-10 block-two base-black">
-    <v-row justify="center">
+    <v-row justify="center" class="custom-width">
       <v-col cols="10" v-for="it in items" :key="it.id">
         <div class="my-text parallax-content text-left">
           <h1 class="font-weight-bold mb-4">
@@ -29,7 +29,7 @@ export default {
       {
         id: 1,
         sLabel: "We believe in the power of spaces that",
-        mLabel: "'Indulge'.",
+        mLabel: "Indulge.",
         subItems: [
           {
             id: 11,
@@ -43,7 +43,13 @@ export default {
         sLabel:
           "Presenting a magical twist to interiors, we're Spellbound - a studio crafting beyond",
         mLabel: "designs.",
-        subItems: [{ id: 21, label: "We span 17 studios across 6 regions." }],
+        subItems: [
+          {
+            id: 21,
+            label:
+              "We've been weaving narratives into spaces since over a decade & more Spatially & Sensorially, All that we do",
+          },
+        ],
       },
     ]);
 
@@ -103,11 +109,11 @@ export default {
       }
 
       const phrases1 = [
-        "'Indulge'.",
-        "'Quench'.",
-        "'Pampers'.",
-        "'Nourish'.",
-        "'Satisfy'.",
+        "Indulge.",
+        "Enchant.",
+        "Elevate.",
+        "Captivate.",
+        "Enrich.",
       ];
 
       const el1 = document.querySelector(".text-1");
@@ -123,7 +129,7 @@ export default {
 
       next1();
 
-      const phrases2 = ["designs.", "creativity.", "imagination."];
+      const phrases2 = ["designs.", "concepts.", "visions.", "imaginations."];
 
       const el2 = document.querySelector(".text-2");
       const fx2 = new TextScramble(el2);
@@ -161,5 +167,8 @@ export default {
 .block-two {
   padding-top: 85px !important;
   padding-bottom: 85px !important;
+}
+.custom-width {
+  max-height: 1100px !important;
 }
 </style>
