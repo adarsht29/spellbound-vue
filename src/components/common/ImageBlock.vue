@@ -119,7 +119,7 @@ export default {
 
 <style lang="scss" scoped>
 .parallax-container {
-  min-height: 100vh;
+  min-height: 40vh;
   height: 100%;
   overflow: hidden;
   transition: transform 1s ease, opacity 1s ease;
