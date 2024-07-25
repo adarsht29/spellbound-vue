@@ -1,11 +1,9 @@
 <template>
-  <v-container fluid class="pa-0">
-    <v-row>
-      <v-col cols="12">
-        <ImageBlock :block="subBlocks[0]" :single-block="true" />
-      </v-col>
-    </v-row>
-  </v-container>
+  <v-row>
+    <v-col cols="12">
+      <ImageBlock :block="subBlocks[0]" :single-block="true" />
+    </v-col>
+  </v-row>
 </template>
 
 <script>

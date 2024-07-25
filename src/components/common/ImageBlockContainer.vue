@@ -1,7 +1,10 @@
 <template>
-  <v-container fluid class="pa-0" v-for="block in blocks" :key="block.id">
-    <component :is="block.component" :sub-blocks="block.subBlocks" />
-  </v-container>
+  <component
+    v-for="block in blocks"
+    :key="block.id"
+    :is="block.component"
+    :sub-blocks="block.subBlocks"
+  />
 </template>
 
 <script>
