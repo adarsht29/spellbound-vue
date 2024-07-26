@@ -8,24 +8,14 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    component: () => import("../views/AboutView.vue"),
-  },
-  {
     path: "/interior",
     name: "interior",
     component: () => import("../views/InteriorView.vue"),
   },
   {
-    path: "/interior/all",
-    name: "interior-all",
-    component: () => import("../views/InteriorView.vue"),
-  },
-  {
-    path: "/interior/all/raas",
-    name: "interior-all-raas",
-    component: () => import("../views/Interior/AllRaas.vue"),
+    path: "/interior/:project",
+    component: () => import("../views/Interior/IndividualProject.vue"),
+    props: true,
   },
   {
     path: "/contact",

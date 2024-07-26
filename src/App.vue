@@ -44,6 +44,9 @@ html * {
 .text-primary-green {
   color: #003d33 !important;
 }
+.text-primary-red {
+  color: #ff533c !important;
+}
 </style>
 
 <style lang="scss" scoped>
