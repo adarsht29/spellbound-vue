@@ -34,7 +34,7 @@ module.exports = {
     {
       id: 4,
       label: "Contact Us",
-      menuItems: [{ id: 1, label: "Contact Us", url: "/contact" }],
+      menuItems: [],
       defaultUrl: "/contact",
     },
   ],
@@ -149,9 +149,8 @@ module.exports = {
     "the-pavilion": {
       mainImage:
         "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
-      title: "Earth And Glass house",
-      caption:
-        "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
+      title: "The Pavilion",
+      caption: "A home to retire into for a cricket historian",
       subtitle: ["Homes", "New Delhi"],
       info: [
         {
@@ -198,9 +197,8 @@ module.exports = {
     ishavasya: {
       mainImage:
         "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      title: "Earth And Glass house",
-      caption:
-        "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
+      title: "Ishavasya, Where the Lord resides",
+      caption: "‘Reverence’ as a space",
       subtitle: ["Homes", "New Delhi"],
       info: [
         {
@@ -235,9 +233,8 @@ module.exports = {
     "beach-house": {
       mainImage:
         "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
-      title: "Earth And Glass house",
-      caption:
-        "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
+      title: "Beach House, ECR Chennai",
+      caption: "In here, ‘To have done less, is indeed to have done more’ …",
       subtitle: ["Homes", "New Delhi"],
       info: [
         {
@@ -272,9 +269,8 @@ module.exports = {
     essencia: {
       mainImage:
         "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
-      title: "Earth And Glass house",
-      caption:
-        "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
+      title: "Essencia, For the Senses.",
+      caption: "Spa.Salon.Stretch Studio<br />‘Sheer indulgence in bliss’ this",
       subtitle: ["Homes", "New Delhi"],
       info: [
         {
@@ -309,7 +305,7 @@ module.exports = {
     "ode-to-timber": {
       mainImage:
         "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
-      title: "Earth And Glass house",
+      title: "Our ‘Ode to Timber’ at N17",
       caption:
         "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
       subtitle: ["Homes", "New Delhi"],
@@ -346,9 +342,8 @@ module.exports = {
     "kimera-wellness": {
       mainImage:
         "https://lh3.googleusercontent.com/d/1mCyJWWhHkdC4GBaDsXDlr9iOKe7XlqGJ=w1000",
-      title: "Earth And Glass house",
-      caption:
-        "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
+      title: "Kimera Wellness",
+      caption: "Where you train your soul to ‘aspire’",
       subtitle: ["Homes", "New Delhi"],
       info: [
         {
@@ -383,9 +378,8 @@ module.exports = {
     "new-york-loft": {
       mainImage:
         "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
-      title: "Earth And Glass house",
-      caption:
-        "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
+      title: "The New York Loft",
+      caption: "Moonlight in NY city, the charm",
       subtitle: ["Homes", "New Delhi"],
       info: [
         {
@@ -420,9 +414,8 @@ module.exports = {
     "a-closet": {
       mainImage:
         "https://lh3.googleusercontent.com/d/1OfC7Jd6Gvvgk3tC4PbR6cDmorQwZVeEv=w1000",
-      title: "Earth And Glass house",
-      caption:
-        "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
+      title: "For the ‘Joy of Dressing’- A Closet",
+      caption: "It’s a charmed world in there!",
       subtitle: ["Homes", "New Delhi"],
       info: [
         {

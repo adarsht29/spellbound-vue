@@ -22,7 +22,13 @@
                 v-bind="props"
                 :class="isActive ? 'base-primry-black' : ''"
               >
-                {{ link.label }}
+                <router-link
+                  :to="link.defaultUrl"
+                  class="text-decoration-none"
+                  :class="isActive ? 'base-primry-black' : 'text-black'"
+                >
+                  {{ link.label }}
+                </router-link>
               </v-sheet>
             </template>
 
