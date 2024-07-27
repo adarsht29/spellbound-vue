@@ -21,24 +21,27 @@
           <v-slide-group-item v-for="(card, index) in slides" :key="index">
             <v-hover>
               <template v-slot:default="{ isHovering, props }">
-                <v-img
+                <v-card
                   v-bind="props"
-                  :src="card.image"
-                  cover
+                  class="ma-2 rounded-0 elevation-0"
                   :width="customWidth"
                   :class="[
                     index !== 0 ? 'ml-8' : '',
                     isHovering ? 'hovered' : '',
                   ]"
                 >
-                  <v-row class="fill-height ma-0" align="end">
-                    <div
-                      class="text-title-1 text-white ma-12 mb-8 pa-1 pl-2 pr-2 custom-title"
-                    >
-                      {{ card.title }}
-                    </div>
-                  </v-row>
-                </v-img>
+                  <router-link :to="card.url">
+                    <v-img :src="card.image" cover height="100%">
+                      <v-row class="fill-height ma-0" align="end">
+                        <div
+                          class="text-title-1 text-white ma-12 mb-8 pa-1 pl-2 pr-2 custom-title"
+                        >
+                          {{ card.title }}
+                        </div>
+                      </v-row>
+                    </v-img>
+                  </router-link>
+                </v-card>
               </template>
             </v-hover>
           </v-slide-group-item>
@@ -51,49 +54,12 @@
 <script>
 import { useDisplay } from "vuetify";
 import { ref, computed } from "vue";
+import { blockThreeSlides as slides } from "@/config";
 export default {
   name: "BlockThree",
   setup() {
     const { smAndUp } = useDisplay();
     const slider = ref(null);
-    const slides = ref([
-      {
-        url: "",
-        title: "Ishavasya",
-        image:
-          "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
-      },
-      {
-        url: "",
-        title: "The Pavilion",
-        image:
-          "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
-      },
-      {
-        url: "",
-        title: "The Holy Abode",
-        image:
-          "https://lh3.googleusercontent.com/d/1nYLppCs29wcI0vyB1bURULXa8kbrAeH0=w1000",
-      },
-      {
-        url: "",
-        title: "Beach House",
-        image:
-          "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
-      },
-      {
-        url: "",
-        title: "Godrej N17",
-        image:
-          "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
-      },
-      {
-        url: "",
-        title: "Essentia Wellness",
-        image:
-          "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
-      },
-    ]);
     const customWidth = computed(() => {
       const width = slider.value
         ?.querySelector(".v-slide-group__container")

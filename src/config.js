@@ -448,4 +448,86 @@ module.exports = {
         "https://lh3.googleusercontent.com/d/1OfC7Jd6Gvvgk3tC4PbR6cDmorQwZVeEv=w1000",
     },
   },
+  blockFourCards: [
+    {
+      title: "Card 1",
+      image:
+        "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+      smallText: "Our Chronicles",
+      largeText: "5 Luxury Interior Design Trends that will be leading in 2025",
+    },
+    {
+      title: "Card 2",
+      image:
+        "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+      smallText: "Our Chronicles",
+      largeText: "A Day in the Life of an Interior Designer",
+    },
+    {
+      title: "Card 3",
+      image:
+        "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
+      smallText: "Our Chronicles",
+      largeText: "Curating the Art of Space: Top 5 Signature Projects",
+    },
+    {
+      title: "Card 4",
+      image:
+        "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
+      smallText: "Our Chronicles",
+      largeText: "Designing for All Senses",
+    },
+    {
+      title: "Card 5",
+      image:
+        "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
+      smallText: "Our Chronicles",
+      largeText: "Designing for All Senses",
+    },
+    {
+      title: "Card 6",
+      image:
+        "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+      smallText: "Our Chronicles",
+      largeText: "Designing for All Senses",
+    },
+  ],
+  blockThreeSlides: [
+    {
+      url: "/interior/ishavasya",
+      title: "Ishavasya",
+      image:
+        "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
+    },
+    {
+      url: "/interior/the-pavilion",
+      title: "The Pavilion",
+      image:
+        "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+    },
+    {
+      url: "/",
+      title: "The Holy Abode",
+      image:
+        "https://lh3.googleusercontent.com/d/1nYLppCs29wcI0vyB1bURULXa8kbrAeH0=w1000",
+    },
+    {
+      url: "/interior/beach-house",
+      title: "Beach House",
+      image:
+        "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+    },
+    {
+      url: "/interior/ode-to-timber",
+      title: "Godrej N17",
+      image:
+        "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
+    },
+    {
+      url: "/interior/essencia",
+      title: "Essentia Wellness",
+      image:
+        "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
+    },
+  ],
 };
