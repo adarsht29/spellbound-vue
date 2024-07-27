@@ -8,7 +8,7 @@
             <div class="text-h4 text-primary-red">{{ project.title }}</div>
             <div class="d-flex text-subtitle-1 mt-2">
               <template v-for="(sub, index) in project.subtitle" :key="sub">
-                <div v-if="index !== 0" class="ml-1 mr-1">|</div>
+                <div v-if="index !== 0" class="ml-2 mr-2">|</div>
                 <div>{{ sub }}</div>
               </template>
             </div>
@@ -17,8 +17,8 @@
             <div class="text-subtitle-1">{{ project.caption }}</div>
           </v-col>
         </v-row>
-        <v-divider :thickness="2" class="mt-10"></v-divider>
-        <div class="text-overline text-sub-subtitle mt-2">
+        <v-divider :thickness="2" class="mt-8"></v-divider>
+        <div class="text-overline text-sub-subtitle mt-3">
           <template v-for="(inf, index) in project.info" :key="index">
             <span v-if="index !== 0" class="ml-1 mr-1">|</span>
             <span class="text-primary-red">{{ inf.main }}</span>
