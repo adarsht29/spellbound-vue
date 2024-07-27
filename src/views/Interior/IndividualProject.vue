@@ -4,7 +4,7 @@
     <v-row justify="center" class="section-2">
       <v-col cols="8">
         <v-row>
-          <v-col cols="6">
+          <v-col cols="12" sm="12" md="6">
             <div class="text-h4 text-primary-red">{{ project.title }}</div>
             <div class="d-flex text-subtitle-1 mt-2">
               <template v-for="(sub, index) in project.subtitle" :key="sub">
@@ -13,7 +13,7 @@
               </template>
             </div>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" sm="12" md="6">
             <div class="text-subtitle-1">{{ project.caption }}</div>
           </v-col>
         </v-row>
@@ -28,10 +28,10 @@
       </v-col>
     </v-row>
     <v-row justify="center" class="section-3">
-      <v-col cols="6">
+      <v-col cols="12" sm="12" md="6">
         <v-parallax :src="project.sectionImage" height="450"> </v-parallax>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" sm="12" md="6">
         <v-carousel hide-delimiters height="450">
           <v-carousel-item
             v-for="(carousel, index) in project.sectionCarouselImage"
@@ -43,7 +43,7 @@
       </v-col>
     </v-row>
     <v-row justify="center" class="section-4">
-      <v-col cols="6">
+      <v-col cols="12" sm="8" md="6">
         <div class="text-subtitle-1" v-html="project.body"></div>
       </v-col>
     </v-row>
