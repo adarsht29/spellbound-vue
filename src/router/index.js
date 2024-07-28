@@ -18,6 +18,11 @@ const routes = [
     props: true,
   },
   {
+    path: "/chronicles",
+    name: "chronicles",
+    component: () => import("../views/ChroniclesView.vue"),
+  },
+  {
     path: "/contact",
     name: "contact",
     component: () => import("../views/ContactView.vue"),

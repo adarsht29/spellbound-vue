@@ -79,7 +79,7 @@
             elevation="0"
             class="d-md-none rounded-0 custom-exp-panels"
             variant="accordion"
-            static="true"
+            :static="true"
           >
             <v-expansion-panel
               v-for="link in links"

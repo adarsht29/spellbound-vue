@@ -18,7 +18,7 @@
               singleBlock ? 'single-block' : '',
               isHovering ? 'hovered' : '',
             ]"
-            align="center"
+            alignContent="center"
             justify="center"
           >
             <v-col v-if="singleBlock" class="text-left" cols="12" md="8">
