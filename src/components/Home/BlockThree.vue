@@ -16,7 +16,7 @@
         <v-slide-group
           class="pa-4 custom-slide-group"
           center-active
-          show-arrows="false"
+          :show-arrows="false"
         >
           <v-slide-group-item v-for="(card, index) in slides" :key="index">
             <v-hover>

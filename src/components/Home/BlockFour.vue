@@ -14,14 +14,14 @@
         <v-slide-group
           class="pa-4 custom-slide-group"
           center-active
-          show-arrows="false"
+          :show-arrows="false"
         >
           <v-slide-group-item v-for="(card, index) in cards" :key="index">
             <v-hover>
               <template v-slot:default="{ isHovering, props }">
                 <v-card
                   v-bind="props"
-                  class="ma-2 rounded-0"
+                  class="ma-2 rounded-0 elevation-2"
                   :width="customWidth"
                   :class="[
                     index !== 0 ? 'ml-8' : '',
