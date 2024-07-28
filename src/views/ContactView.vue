@@ -276,8 +276,43 @@ export default {
     const items = ref(["Business", "Media"]);
 
     // Define the submit function
-    const submit = handleSubmit((values) => {
-      alert(JSON.stringify(values, null, 2));
+    const submit = handleSubmit(async () => {
+      // Create a FormData object and append form data
+      const form = new FormData();
+      form.append("entry.1426437528", firstName.value.value);
+      form.append("entry.429583390", lastName.value.value);
+      form.append("entry.1468827897", email.value.value);
+      form.append("entry.1398678113", company.value.value);
+      form.append("entry.715305321", designation.value.value);
+      form.append("entry.2078673614", phone.value.value);
+      form.append("entry.357352729", message.value.value);
+      form.append("entry.1471353204", purpose.value.value);
+
+      try {
+        await fetch(
+          "https://docs.google.com/forms/d/e/1FAIpQLSfyUnIrJD26vgZXnFfF_ZKdm4giPtXg3BosO80FAsMwTlWfmg/formResponse",
+          {
+            method: "POST",
+            mode: "no-cors",
+            body: form,
+          }
+        );
+
+        // Provide feedback to the user
+        alert("Form submitted successfully!");
+
+        // Optionally reset the form data
+        firstName.value.value = "";
+        lastName.value.value = "";
+        email.value.value = "";
+        company.value.value = "";
+        designation.value.value = "";
+        phone.value.value = "";
+        message.value.value = "";
+        purpose.value.value = "";
+      } catch (error) {
+        alert("An error occurred while submitting the form.");
+      }
     });
 
     // Return the properties and methods to the template
