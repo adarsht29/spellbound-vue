@@ -3,7 +3,9 @@
     <!-- Common Header -->
     <v-row>
       <v-col cols="12">
-        <div class="text-h4 ma-6 mt-2 mb-2 text-center font-weight-bold">
+        <div
+          class="text-h4 ma-6 mt-2 mb-2 text-center font-weight-medium header-font"
+        >
           Spicing up the stories – take our word for it!
         </div>
       </v-col>
@@ -21,7 +23,7 @@
               <template v-slot:default="{ isHovering, props }">
                 <v-card
                   v-bind="props"
-                  class="ma-2 rounded-0 elevation-2"
+                  class="ma-2 rounded-0 elevation-0 custom-card"
                   :width="customWidth"
                   :class="[
                     index !== 0 ? 'ml-8' : '',
@@ -29,7 +31,7 @@
                   ]"
                 >
                   <v-img :src="card.image" cover></v-img>
-                  <div class="pa-4 pl-6 pr-6">
+                  <div class="pa-4 pl-0 pr-6">
                     <p class="font-weight-black small-text">
                       {{ card.smallText }}
                     </p>
@@ -90,8 +92,11 @@ export default {
 .custom-container {
   background-color: #fff;
 }
-.hovered {
+.custom-card {
   opacity: 0.7 !important;
+}
+.hovered {
+  opacity: 1 !important;
   cursor: pointer;
   transform: scale(1.03);
   overflow: visible;

@@ -9,7 +9,7 @@
             <router-link to="/" class="logo-btn">
               <img
                 alt="logo"
-                :src="require('../assets/logo.png')"
+                src="https://lh3.googleusercontent.com/d/1Ac5TvYSmiVi0ud-tXHLwEWg-L8AT6BwI=w1000"
                 class="logo"
               />
             </router-link>
@@ -18,13 +18,13 @@
           <v-menu open-on-hover v-for="link in links" :key="link.id">
             <template v-slot:activator="{ isActive, props }">
               <v-sheet
-                class="pa-2 text-caption h-100 w-100 align-center d-flex cursor-pointer text-break pl-4 pr-4"
+                class="pa-2 text-subtitle-2 h-100 w-100 align-center d-flex cursor-pointer text-break pl-4 pr-4"
                 v-bind="props"
                 :class="isActive ? 'base-primry-black' : ''"
               >
                 <router-link
                   :to="link.defaultUrl"
-                  class="text-decoration-none"
+                  class="text-subtitle-2 text-decoration-none"
                   :class="isActive ? 'base-primry-black' : 'text-black'"
                 >
                   {{ link.label }}
@@ -37,10 +37,10 @@
                 v-for="item in link.menuItems"
                 :key="item.id"
                 :to="item.url"
-                class="text-decoration-none"
+                class="text-subtitle-2 text-decoration-none"
               >
                 <v-list-item class="base-primry-black">
-                  <v-list-item-title class="text-caption base-primry-black">
+                  <v-list-item-title class="text-subtitle-2 base-primry-black">
                     {{ item.label }}
                   </v-list-item-title>
                 </v-list-item>

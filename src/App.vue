@@ -6,10 +6,20 @@
       </template>
     </NavHeader>
     <NavFooter class="footer" />
+    <v-btn
+      icon
+      class="whatsapp-widget"
+      href="javascript:void(0);"
+      color="green"
+      @click="openWhatsApp()"
+    >
+      <v-icon>mdi-whatsapp</v-icon>
+    </v-btn>
   </v-app>
 </template>
 
 <script>
+import { ref } from "vue";
 import NavHeader from "@/components/NavHeader.vue";
 import NavFooter from "@/components/NavFooter.vue";
 
@@ -19,12 +29,35 @@ export default {
     NavHeader,
     NavFooter,
   },
+  setup() {
+    const phoneNumber = ref("+919897882511");
+    const message = ref(
+      "Hello Spellbound, I'm interested in discussing interior design services for my [home/office/restaurant]. Could you please provide more information on your services?"
+    );
+
+    const openWhatsApp = () => {
+      const whatsappLink = `https://wa.me/${
+        phoneNumber.value
+      }?text=${encodeURIComponent(message.value)}`;
+      window.open(whatsappLink, "_blank");
+    };
+
+    return {
+      phoneNumber,
+      message,
+      openWhatsApp,
+    };
+  },
 };
 </script>
 
 <style lang="scss">
 html * {
-  font-family: "Montserrat" !important;
+  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
+}
+.header-font {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 32px !important;
 }
 .base-black {
   background: #000 !important;
@@ -45,12 +78,29 @@ html * {
   color: #003d33 !important;
 }
 .text-primary-red {
-  color: #ff533c !important;
+  color: #1d1d1d !important;
+}
+.text-gray {
+  color: #c0c0c0 !important;
 }
 </style>
 
 <style lang="scss" scoped>
 .footer {
   margin-top: 80px;
+}
+.whatsapp-widget {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-widget:hover {
+  background-color: #20b857;
 }
 </style>

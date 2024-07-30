@@ -3,10 +3,12 @@
     <v-row justify="center" class="custom-width">
       <v-col cols="10" v-for="it in items" :key="it.id">
         <div class="my-text parallax-content text-left">
-          <h1 class="font-weight-bold mb-4">
+          <div class="text-h4 font-weight-medium mb-4 header-font">
             {{ it.sLabel }}
-            <span :class="`text-${it.id}`">{{ it.mLabel }}</span>
-          </h1>
+            <span class="header-font" :class="`text-${it.id}`">{{
+              it.mLabel
+            }}</span>
+          </div>
           <p
             v-for="sIt in it.subItems"
             :key="sIt.id"

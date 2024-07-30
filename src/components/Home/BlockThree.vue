@@ -2,7 +2,9 @@
   <v-container fluid class="block-three pa-10">
     <v-row>
       <v-col cols="12">
-        <div class="text-h3 ma-6 mt-2 mb-3 text-center font-weight-bold">
+        <div
+          class="text-h4 ma-6 mt-2 mb-3 text-center font-weight-medium header-font"
+        >
           Interior Narratives
         </div>
         <div class="text-h5 ma-6 mt-2 mb-3 text-center">
@@ -23,7 +25,7 @@
               <template v-slot:default="{ isHovering, props }">
                 <v-card
                   v-bind="props"
-                  class="ma-2 rounded-0 elevation-0"
+                  class="ma-2 rounded-0 elevation-0 custom-card"
                   :width="customWidth"
                   :class="[
                     index !== 0 ? 'ml-8' : '',
@@ -94,8 +96,11 @@ export default {
   font-family: "Allura" !important;
   font-size: 50px !important;
 }
-.hovered {
+.custom-card {
   opacity: 0.7 !important;
+}
+.hovered {
+  opacity: 1 !important;
   cursor: pointer;
   transform: scale(1.05);
   overflow: visible;

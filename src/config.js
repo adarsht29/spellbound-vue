@@ -497,7 +497,7 @@ module.exports = {
       url: "/interior/ishavasya",
       title: "Ishavasya",
       image:
-        "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
+        "https://lh3.googleusercontent.com/d/1padtLRouIN6lLQlg1BSUXKQvkqkNr-lZ=w1000",
     },
     {
       url: "/interior/the-pavilion",

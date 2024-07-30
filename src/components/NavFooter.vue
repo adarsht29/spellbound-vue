@@ -1,9 +1,13 @@
 <template>
-  <v-footer>
-    <v-container fluid>
+  <v-footer class="pa-0">
+    <v-container fluid class="custom-footer base-primry-black pt-16">
       <v-row class="hidden-sm-and-down">
-        <v-col cols="2" class="text-left d-flex pt-10 pl-10">
-          <img alt="logo" :src="require('../assets/logo.png')" height="50" />
+        <v-col cols="2" class="text-left d-flex pl-10">
+          <img
+            alt="logo"
+            src="https://lh3.googleusercontent.com/d/1eerjMgjAP9wjOAjdySBkGwRn-DAANVsm=w1000"
+            height="50"
+          />
         </v-col>
 
         <v-col col="8">
@@ -16,14 +20,19 @@
               :key="link.id"
               class="text-left"
             >
-              <h4 class="pl-4 pr-4 font-weight-medium">{{ link.label }}</h4>
-              <v-list dense>
+              <div class="pl-4 pr-4 font-weight-medium text-body-1">
+                {{ link.label }}
+              </div>
+              <v-list dense class="base-primry-black">
                 <router-link
                   v-for="item in link.menuItems"
                   :key="item.id"
                   :to="item.url"
-                  class="text-decoration-none text-black"
-                  ><v-list-item link class="text-caption">
+                  class="text-decoration-none text-black text-body-1 text-gray"
+                  ><v-list-item
+                    link
+                    class="base-primry-black text-body-1 text-gray"
+                  >
                     {{ item.label }}
                   </v-list-item></router-link
                 >
@@ -43,7 +52,7 @@
             ></v-btn>
           </div>
 
-          <div class="d-flex text-subtitle-2 mb-4 mt-3 text-primary-green">
+          <div class="d-flex text-subtitle-2 mb-4 mt-3">
             Let’s bring your story to life.
           </div>
 
@@ -105,6 +114,27 @@
           </v-expansion-panel-text>
         </v-expansion-panel>
       </v-expansion-panels>
+
+      <v-row class="ma-0 mt-10">
+        <v-col cols="3" class="pa-0 d-flex align-end">
+          <div class="text-subtitle-2">
+            © 2024 Spellbound. All rights reserved.
+          </div>
+        </v-col>
+        <v-col
+          cols="6"
+          class="pa-0 d-flex align-end justify-center text-center"
+        >
+          <div class="text-subtitle-2 text-gray">
+            Site Crafted and Maintained by SS Communications<br />For support or
+            inquiries, contact us at hellosscommunications@gmail.com |
+            +91-7303262306
+          </div>
+        </v-col>
+        <v-col cols="3" class="pa-0 d-flex align-end justify-end">
+          <div class="text-subtitle-2">Privacy Policy</div>
+        </v-col>
+      </v-row>
     </v-container>
   </v-footer>
 </template>

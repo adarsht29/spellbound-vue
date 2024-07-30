@@ -23,7 +23,7 @@
         </div>
       </div>
     </v-container>
-    <v-container fluid class="ma-0 pa-5">
+    <v-container fluid class="ma-0 pa-5 mt-10">
       <v-row>
         <v-col
           cols="12"
