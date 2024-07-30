@@ -167,4 +167,8 @@ export default {
     color: #fafafa !important;
   }
 }
+.v-app-bar {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
 </style>

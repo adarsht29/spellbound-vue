@@ -146,7 +146,7 @@
                 <v-col cols="5" class="pl-0">
                   <v-card
                     class="pa-6 rounded-0 h-100 text-caption text-white elevation-0"
-                    color="#003D33"
+                    color="#1d1d1d"
                   >
                     <div class="text-h5 mb-6">Address</div>
                     <p>WeWork Galaxy</p>

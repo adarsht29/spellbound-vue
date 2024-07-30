@@ -1,7 +1,9 @@
 <template>
   <v-container fluid>
     <div class="pt-4 pb-6">
-      <div class="text-h4 ma-6 mt-2 mb-2 text-center font-weight-bold">
+      <div
+        class="text-h4 ma-6 mt-2 mb-2 text-center font-weight-medium header-font"
+      >
         Let the magic slide into the DMs.
       </div>
       <div class="text-h6 ma-6 mt-2 mb-2 text-center font-weight-bold">

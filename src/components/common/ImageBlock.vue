@@ -27,8 +27,10 @@
                 v-bind="props"
                 :class="isHovering ? '' : 'text-transparent'"
               >
-                <p class="text-h2">{{ block.title }}</p>
-                <p class="text-h6 mt-4" v-html="block.body"></p>
+                <div class="text-h4 font-weight-medium header-font">
+                  {{ block.title }}
+                </div>
+                <div class="text-h6 mt-4" v-html="block.body"></div>
               </div>
             </v-col>
             <v-col v-else class="text-left" cols="12" md="10">

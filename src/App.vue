@@ -81,7 +81,7 @@ html * {
   color: #1d1d1d !important;
 }
 .text-gray {
-  color: #c0c0c0 !important;
+  color: #9a9a9a !important;
 }
 </style>
 
