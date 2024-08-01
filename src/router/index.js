@@ -14,13 +14,18 @@ const routes = [
   },
   {
     path: "/interior/:project",
-    component: () => import("../views/Interior/IndividualProject.vue"),
+    component: () => import("../views/IndividualProject.vue"),
     props: true,
   },
   {
     path: "/chronicles",
     name: "chronicles",
     component: () => import("../views/ChroniclesView.vue"),
+  },
+  {
+    path: "/chronicles/:project",
+    component: () => import("../views/IndividualChronicle.vue"),
+    props: true,
   },
   {
     path: "/contact",

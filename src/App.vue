@@ -83,6 +83,23 @@ html * {
 .text-gray {
   color: #9a9a9a !important;
 }
+.router-btn {
+  color: inherit !important;
+}
+.section-header-font {
+  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
+  font-size: 28px !important;
+}
+.section-image-text-layout {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+  padding-top: 80px !important;
+}
+.section-image-layout {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 80px !important;
+}
 </style>
 
 <style lang="scss" scoped>

@@ -1,20 +1,21 @@
 <template>
   <div class="interior">
-    <ImageBlockContainer :blocks="blocks" />
+    <ProjectBlocks :project-blocks="projectBlocks" />
   </div>
 </template>
 
 <script>
-import { blocks } from "@/config";
-import ImageBlockContainer from "@/components/common/ImageBlockContainer.vue";
+import { blocks, projectBlocks } from "@/config";
+import ProjectBlocks from "@/components/Interior/ProjectBlocks.vue";
 export default {
   name: "InteriorView",
   components: {
-    ImageBlockContainer,
+    ProjectBlocks,
   },
   setup() {
     return {
       blocks,
+      projectBlocks,
     };
   },
 };

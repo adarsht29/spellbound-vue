@@ -14,7 +14,7 @@
             </div>
           </v-col>
           <v-col cols="12" sm="12" md="6">
-            <div class="text-subtitle-1">{{ project.caption }}</div>
+            <div v-html="project.caption" class="text-subtitle-1"></div>
           </v-col>
         </v-row>
         <v-divider :thickness="2" class="mt-8"></v-divider>

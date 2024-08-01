@@ -90,7 +90,7 @@
         <v-expansion-panel
           v-for="link in links"
           :key="link.id"
-          class="rounded-0"
+          class="rounded-0 base-primry-black"
         >
           <v-expansion-panel-title
             expand-icon="mdi-plus"
