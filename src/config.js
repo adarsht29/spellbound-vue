@@ -710,20 +710,20 @@ module.exports = {
       title: "ARTICLE 02_Designing for All Senses_Spellbound",
       image:
         "https://lh3.googleusercontent.com/d/1ywV4bYAuxAxiOCPGJjuDl-HN1RQI7L92=w1000",
-      url: "/",
+      url: "/chronicles/sensory-design",
     },
     {
       title:
         "ARTICLE 03_Curating the Art of Space: Top 5 Signature Projects_Spellbound",
       image:
         "https://lh3.googleusercontent.com/d/1wQxQ9xibWoH7vG8JwAT1YvrMAat2Cyz8=w1000",
-      url: "/",
+      url: "/chronicles/signature-projects",
     },
     {
       title: "ARTICLE 04_A Day in the Life of an Interior Designer_Spellbound",
       image:
         "https://lh3.googleusercontent.com/d/1ilmlg1ETgC5xnGy9HwBAi-vpMDayDpzo=w1000",
-      url: "/",
+      url: "/chronicles/life-at-spellbound",
     },
   ],
   chronicesBlogs: {

@@ -37,13 +37,15 @@
         >
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
-              <v-card
-                v-bind="props"
-                class="rounded-0 h-100"
-                :class="[isHovering ? 'hovered' : '']"
-              >
-                <v-img :src="block.image" cover class="h-100"></v-img>
-              </v-card>
+              <router-link :to="block.url">
+                <v-card
+                  v-bind="props"
+                  class="rounded-0 h-100"
+                  :class="[isHovering ? 'hovered' : '']"
+                >
+                  <v-img :src="block.image" cover class="h-100"></v-img>
+                </v-card>
+              </router-link>
             </template>
           </v-hover>
         </v-col>
