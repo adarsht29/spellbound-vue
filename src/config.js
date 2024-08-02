@@ -46,113 +46,6 @@ module.exports = {
       defaultUrl: "/contact",
     },
   ],
-  blocks: [
-    {
-      id: 1,
-      component: "OneImageBlock",
-      subBlocks: [
-        {
-          id: 11,
-          title: "Interiors",
-          subtitle: "",
-          body: "We believe that every space has a story to tell.<br />Our interior design approach is inspired by context and enchanted with fine craftsmanship. The beauty of tones and textures meets the magic of tales to craft tactile spaces that offer a sensory experience.",
-          url: "",
-          image:
-            "https://lh3.googleusercontent.com/d/1padtLRouIN6lLQlg1BSUXKQvkqkNr-lZ=w1000",
-        },
-      ],
-    },
-    {
-      id: 2,
-      component: "TwoImageBlock",
-      subBlocks: [
-        {
-          id: 21,
-          title: "The Pavilion",
-          subtitle: "",
-          body: "A home to retire into for a cricket historian",
-          url: "/interior/the-pavilion",
-          image:
-            "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
-        },
-        {
-          id: 22,
-          title: "Ishavasya, Where the Lord resides",
-          subtitle: "",
-          body: "‘Reverence’ as a space",
-          url: "/interior/ishavasya",
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-        },
-      ],
-    },
-    {
-      id: 3,
-      component: "FourImageBlock",
-      subBlocks: [
-        {
-          id: 31,
-          title: "Beach House, ECR Chennai",
-          subtitle: "",
-          body: "In here, ‘To have done less, is indeed to have done more’ …",
-          url: "/interior/beach-house",
-          image:
-            "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
-        },
-        {
-          id: 32,
-          title: "Essencia, For the Senses.",
-          subtitle: "",
-          body: "Spa.Salon.Stretch Studio<br />‘Sheer indulgence in bliss’ this",
-          url: "/interior/essencia",
-          image:
-            "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
-        },
-        {
-          id: 33,
-          title: "Our ‘Ode to Timber’ at N17",
-          subtitle: "",
-          body: "",
-          url: "/interior/ode-to-timber",
-          image:
-            "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
-        },
-        {
-          id: 34,
-          title: "Kimera Wellness",
-          subtitle: "",
-          body: "Where you train your soul to ‘aspire’",
-          url: "/interior/kimera-wellness",
-          image:
-            "https://lh3.googleusercontent.com/d/1mCyJWWhHkdC4GBaDsXDlr9iOKe7XlqGJ=w1000",
-        },
-      ],
-    },
-    {
-      id: 4,
-      component: "TwoImageBlock",
-      subBlocks: [
-        {
-          id: 41,
-          title: "The New York Loft",
-          subtitle: "",
-          body: "Moonlight in NY city, the charm",
-          url: "/interior/new-york-loft",
-          image:
-            "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
-        },
-        {
-          id: 42,
-          title: "For the ‘Joy of Dressing’- A Closet",
-          subtitle: "",
-          body: "It’s a charmed world in there!",
-          url: "/interior/a-closet",
-          image:
-            "https://lh3.googleusercontent.com/d/1OfC7Jd6Gvvgk3tC4PbR6cDmorQwZVeEv=w1000",
-        },
-      ],
-    },
-  ],
   projectBlocks: [
     {
       id: 1,
@@ -193,7 +86,7 @@ module.exports = {
           id: 31,
           title: "The Pavilion",
           subtitle: "A home to retire into for a cricket historian",
-          body: "Our work is driven by curiosity, powered by research and technology, and fueled by grit and ingenuity. We strive to make a positive difference every day. To do the right thing. To seek out ways to be even better.",
+          body: "We’re all about working collaboratively with our clients—engaging, listening, questioning—until, together, we exceed expectations and define design excellence.",
           bodySubtitle: "",
           url: "/interior/the-pavilion",
           image:
@@ -209,7 +102,7 @@ module.exports = {
           id: 41,
           title: "Ishavasya, Where the Lord resides",
           subtitle: "‘Reverence’ as a space",
-          body: "With you—our clients, communities, partners, and peers—we aim to create a more beautiful, sustainable, equitable world. Together, we design for life.",
+          body: "At the heart of our philosophy is the belief that spaces are personal extensions of the individual.",
           bodySubtitle: "",
           url: "/interior/ishavasya",
           image:
@@ -226,9 +119,8 @@ module.exports = {
           title: "Beach House, ECR Chennai",
           subtitle:
             "In here, ‘To have done less, is indeed to have done more’ …",
-          body: "We listen.​",
-          bodySubtitle:
-            "Empathy and compassion nourish our culture of justice, equity, diversity, and inclusion. We live by these values every day, both in our studios and in the communities we serve.​​",
+          body: "Design that supports the human body, mind, and spirit.​",
+          bodySubtitle: "",
           url: "/interior/beach-house",
           image:
             "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
@@ -244,9 +136,8 @@ module.exports = {
           title: "Essencia, For the Senses.",
           subtitle:
             "Spa.Salon.Stretch Studio<br />‘Sheer indulgence in bliss’ this",
-          body: "We imagine.​​",
-          bodySubtitle:
-            "Our process is rooted in the exploration of ideas and the rigorous testing of hypotheses. We uncover solutions to some of the world’s most pressing design challenges.​​​",
+          body: "We put people at the center, crafting spaces that resonate deeply with who they truly are.​​",
+          bodySubtitle: "​​​",
           url: "/interior/essencia",
           image:
             "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
@@ -261,7 +152,7 @@ module.exports = {
           id: 71,
           title: "Our ‘Ode to Timber’ at N17",
           subtitle: "",
-          body: "",
+          body: "Every project is a narrative woven with care, turning each environment into a poetic experience.",
           bodySubtitle: "",
           url: "/interior/ode-to-timber",
           image:
@@ -277,9 +168,8 @@ module.exports = {
           id: 81,
           title: "Kimera Wellness",
           subtitle: "Where you train your soul to ‘aspire’",
-          body: "We create.​",
-          bodySubtitle:
-            "​We design healthy, high-performance environments at every scale, thoughtfully bringing our clients’ visions to life and helping them realize their goals.​​​",
+          body: "Our design process is fueled by a relentless curiosity that compels us to explore deeply and innovate constantly.​",
+          bodySubtitle: "​",
           url: "/interior/kimera-wellness",
           image:
             "https://lh3.googleusercontent.com/d/1mCyJWWhHkdC4GBaDsXDlr9iOKe7XlqGJ=w1000",
@@ -294,7 +184,7 @@ module.exports = {
           id: 91,
           title: "The New York Loft",
           subtitle: "Moonlight in NY city, the charm",
-          body: "",
+          body: "Design is a powerful genre that has the power to touch lives, ​make memories, and build togetherness. ​Our work is purposeful, adding beauty ​and joy to your world.",
           bodySubtitle: "",
           url: "/interior/new-york-loft",
           image:
@@ -304,7 +194,7 @@ module.exports = {
           id: 92,
           title: "For the ‘Joy of Dressing’- A Closet",
           subtitle: "It’s a charmed world in there!",
-          body: "",
+          body: "With you—our clients, communities, partners, and peers—we aim to create a more beautiful, conscious, equitable world. Together, we design for a holistic life.",
           bodySubtitle: "",
           url: "/interior/a-closet",
           image:
