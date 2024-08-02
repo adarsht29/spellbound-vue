@@ -144,12 +144,7 @@ import { links } from "@/config";
 
 export default {
   setup() {
-    const icons = [
-      "mdi-facebook",
-      "mdi-twitter",
-      "mdi-linkedin",
-      "mdi-instagram",
-    ];
+    const icons = ["mdi-linkedin", "mdi-instagram"];
     return {
       links,
       icons,

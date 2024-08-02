@@ -1,8 +1,8 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="pa-0 left-full-image-block">
     <v-row>
       <!-- Image Column -->
-      <v-col cols="12" md="9" class="section-image-layout">
+      <v-col cols="12" md="9">
         <v-img :src="block.image" :alt="block.title"></v-img>
         <div class="mt-3 text-right">
           <div class="text-h6 font-weight-bold">{{ block.title }}</div>
@@ -25,7 +25,7 @@
       </v-col>
 
       <!-- Blank Space Column -->
-      <v-col cols="12" md="3" class="section-image-layout"></v-col>
+      <v-col cols="12" md="3"></v-col>
     </v-row>
   </v-container>
 </template>

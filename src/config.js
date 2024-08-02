@@ -213,7 +213,7 @@ module.exports = {
           bodySubtitle: "",
           url: "/interior/ishavasya",
           image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
+            "https://lh3.googleusercontent.com/d/1padtLRouIN6lLQlg1BSUXKQvkqkNr-lZ=w1000",
         },
       ],
     },
@@ -689,7 +689,7 @@ module.exports = {
       title:
         "ARTICLE 01_8 Luxury Interior Design Trends that will be leading in 2025",
       image:
-        "https://lh3.googleusercontent.com/d/1wnHi_yiRx_mH_OuHDEcTD7l4UmDf9Pvw=w1000",
+        "https://lh3.googleusercontent.com/d/11a6MjgBH4kB2vY5I5OVBHd0iauL_VZCh=w1000",
       url: "/chronicles/interior-design-trends",
     },
     {

@@ -1,11 +1,11 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-0 text-block">
     <v-row>
       <v-col
         cols="8"
         md="5"
         offset-md="2"
-        class="d-flex align-center justify-start section-image-text-layout"
+        class="d-flex align-center justify-start"
       >
         <div class="section-header-font">
           {{ block.body }}

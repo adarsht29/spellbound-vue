@@ -1,8 +1,8 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-0 top-left-bottom-right-image-block">
     <!-- First Row for the First Image -->
     <v-row :class="{ overlap: mdAndUp }">
-      <v-col cols="12" md="6" class="section-image-text-layout">
+      <v-col cols="12" md="6">
         <v-img :src="block1.image" :alt="block1.title"></v-img>
         <div class="mt-3">
           <div class="text-h6 font-weight-bold">{{ block1.title }}</div>
@@ -27,12 +27,7 @@
 
     <!-- Second Row for the Second Image -->
     <v-row :class="{ 'overlap-second': mdAndUp }">
-      <v-col
-        cols="12"
-        md="6"
-        class="section-image-text-layout"
-        style="margin-left: auto"
-      >
+      <v-col cols="12" md="6" style="margin-left: auto">
         <v-img :src="block2.image" :alt="block2.title"></v-img>
         <div class="mt-3">
           <div class="text-h6 font-weight-bold">{{ block2.title }}</div>

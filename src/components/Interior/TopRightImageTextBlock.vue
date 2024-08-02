@@ -1,13 +1,9 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="pa-0 top-right-image-text-block">
     <!-- Row for Image -->
     <v-row class="justify-end">
-      <v-col
-        cols="12"
-        md="6"
-        class="d-flex align-start justify-end section-image-text-layout"
-      >
-        <div>
+      <v-col cols="12" md="10" class="d-flex align-start justify-end">
+        <div class="w-100">
           <v-img :src="block.image" :alt="block.title"></v-img>
           <div class="mt-3">
             <div class="text-h6 font-weight-bold">{{ block.title }}</div>
@@ -33,11 +29,7 @@
 
     <!-- Row for Text -->
     <v-row class="justify-start">
-      <v-col
-        cols="12"
-        md="6"
-        class="d-flex align-end justify-start section-image-text-layout"
-      >
+      <v-col cols="12" md="6" class="d-flex align-end justify-start">
         <div class="text-content">
           <div class="section-header-font">
             {{ block.body }}

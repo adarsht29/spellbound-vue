@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <div class="full-image-block">
     <v-parallax
       :src="block.image"
       class="text-white custom-parallax"
@@ -29,7 +29,7 @@
         </template>
       </v-hover>
     </v-parallax>
-  </v-container>
+  </div>
 </template>
 
 <script>
