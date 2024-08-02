@@ -42,6 +42,10 @@ const routes = [
     name: "contact",
     component: () => import("../views/ContactView.vue"),
   },
+  {
+    path: "/:catchAll(.*)",
+    component: () => import("../views/PageNotFoundView.vue"),
+  },
 ];
 
 const router = createRouter({
