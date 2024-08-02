@@ -1,6 +1,6 @@
 <template>
   <div class="spellbound-view">
-    <v-container fluid class="ma-0 pa-0">
+    <v-container fluid class="ma-0 pa-0 pb-10">
       <BlockOne image="Spellbound_video.mp4" />
 
       <v-row dense justify="space-between" class="pt-12">
