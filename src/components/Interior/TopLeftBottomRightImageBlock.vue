@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0 top-left-bottom-right-image-block">
+  <div fluid class="top-left-bottom-right-image-block">
     <!-- First Row for the First Image -->
     <v-row :class="{ overlap: mdAndUp }">
       <v-col cols="12" md="6">
@@ -49,7 +49,7 @@
         </div>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>

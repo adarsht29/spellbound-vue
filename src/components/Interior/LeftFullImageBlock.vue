@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0 left-full-image-block">
+  <div class="left-full-image-block">
     <v-row>
       <!-- Image Column -->
       <v-col cols="12" md="9">
@@ -27,7 +27,7 @@
       <!-- Blank Space Column -->
       <v-col cols="12" md="3"></v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0 text-block">
+  <div class="text-block">
     <v-row>
       <v-col
         cols="8"
@@ -15,7 +15,7 @@
         <!-- Blank column to leave right side blank -->
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
