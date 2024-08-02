@@ -1,7 +1,7 @@
 <template>
   <div class="top-right-image-text-block">
     <!-- Row for Image -->
-    <v-row class="justify-end">
+    <v-row class="justify-end" no-gutters>
       <v-col cols="12" md="10" class="d-flex align-start justify-end">
         <div class="w-100">
           <v-img :src="block.image" :alt="block.title"></v-img>
@@ -28,13 +28,13 @@
     </v-row>
 
     <!-- Row for Text -->
-    <v-row class="justify-start">
+    <v-row class="justify-start mt-16" no-gutters>
       <v-col cols="12" md="6" class="d-flex align-end justify-start">
         <div class="text-content">
           <div class="section-header-font">
             {{ block.body }}
           </div>
-          <div v-if="block.bodySubtitle" class="text-h6">
+          <div v-if="block.bodySubtitle" class="section-body-font">
             {{ block.bodySubtitle }}
           </div>
         </div>

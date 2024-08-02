@@ -1,14 +1,14 @@
 <template>
   <div class="left-image-text-block">
-    <v-row>
+    <v-row no-gutters>
       <!-- Image Column -->
-      <v-col cols="12" md="8">
+      <v-col cols="12" md="7">
         <v-img :src="block.image" :alt="block.title"></v-img>
-        <div class="mt-3">
+        <div class="mt-3 text-right">
           <div class="text-h6 font-weight-bold">{{ block.title }}</div>
           <div v-html="block.subtitle" class="text-subtitle-1"></div>
         </div>
-        <div class="mt-3">
+        <div class="mt-3 text-right">
           <router-link
             :to="block.url"
             class="text-decoration-none router-btn text-black"
@@ -25,12 +25,12 @@
       </v-col>
 
       <!-- Text Column -->
-      <v-col cols="12" md="4" class="d-flex align-center justify-center">
+      <v-col cols="12" md="5" class="d-flex align-center justify-center">
         <div class="text-content">
           <div class="section-header-font">
             {{ block.body }}
           </div>
-          <div v-if="block.bodySubtitle" class="text-h6">
+          <div v-if="block.bodySubtitle" class="section-body-font">
             {{ block.bodySubtitle }}
           </div>
         </div>

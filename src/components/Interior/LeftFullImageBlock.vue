@@ -1,6 +1,6 @@
 <template>
   <div class="left-full-image-block">
-    <v-row>
+    <v-row no-gutters>
       <!-- Image Column -->
       <v-col cols="12" md="9">
         <v-img :src="block.image" :alt="block.title"></v-img>

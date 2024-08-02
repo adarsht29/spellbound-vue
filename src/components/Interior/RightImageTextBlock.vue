@@ -1,20 +1,20 @@
 <template>
   <div class="right-image-text-block">
-    <v-row>
+    <v-row no-gutters justify="space-between">
       <!-- Text Column -->
       <v-col cols="12" md="4" class="d-flex align-center justify-center">
         <div class="text-content">
           <div class="section-header-font">
             {{ block.body }}
           </div>
-          <div v-if="block.bodySubtitle" class="text-h6">
+          <div v-if="block.bodySubtitle" class="section-body-font">
             {{ block.bodySubtitle }}
           </div>
         </div>
       </v-col>
 
       <!-- Image Column -->
-      <v-col cols="12" md="8">
+      <v-col cols="12" md="7">
         <v-img :src="block.image" :alt="block.title"></v-img>
         <div class="mt-3">
           <div class="text-h6 font-weight-bold">{{ block.title }}</div>

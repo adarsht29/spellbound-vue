@@ -88,7 +88,15 @@ html * {
 }
 .section-header-font {
   font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
-  font-size: 28px !important;
+  font-size: 25px !important;
+}
+.section-body-font {
+  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
+  font-size: 18px !important;
+}
+.text-content {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
 }
 </style>
 

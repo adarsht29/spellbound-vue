@@ -5,6 +5,7 @@
       :key="block.id"
       :is="block.component"
       :blocks="block.subBlocks"
+      :class="{ 'section-padding': block.component !== 'FullImageBlock' }"
     />
   </v-container>
 </template>
@@ -39,4 +40,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.section-padding {
+  margin-top: 110px;
+}
+</style>

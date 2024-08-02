@@ -8,17 +8,14 @@
       <v-hover>
         <template v-slot:default="{ isHovering, props }">
           <v-row
-            class="h-100 custom-parallax-content ma-0"
+            class="h-100 custom-parallax-content"
             :class="isHovering ? 'hovered' : ''"
             alignContent="center"
             justify="center"
+            no-gutters
           >
             <v-col class="text-left" cols="12" md="8">
-              <div
-                class="text-content"
-                v-bind="props"
-                :class="isHovering ? '' : 'text-transparent'"
-              >
+              <div v-bind="props" :class="isHovering ? '' : 'text-transparent'">
                 <div class="text-h4 font-weight-medium header-font">
                   {{ block.title }}
                 </div>

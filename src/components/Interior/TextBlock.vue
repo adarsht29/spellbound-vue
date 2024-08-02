@@ -1,6 +1,6 @@
 <template>
   <div class="text-block">
-    <v-row>
+    <v-row no-gutters>
       <v-col
         cols="8"
         md="5"
