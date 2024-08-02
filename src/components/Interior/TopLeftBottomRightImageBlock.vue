@@ -4,7 +4,7 @@
     <v-row :class="{ overlap: mdAndUp }" no-gutters>
       <v-col cols="12" md="6">
         <v-img :src="block1.image" :alt="block1.title"></v-img>
-        <div class="mt-3 text-right">
+        <div class="mt-2 text-right">
           <div class="text-h6 font-weight-bold">{{ block1.title }}</div>
           <div v-html="block1.subtitle" class="text-subtitle-1"></div>
         </div>
@@ -29,7 +29,7 @@
     <v-row :class="{ 'overlap-second': mdAndUp }" no-gutters>
       <v-col cols="12" md="5" style="margin-left: auto">
         <v-img :src="block2.image" :alt="block2.title"></v-img>
-        <div class="mt-3">
+        <div class="mt-2">
           <div class="text-h6 font-weight-bold">{{ block2.title }}</div>
           <div v-html="block2.subtitle" class="text-subtitle-1"></div>
         </div>

@@ -43,13 +43,19 @@
 
         <v-col cols="2" class="pt-0">
           <div class="d-flex">
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              :icon="icon"
-              class="rounded-0"
-              variant="text"
-            ></v-btn>
+            <template v-for="social in socials" :key="social.icon">
+              <a
+                :href="social.url"
+                target="_blank"
+                class="text-decoration-none text-white"
+              >
+                <v-btn
+                  :icon="social.icon"
+                  class="rounded-0"
+                  variant="text"
+                ></v-btn>
+              </a>
+            </template>
           </div>
 
           <div class="d-flex text-subtitle-2 mb-4 mt-3">
@@ -144,10 +150,19 @@ import { links } from "@/config";
 
 export default {
   setup() {
-    const icons = ["mdi-linkedin", "mdi-instagram"];
+    const socials = [
+      {
+        icon: "mdi-linkedin",
+        url: "https://www.linkedin.com/company/spellbound-homes",
+      },
+      {
+        icon: "mdi-instagram",
+        url: "https://www.instagram.com/spellbound_india",
+      },
+    ];
     return {
       links,
-      icons,
+      socials,
     };
   },
 };

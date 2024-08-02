@@ -16,7 +16,7 @@
       <!-- Image Column -->
       <v-col cols="12" md="7">
         <v-img :src="block.image" :alt="block.title"></v-img>
-        <div class="mt-3">
+        <div class="mt-2">
           <div class="text-h6 font-weight-bold">{{ block.title }}</div>
           <div v-html="block.subtitle" class="text-subtitle-1"></div>
         </div>

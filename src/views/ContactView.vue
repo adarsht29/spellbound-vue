@@ -145,48 +145,47 @@
                 </v-col>
                 <v-col cols="5" class="pl-0">
                   <v-card
-                    class="pa-6 rounded-0 h-100 text-caption text-white elevation-0"
+                    class="pa-6 rounded-0 h-100 text-body-2 text-white elevation-0"
                     color="#1d1d1d"
                   >
                     <div class="text-h5 mb-6">Address</div>
-                    <p>WeWork Galaxy</p>
                     <p>
-                      43, Residency Road, Shanthala Nagar, Ashok Nagar, Banglore
+                      Spellbound Atelier Pvt. Ltd. 1st Floor, No. 14/2, 40th
+                      Cross, 8th Main 5th Block Jayanagar, Bangalore-560041
                     </p>
                     <p>Karnataka 560025</p>
                     <v-divider class="mt-6 mb-6"></v-divider>
                     <v-row>
-                      <v-col cols="5">
-                        <p>Phone</p>
+                      <v-col cols="12">
                         <p>
                           <a
                             href="tel:+91-11-4057-0808"
                             class="text-decoration-none text-white"
-                            >+ 91 11 4057 0808</a
+                            >Phone: +91 9844033222</a
                           >
                         </p>
                         <p>
                           <a
                             href="tel:+91-11-4052-7979"
                             class="text-decoration-none text-white"
-                            >+ 91 11 4052 7979</a
+                            >Phone: +91 9844033222</a
                           >
                         </p>
                       </v-col>
-                      <v-col cols="7">
-                        <p>Email</p>
+                      <v-col cols="12">
                         <p>
                           <a
                             href="mailto:business@spellbound.in"
                             class="text-decoration-none text-white"
-                            >business@spellbound.in</a
-                          >
+                            >For general enquiries: contact@spellbound.homes
+                          </a>
                         </p>
                         <p>
                           <a
                             href="mailto:media@spellbound.in"
                             class="text-decoration-none text-white"
-                            >media@spellbound.in</a
+                            >For media and other enquiries:
+                            info@spellbound.homes</a
                           >
                         </p>
                       </v-col>
