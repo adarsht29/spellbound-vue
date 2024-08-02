@@ -32,7 +32,7 @@
                     isHovering ? 'hovered' : '',
                   ]"
                 >
-                  <router-link :to="card.url">
+                  <router-link :to="card.url" class="text-decoration-none">
                     <v-img :src="card.image" cover height="100%">
                       <v-row class="fill-height ma-0" align="end">
                         <div

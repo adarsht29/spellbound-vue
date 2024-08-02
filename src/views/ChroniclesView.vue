@@ -40,7 +40,7 @@
               <router-link :to="block.url">
                 <v-card
                   v-bind="props"
-                  class="rounded-0 h-100"
+                  class="rounded-0 h-100 chronicles-block"
                   :class="[isHovering ? 'hovered' : '']"
                 >
                   <v-img :src="block.image" cover class="h-100"></v-img>
@@ -82,8 +82,11 @@ export default {
   background-color: black;
   margin: 6px auto 0;
 }
-.hovered {
+.chronicles-block {
   opacity: 0.7 !important;
+}
+.hovered {
+  opacity: 1 !important;
   cursor: pointer;
   transform: scale(1.03);
   overflow: visible;

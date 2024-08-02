@@ -620,42 +620,28 @@ module.exports = {
     {
       title: "Card 1",
       image:
-        "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+        "https://lh3.googleusercontent.com/d/1wnHi_yiRx_mH_OuHDEcTD7l4UmDf9Pvw=w1000",
       smallText: "Our Chronicles",
-      largeText: "5 Luxury Interior Design Trends that will be leading in 2025",
+      largeText: "7 Luxury Interior Design Trends that will be leading in 2025",
     },
     {
       title: "Card 2",
       image:
-        "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+        "https://lh3.googleusercontent.com/d/1ywV4bYAuxAxiOCPGJjuDl-HN1RQI7L92=w1000",
       smallText: "Our Chronicles",
       largeText: "A Day in the Life of an Interior Designer",
     },
     {
       title: "Card 3",
       image:
-        "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
+        "https://lh3.googleusercontent.com/d/1wQxQ9xibWoH7vG8JwAT1YvrMAat2Cyz8=w1000",
       smallText: "Our Chronicles",
       largeText: "Curating the Art of Space: Top 5 Signature Projects",
     },
     {
       title: "Card 4",
       image:
-        "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
-      smallText: "Our Chronicles",
-      largeText: "Designing for All Senses",
-    },
-    {
-      title: "Card 5",
-      image:
-        "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
-      smallText: "Our Chronicles",
-      largeText: "Designing for All Senses",
-    },
-    {
-      title: "Card 6",
-      image:
-        "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+        "https://lh3.googleusercontent.com/d/1ilmlg1ETgC5xnGy9HwBAi-vpMDayDpzo=w1000",
       smallText: "Our Chronicles",
       largeText: "Designing for All Senses",
     },
@@ -674,7 +660,7 @@ module.exports = {
         "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
     },
     {
-      url: "/",
+      url: "/interior/ishavasya",
       title: "The Holy Abode",
       image:
         "https://lh3.googleusercontent.com/d/1nYLppCs29wcI0vyB1bURULXa8kbrAeH0=w1000",
@@ -710,7 +696,7 @@ module.exports = {
       title: "ARTICLE 02_Designing for All Senses_Spellbound",
       image:
         "https://lh3.googleusercontent.com/d/1ywV4bYAuxAxiOCPGJjuDl-HN1RQI7L92=w1000",
-      url: "/chronicles/sensory-design",
+      url: "/chronicles/life-at-spellbound",
     },
     {
       title:
@@ -723,7 +709,7 @@ module.exports = {
       title: "ARTICLE 04_A Day in the Life of an Interior Designer_Spellbound",
       image:
         "https://lh3.googleusercontent.com/d/1ilmlg1ETgC5xnGy9HwBAi-vpMDayDpzo=w1000",
-      url: "/chronicles/life-at-spellbound",
+      url: "/chronicles/sensory-design",
     },
   ],
   chronicesBlogs: {
