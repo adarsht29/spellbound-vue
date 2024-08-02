@@ -1,17 +1,14 @@
 <template>
   <v-container fluid class="ma-0 pa-0">
     <video
-      :key="require('@/assets/Homepage_blockOne.mp4')"
+      :key="require(`@/assets/${image}`)"
       autoplay
       muted="true"
       width="100%"
       class="d-block video"
       loop
     >
-      <source
-        :src="require('@/assets/Homepage_blockOne.mp4')"
-        type="video/mp4"
-      />
+      <source :src="require(`@/assets/${image}`)" type="video/mp4" />
     </video>
   </v-container>
 </template>
@@ -20,6 +17,12 @@
 import { ref, onMounted } from "vue";
 export default {
   name: "BlockOne",
+  props: {
+    image: {
+      type: String,
+      required: true,
+    },
+  },
   setup() {
     const customHeight = ref(700);
     onMounted(() => {

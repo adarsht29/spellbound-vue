@@ -101,9 +101,6 @@ html * {
 </style>
 
 <style lang="scss" scoped>
-.footer {
-  margin-top: 80px;
-}
 .whatsapp-widget {
   position: fixed;
   bottom: 16px;

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="ma-0 pa-0 project-blocks">
+  <v-container fluid class="ma-0 pa-0 project-blocks pb-12">
     <component
       v-for="block in projectBlocks"
       :key="block.id"

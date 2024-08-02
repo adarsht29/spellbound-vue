@@ -28,6 +28,16 @@ const routes = [
     props: true,
   },
   {
+    path: "/our-story/spellbound",
+    component: () => import("../views/OurStory/SpellboundView.vue"),
+    props: true,
+  },
+  {
+    path: "/our-story/design-culture",
+    component: () => import("../views/OurStory/DesignCultureView.vue"),
+    props: true,
+  },
+  {
     path: "/contact",
     name: "contact",
     component: () => import("../views/ContactView.vue"),

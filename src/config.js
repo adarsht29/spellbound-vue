@@ -34,10 +34,14 @@ module.exports = {
       id: 3,
       label: "Our Story",
       menuItems: [
-        { id: 31, label: "Spellbound", url: "/" },
-        { id: 32, label: "Our Design Culture", url: "/" },
+        { id: 31, label: "Spellbound", url: "/our-story/spellbound" },
+        {
+          id: 32,
+          label: "Our Design Culture",
+          url: "/our-story/design-culture",
+        },
       ],
-      defaultUrl: "/our-story",
+      defaultUrl: "/our-story/spellbound",
     },
     {
       id: 4,
@@ -961,4 +965,30 @@ module.exports = {
       ],
     },
   },
+  valuesBlocks: [
+    {
+      title: "The Human comes First and Spaces Second",
+      body: "Spaces are an extension of the user’s beliefs and personality. Our meticulous attention to detail and commitment to intricacy allow the user’s personality to shine through. We prioritize people, designing with their essence in mind to create spaces that truly reflect who they are.",
+      image:
+        "https://lh3.googleusercontent.com/d/1Y13_GuFKJL5UTrNs_FiOJyHX8IL7_juq=w1000",
+    },
+    {
+      title: "Building an Emotional Narrative",
+      body: "Our designs are deeply contextual. We weave warmth and elegance into every space, creating an ambiance that whispers opulence and evokes the right emotions. Each project is a crafted narrative, adding poetry to the design.",
+      image:
+        "https://lh3.googleusercontent.com/d/1rYqK0saA59PTGhuvVGj_cmx6s2gWJmnx=w1000",
+    },
+    {
+      title: "Indulging with Art",
+      body: "For us, interior design transcends mere decoration. We view spaces as blank canvases waiting to be brought to life with stories. We seamlessly integrate art into our designs, evoking a magical sense of indulgence and transforming spaces into living works of art.",
+      image:
+        "https://lh3.googleusercontent.com/d/1h4KdVOXzm7ukw8NEf-8XOVgUiwwvWWhU=w1000",
+    },
+    {
+      title: "Rigorous Curiosity",
+      body: "Curiosity is our design fuel. We dive into the project, analytics, and brief to uncover every space's hidden potential. Our curiosity to know better and design innovation allows us to infuse intentionality into our works.",
+      image:
+        "https://lh3.googleusercontent.com/d/1OfC7Jd6Gvvgk3tC4PbR6cDmorQwZVeEv=w1000",
+    },
+  ],
 };

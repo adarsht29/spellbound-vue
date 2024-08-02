@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <BlockOne />
+    <BlockOne image="Homepage_video.mp4" />
     <BlockTwo />
     <BlockThree />
     <BlockFour />
