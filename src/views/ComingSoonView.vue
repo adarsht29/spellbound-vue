@@ -9,14 +9,15 @@
           large
           color="grey lighten-1"
           class="spin-animation bounce animated-icon"
-          >mdi-emoticon-sad-outline</v-icon
+          >mdi-rocket</v-icon
         >
 
-        <h1 class="display-3 fade-in">404</h1>
-        <h2 class="fade-in-delayed">Oops! Page not found</h2>
-        <p class="fade-in-more">The page you are looking for does not exist.</p>
-        <v-btn color="primary" class="mt-5 pulse" @click="goHome"
-          >Go to Home</v-btn
+        <h1 class="display-3 fade-in">Coming Soon</h1>
+        <h2 class="fade-in-delayed">
+          We're working hard to launch our new product. Stay tuned!
+        </h2>
+        <v-btn color="primary" class="mt-5 pulse" @click="notifyMe"
+          >Notify Me</v-btn
         >
       </v-col>
     </v-row>
@@ -25,10 +26,13 @@
 
 <script>
 export default {
-  name: "PageNotFoundView",
+  name: "ComingSoonView",
   methods: {
     goHome() {
       this.$router.push("/");
+    },
+    notifyMe() {
+      alert("We'll notify you once we launch!");
     },
   },
 };
@@ -101,7 +105,7 @@ export default {
   }
 }
 .display-3 {
-  font-size: 6rem;
+  font-size: 3rem;
   color: #555;
   margin: 20px 0;
 }

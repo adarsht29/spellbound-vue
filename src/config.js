@@ -210,304 +210,419 @@ module.exports = {
   projects: {
     "the-pavilion": {
       mainImage:
-        "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
-      title: "The Pavilion",
-      caption: "A home to retire into for a cricket historian",
-      subtitle: ["Homes", "New Delhi"],
+        "https://lh3.googleusercontent.com/d/1zpZS5UdIWNIPQhLO5axJ_Uf3Ri6Q4kFx=w1000",
+      title: "The Pavilion, a Cricket Historian’s Second Home",
+      caption: "The joy of living off the field.",
+      subtitle: ["Luxury Residence", "Bangalore"],
       info: [
         {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
+          main: "Area(Site)",
+          subtitle: "2600 sq. ft.",
         },
         {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
-        },
-        {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
-        },
-        {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
+          main: "Status",
+          subtitle: "Completed",
         },
       ],
-      sectionImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      sectionCarouselImage: [
+      sections: [
         {
-          image:
+          id: 2,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1_qRU8a9vNkrTtKmbrb-cT6a3ycChTzEy=w1000",
             "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+          ],
+          body: "Cricket takes cricketers across the world for tests, tournaments, etc. At the end of it all, a cricketer returns to his comfort—to a home where the family comes together. The Pavilion is that comfort sanctuary for a cricket historian. This 2600 sq. ft. home is living proof that a cricketer’s creativity isn’t bound to the crease alone.",
         },
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
+          id: 3,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/14BNvRRBhLV2FoCvtgmLVzGZTW91j1dkY=w1000",
+            "https://lh3.googleusercontent.com/d/1bLsRkZiYxfCycGqYl8fb_GV4AiEZ59bi=w1000",
+          ],
+          body: "The Pavilion is built on the philosophy of crafting spaces that capture a personal journey. The wife– a devoted teacher for special needs children and a practicing Buddhist- brings her appreciation for bright tones from Bali aesthetics to the home.<br /><br />To shape up the design story, we began by requesting three of her favorite sarees. From there, we borrowed an eclectic mood board with tones, patterns, and intricacy in design. Each saree told us a story of emotional resonance with the shades. And that’s how a personalized and warm interior design meditates on the true meaning of ‘home.’",
+        },
+        {
+          id: 4,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1HlOvjDCKw53iaVvyeVBqmAEnSMqghuGB=w1000",
+            "https://lh3.googleusercontent.com/d/1E9Iuc-vdlMUf7gb_qNDrXnksyh1naSop=w1000",
+          ],
+          body: "",
+        },
+        {
+          id: 5,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1kzm717YJq3dZNe2o1NM3RT7vk39E2Zbe=w1000",
+            "https://lh3.googleusercontent.com/d/1n90iXgaGZtamLXZYgUhz9XNnHTf8RAr4=w1000",
+          ],
+          body: "This home celebrates the couple's individual stories through a touch of tropical elements, bright-coloured textiles, and natural wood. A carefully selected harmony of materials allows this home to exude an easy vibe, recreating the essence of resort living.<br /><br />With tones borrowed from the sarees, the design story features an interesting incorporation of textiles throughout the house, adding energy and warmth and injecting the joy of living.",
+        },
+        {
+          id: 6,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1D1tm7uw93AR48L1lnOFqO1EdKk0vkF0I=w1000",
+            "https://lh3.googleusercontent.com/d/1rKMqRQCeHINdchIpHzb3FuSUOMbojdCw=w1000",
+          ],
+          body: "As the residents step inside, a warm foyer welcomes them with wooden columns accented in turquoise blue. Creating a lasting first impression is the vermilion-coloured wall panel housing a beautiful idol of a Goddess.<br /><br />The hints of natural wood finish ground the vibrant palette and radiate warmth. Stepping further in, tropical vibes consume the space, evoking a sense of serene ambience. Artisanal crafts and decor items sustain the couple’s love for personalising spaces uniquely.",
+        },
+        {
+          id: 7,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1iAIfxJ9c0lI347Vy8oR2gU4h-vZDjMsD=w1000",
+            "https://lh3.googleusercontent.com/d/14g-8wto2TEjVXRRMDDxMLrU3jgRpmDv-=w1000",
+          ],
+          body: "Reflecting the client’s Buddhist practices, the living room features a gong. When struck, the sound vibrates, commotion recedes, and calm fills the space. Within the space, the faux columns are strategically planned to frame a decorative mirror, marrying design with art.<br /><br />One of this home’s most magical assets is the intricately carved sliding-folding panel for the TV. The carving's intricacy elevates the house in terms of elegance and finesse. The feature wall in the dining area serves as the home’s centrepiece, furthering the Bali-inspired experience with a large sculptural light crafted from banana fibre.",
+        },
+        {
+          id: 8,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1wMFftUBLd6q705u2VrUPSDpTizj8FCel=w1000",
+            "https://lh3.googleusercontent.com/d/1GbG8XK4aaU-5GHwj3px_4ddHuMxfLn9S=w1000",
+          ],
+          body: "The client’s clarity in design vision prompted a vibrant colour scheme. Bold accents, nature-inspired elements, and carefully selected materials culminate in spaces that truly resonate with the client’s sense of joy and comfort.<br /><br />The Pavilion is a testament to the joy of living off the field, crafting a profoundly personalised and elegant sanctuary.",
         },
       ],
-      body: 'A driveaway leads visitors to the entrance porch, shaded by a ten metre-long cantilevered volume resting on a load-bearing rammed earth wall and a pair of V-shaped columns. The site zoning is derived from the principles of Vastu. <span class="text-primary-red">To let in the south sun and bring the outdoors in, the design team scooped out a winter court, opening the living area to the landscape, facilitating a seamless line of sight</span>-from the winter court to the lawns on the north.',
-      subImage:
-        "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
     },
     ishavasya: {
       mainImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      title: "Ishavasya, Where the Lord resides",
-      caption: "‘Reverence’ as a space",
-      subtitle: ["Homes", "New Delhi"],
+        "https://lh3.googleusercontent.com/d/1oTUFZ9ZWSR8e6ESgKfVD8VYvdeme4HKj=w1000",
+      title: "Ishavasya, where the Lord resides",
+      caption: "A journey of self-discovery and enlightenment.",
+      subtitle: ["Luxury Residence", "Bangalore"],
       info: [
         {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
+          main: "Area(Site)",
+          subtitle: "2600 sq. ft.",
         },
         {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
+          main: "Status",
+          subtitle: "Completed",
         },
       ],
-      sectionImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      sectionCarouselImage: [
+      sections: [
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+          id: 2,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1_acVXlRRsUh8AVrBaNzTPRYgBRcqEFdd=w1000",
+            "https://lh3.googleusercontent.com/d/1goDzIE9DJcVU8zwNZxxb_-P_BfpaiC3E=w1000",
+          ],
+          body: "After residing and working in the US as a tech visionary, the client envisioned a second home in India– 2600 sq. ft. within the Svasa Homes complex. He devised a simple brief to build a home as his offering to the Lord. In the ethereal realm of Ishavasya, the sacred and sublime converge, resulting in a home with an essence of deep reverence.",
         },
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
+          id: 3,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1ZM0h39IKybnexCrXcV2QmpbUyJ4KO1-1=w1000",
+          ],
+          body: "The main inspiration for the design came from the client’s profound sense of gratitude. The brick-and-mortar bareshell displays the story of faith and devotion through hues, patterns, and motifs. Infusing elements from the mythological tales are the scenes from epics adorning the wall.<br /><br />A unique creative vision led to the introduction of sacred symbols through motifs into every essence of the space. The home reflects an immersive symphony of symbolism, where every minute detail narrates the story of faith and devotion.",
+        },
+        {
+          id: 4,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1Yd_B6x-OcUmCEsPVItf4BycXn9tSi6aP=w1000",
+            "https://lh3.googleusercontent.com/d/16xIARUtBtHu9Dqy_w-WcCvkVYrWeUaCX=w1000",
+          ],
+          body: "",
+        },
+        {
+          id: 5,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1JNrdmr3g6UMnGU1kUBZCBSrWWvdMwRrY=w1000",
+          ],
+          body: "Three influences defining devotion in the home are the artworks reflecting epics, Kota and Kadapa stone flooring borrowed from the temple’s sacred ambience, and scenes from mythology as art panels.<br /><br />When it comes to evoking cultural eclecticism, the challenge remains in the execution. With attention to detail and meticulous craftsmanship, from the woodwork to stone mosaic, mother-of-pearl inlay to hand-embroidered zardozi designs, every element showcases a deep commitment to the premium standards of artistry.",
+        },
+        {
+          id: 6,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1h4KdVOXzm7ukw8NEf-8XOVgUiwwvWWhU=w1000",
+            "https://lh3.googleusercontent.com/d/1km48OjvK0xs5OpwCFbPoTEiEyXEHh0pj=w1000",
+          ],
+          body: "As the residents step inside, an art piece of Lord Hanuman fondly carrying Lord Rama upon his shoulders greets them. The art and its symbolic vermilion hue reflecting a divine connection set the tone for what is to follow throughout this home.<br /><br />Each weathered groove and grain of sand in temple flooring bears the marks of devotion. In that sense, the home features flooring with a similar essence to that of a weather-beaten temple premise.",
+        },
+        {
+          id: 7,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1huvA661HDrA26iFYnC_BZCRD9TDR9fbc=w1000",
+            "https://lh3.googleusercontent.com/d/1nYLppCs29wcI0vyB1bURULXa8kbrAeH0=w1000",
+          ],
+          body: "Marigold flowers with petals have always been the centre stage of Hindu rituals and ceremonies. Captivating the same essence and symbolising unwavering devotion, purity, and prosperity are the marigold-form drop lights– Jhumki from Klove Studio hosted in the living area.<br /><br />As you walk further into the bedroom, a scene from The Gajendra Moksh episode serves as a captivating art panel on the wardrobe front. The perfectly blended tones with the warm wooden accents evoke a sense of timeless design through modest materials.",
+        },
+        {
+          id: 8,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1Or5k3RW8MQ3Cs2mwoJetYlcXccgAvGie=w1000",
+            "https://lh3.googleusercontent.com/d/1_vE5VnRquz_vY0vYLUcZmFvAqDWvtCJp=w1000",
+          ],
+          body: "In this holy abode, the divine resides in every corner.<br /><br />From the symbolic episode for spiritual truth and transcendence as an art panel to the welcoming art reflecting an inseparable union between the devotee and divine, it’s all hidden in plain sight, waiting to be uncovered by the discerning eye to spot the narrative woven with threads of reverence.",
         },
       ],
-      body: 'A driveaway leads visitors to the entrance porch, shaded by a ten metre-long cantilevered volume resting on a load-bearing rammed earth wall and a pair of V-shaped columns. The site zoning is derived from the principles of Vastu. <span class="text-primary-red">To let in the south sun and bring the outdoors in, the design team scooped out a winter court, opening the living area to the landscape, facilitating a seamless line of sight</span>-from the winter court to the lawns on the north.',
-      subImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
     },
     "beach-house": {
       mainImage:
         "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
-      title: "Beach House, ECR Chennai",
-      caption: "In here, ‘To have done less, is indeed to have done more’ …",
-      subtitle: ["Homes", "New Delhi"],
+      title: "Beach House",
+      caption: "To have done less is indeed to have done more!",
+      subtitle: ["Luxury Residence", "ECR, Chennai"],
       info: [
         {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
+          main: "Area(Site)",
+          subtitle: "10,000 sq. ft.",
         },
         {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
+          main: "Status",
+          subtitle: "Completed",
         },
       ],
-      sectionImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      sectionCarouselImage: [
+      sections: [
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+          id: 2,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1wKNvyHS2Z2PoyTMW5A4CxRIQFlQEr1SS=w1000",
+          ],
+          body: "A home away from the chaos to slow down… of the sand, sun, and sea.<br /><br />When this young couple approached us to add design magic to their homes, we were enchanted by their philosophy of the home's true meaning. Beach House, a 10,000 sq. ft. 5-bedroom property, is nestled off the ECR, Chennai, skirting the Bay of Bengal.",
         },
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
+          id: 3,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1-BP3EsXSyrCdD2yFaJOHV159Yo7MFYvE=w1000",
+          ],
+          body: "The design goal centered on calming comfort to elevate envisioned indulgences. Emphasizing muted colors and simplified furnishings—hallmarks of tranquility—created a sensory experience permeating the entire space. Within the calm haven sits the home studio of Shweta– BAHA, a footwear label. The serenity shaping up the home is a nearly transcendental experience for her creative process. ",
+        },
+        {
+          id: 4,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1pAwW9ipbA1pRs6ZvBXyTEan4iLTK412e=w1000",
+          ],
+          body: "",
+        },
+        {
+          id: 5,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/11iLe8UGBXVK4PadN3EmqhmwQWTuROJvX=w1000",
+          ],
+          body: "The Beach House is the epitome of subtle luxuries. A tone-on-tone palette, marble flooring, and high-quality finishes craft a refined visual narrative. Design languages attempt to segregate entertaining spaces from private spaces. While contemporary design flair adorns common zones, Victorian elegance graces private rooms—yet maintaining a seamless transition. Large glass doors and windows keep up with the continuity of flow by blurring the lines between the outdoors and indoors.",
+        },
+        {
+          id: 6,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/16Nmr6YTpWDOwzgFsboXQIWmLI1DYGRs2=w1000",
+            "https://lh3.googleusercontent.com/d/1g4O-Bq4C4fMl9eJCimNApR57GXPNwiup=w1000",
+          ],
+          body: "Greeting the residents right at the entrance is the swimming pool– cool, refreshing, and setting a tone for the sensory experience waiting to unfold. A double-height scale calms the senses as one leads to the living room.<br /><br />Much of the space is expressed in a muted palette of beige tones, with simplified furnishings punctuating the serenity. Refined simplicity and harmonised textures celebrate the senses throughout.",
+        },
+        {
+          id: 7,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/12b3IspCpK2yNqtasKlmkDxGABzZdmzdu=w1000",
+          ],
+          body: "The living area establishes a tactile comfort through plush upholstery. Sublime linen curtains convey subtle elegance while mimicking the coastal essence. An intentional colour palette with gentle white, pale blue, sandy tones, etc., keeps the home wrapped in serenity while perfectly mirroring the beachscape.<br /><br />Clean lines and understated forms of furnishings play host to the natural beauty of materials and simultaneously promise comfort. Mindful of maintaining a connection with nature, the double-height glass in the living room frames the swimming pool view while allowing sunlight in.",
+        },
+        {
+          id: 8,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/19kwJQC6xX5-AnW3ZN_9uzN8WyCjlK4IA=w1000",
+            "https://lh3.googleusercontent.com/d/1RXIsh8HdTjru3T5gZSbakTdeJCWpQ-Mq=w1000",
+          ],
+          body: "The main inspiration for Beach House stemmed from the desire to curate a comfortable and sensory living experience. Soft hues and refined simplicity break the rank with the ostentatious, focusing instead on a serene and sensory retreat.<br /><br />This luxury residence offers a sensory haven and precisely reflects the client’s vision of a home embodying peace, elegance, and understated luxury.",
         },
       ],
-      body: 'A driveaway leads visitors to the entrance porch, shaded by a ten metre-long cantilevered volume resting on a load-bearing rammed earth wall and a pair of V-shaped columns. The site zoning is derived from the principles of Vastu. <span class="text-primary-red">To let in the south sun and bring the outdoors in, the design team scooped out a winter court, opening the living area to the landscape, facilitating a seamless line of sight</span>-from the winter court to the lawns on the north.',
-      subImage:
-        "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
     },
     essencia: {
       mainImage:
-        "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
-      title: "Essencia, For the Senses.",
-      caption: "Spa.Salon.Stretch Studio<br />‘Sheer indulgence in bliss’ this",
-      subtitle: ["Homes", "New Delhi"],
+        "https://lh3.googleusercontent.com/d/1tSijlUWo7m5VDXLwlg3cbZx1d3OXFlml=w1000",
+      title: "Essencia, For the Senses",
+      caption: "For a sheer indulgence in bliss, this.",
+      subtitle: ["Luxury Wellness", "Basavangudi, Bangalore"],
       info: [
         {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
+          main: "Area(Site)",
+          subtitle: "1600 sq. ft.",
         },
         {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
+          main: "Status",
+          subtitle: "Completed",
         },
       ],
-      sectionImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      sectionCarouselImage: [
+      sections: [
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+          id: 2,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1QXvE7Hy7VivNBUlLlaQObAOOy_csO-iB=w1000",
+          ],
+          body: "Striking the right balance between the traditional and luxury is more complicated than it appears. This luxury wellness space, sprawling across 1600 sq. ft. in Basavangudi, Bangalore, however, flawlessly manages it through an opulent and modern Indian theme– Shringhar. Nestling in a neighborhood rich in culture, Essencia establishes itself as a landmark through its visual narratives.",
         },
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
+          id: 3,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
+          ],
+          body: "One of the most critical aspects of design is getting on the same mental wave as the clients. Poised to step into the wellness industry, our clients wished to launch themselves as a unique brand, and our team managed to serve them beyond expectations.<br /><br />Our design offerings for this project were derived from market research and experience in the wellness sector. The peculiarities of the site location—vantage point and cultural richness—guided the project’s conceptualization. We envisioned a palatial ambiance that conversed with the site specificity for opulent spatial dialogues.",
+        },
+        {
+          id: 4,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1e7TPj9jSAhm6ucGqDtuUCtUHYtAIcCF9=w1000",
+          ],
+          body: "",
+        },
+        {
+          id: 5,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1EYulD4lhTNPPTyLgyqLT7fYa2xxtdg3f=w1000",
+          ],
+          body: "We chose to break away from a conventional beauty salon’s modern glam ethos. Our design philosophy for this luxury salon boasts the ancient Indian art of ‘Shringhar.’ The salon is steeped in the celebration of traditional Indian craftsmanship.<br /><br />Etched mirrors, Benaras sold fabric as wall art, and intricately carved wooden moldings gesture the influence of Indian culture. Painting a clear picture of timeless essence and elegance further, ‘Shringhar’ takes over as the signature style for the interiors.",
+        },
+        {
+          id: 6,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1sR6zTXvejC6a1br09ECgNIKplF3Hsht4=w1000",
+          ],
+          body: "Standards for function and smooth operations guided the spatial layout. From inception to installation, meticulous attention to detail and seamless blending of types of equipment in the layout remained our top priority. A palette rich in woody browns and adorned with Indian floral motifs harmoniously brings together function and traditional warmth, curating an immersive sensory experience.",
+        },
+        {
+          id: 7,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1TtLYfvdy15MxvskkU4wq02zbOCuVm_IJ=w1000",
+          ],
+          body: "An intriguing glass facade invites the onlookers to enter luxury through the hide-and-seek effect of sheer curtains. A grand double-leaf entrance door ultimately unfolds an opulent and modern Indian retreat.<br /><br />A framed Benaras silk fabric catches your attention as you enter the reception. The Nail Bar, strategically positioned by the reception, evokes an enchanting allure of fireflies. Radiating this essence is a patterned etched mirror for mesmerizing appeal. Infinite reflections from the mirrors solidify the place of stunning grandeur in the salon.",
+        },
+        {
+          id: 8,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1A2EEqyC8D5YatvAVaCnL8rJD-74I1Hbi=w1000",
+          ],
+          body: "When it comes to Indian craftsmanship, the critical element is precision. Our team’s rigorous quality control and close coordination with the artisans promised a tactile translation of the intuitive juxtaposition– traditional over contemporary.<br /><br />Our focus for Essencia was to design for the senses. Our approach focused on blending boundless creativity while strategizing based on insights. The touchdowns on artistry, innovation, and elegance allowed us to add a new chapter to the art of crafting luxury wellness.<br /><br />From a warm palette to shiny mirrors, Essencia serves as an aesthetic narration of the client’s aspirations and our expertise.",
         },
       ],
-      body: 'A driveaway leads visitors to the entrance porch, shaded by a ten metre-long cantilevered volume resting on a load-bearing rammed earth wall and a pair of V-shaped columns. The site zoning is derived from the principles of Vastu. <span class="text-primary-red">To let in the south sun and bring the outdoors in, the design team scooped out a winter court, opening the living area to the landscape, facilitating a seamless line of sight</span>-from the winter court to the lawns on the north.',
-      subImage:
-        "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
     },
     "ode-to-timber": {
       mainImage:
-        "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
-      title: "Our ‘Ode to Timber’ at N17",
-      caption:
-        "Interconnected Volumes establish a dialogue between the Indoors and the Outdoors at this weekend retreat",
-      subtitle: ["Homes", "New Delhi"],
+        "https://lh3.googleusercontent.com/d/1YYW19VEkzwq6uzZ_Q4eYpKrlRkweit1y=w1000",
+      title: "Our Ode to Timber at Villa N 17",
+      caption: "A tribute to timber–  through its beauty and versatility.",
+      subtitle: ["Row Villa", "Bangalore"],
       info: [
         {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
+          main: "Area(Site)",
+          subtitle: "5500 sq. ft.",
         },
         {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
+          main: "Status",
+          subtitle: "Completed",
         },
       ],
-      sectionImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      sectionCarouselImage: [
+      sections: [
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+          id: 2,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1oFckUcMAPllPSy_RlvS6yFMgryHkJPzT=w1000",
+            "https://lh3.googleusercontent.com/d/1Ap9ydJdkVaFR8JozPucv9BLcWq1uRc5z=w1000",
+          ],
+          body: "At Villa N17, the goal was to pick the apt design approach, infusing authenticity and warmth into every corner of the home. The materials here connect honestly to the client’s aspirations, revealing his decade-long passion for timber. This deep reverence influenced every design decision for this 5500 sq. ft sanctuary.",
         },
         {
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
+          id: 3,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1isdrm2r5upb6TE9pejEp10N1ey6v5z-C=w1000",
+          ],
+          body: "An unplastered bare shell– this was the starting point for our ode to timber. What followed was a celebration of the art of adding meaning to spaces. Timber, a deliberate design choice, became the elegant statement of this home.<br /><br />This personal sanctuary hints at the simplicity yet versatility of timber through Indian contemporary style. Interspersing wood and veneer throughout the house, a warm and elegant design language emerges as the defining feature.",
+        },
+        {
+          id: 4,
+          imageTop: true,
+          images: [
+            "https://lh3.googleusercontent.com/d/1B6jxxoZI_rVnHB9mQNAUGgzmy9hsmpqO=w1000",
+          ],
+          body: "",
+        },
+        {
+          id: 5,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1h8BpsRMwJShVqteayKYTNCDDLy2NOpnf=w1000",
+          ],
+          body: "From bold and impressive to subtle and harmonious, each space in the home is carefully crafted to suit the context. Anchored Indian contemporary aesthetics, however, tie the spaces together visually and through materials. Along with the spatial aesthetics, ergonomic furniture helps elevate everyday luxury.<br /><br />Our uniquely creative vision allowed us to introduce nature-inspired furniture design as a testament to function and aesthetics.",
+        },
+        {
+          id: 6,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1u4hgTZnbd-9uV7VSdcZw-FuH2hTQ6ost=w1000",
+          ],
+          body: "The timber story begins as one steps into the living area, talking all about grandeur. A timber wall paneling adorning the double-height space narrates an intricate, interlaced tale of elegance. While this wall marks a bold impression, the family area, on the other hand, keeps timber understated through its ceiling design. This room is enlivened by a feature wall with an interplay of stone quietly complemented by a wooden ceiling.",
+        },
+        {
+          id: 7,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1yuP3Qt7N7tuw5r96k6u9V7HMG9xijZGy=w1000",
+          ],
+          body: "One of the most impressive elements sitting in the family room is a sculptural leaf chaise. Carved out of solid timber, the organic design reminiscent of veins and branches of a leaf imparts sophistication without compromising comfort.<br /><br />With myriad natural influences– through materials and form blended lovingly into the house– elegance takes center stage. A play of wood, tones, and textures adds unique character to every room while constantly crafting sentiments that resonate deeply with the residents.",
+        },
+        {
+          id: 8,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
+          ],
+          body: "Blurring the boundaries between inside and outside is an open-to-the-sky bar in the backyard. At the heart of this bar sits its most defining feature—a concrete bar counter. Crafted by Nuance Studio, the counter is a visual delight, featuring Glenfiddich's logo.<br /><br />The feature solidifies the personal touch in the room. This bar serves as the epicenter for the residents to interact and socialize. It’s an oasis of tranquility, with cascading water features adding to the dynamicity and unwinding quotient.",
+        },
+        {
+          id: 9,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1BT3KYSjKtBiGyWLB4Jy-aWa2ALnuD8Mm=w1000",
+            "https://lh3.googleusercontent.com/d/16G7NYLggfs-I24iBTe_KZGm_EA-L8a__=w1000",
+          ],
+          body: "As one steps into the master bedroom, warmth unfolds. A fine veneer bed back and a tan-brown leather headboard are the perfect elements to warm the bedroom. A sense of luxury crafted through a clever selection of materials treats the residents with a stylish and comfortable retreat.<br /><br />Feature lighting on the headboard highlights the bed area and the sophisticated mood board. The ensuite washroom showcases contemporary aesthetics with the latest Gessi fittings. A large glass panel, doubling as a partial mirror, keeps the design visually striking while connecting the bathroom and bedroom.",
+        },
+        {
+          id: 10,
+          imageTop: false,
+          images: [
+            "https://lh3.googleusercontent.com/d/1wQEGKRI4P28tTJzEYCNKPeLWiYurrA2s=w1000",
+          ],
+          body: "The generous use of wood in the guest room, through sleek slatted ceiling sections, imparts a distinctively warm feel. From wood on walls to wood as art, the presence of timber results in the curation of a timeless home. Each space, from the luxurious living room to the refreshing backyard bar, tells a story of natural elegance and the client’s taste. Villa N17 embodies the art of making the mood board and, hence, spaces meaningful.",
         },
       ],
-      body: 'A driveaway leads visitors to the entrance porch, shaded by a ten metre-long cantilevered volume resting on a load-bearing rammed earth wall and a pair of V-shaped columns. The site zoning is derived from the principles of Vastu. <span class="text-primary-red">To let in the south sun and bring the outdoors in, the design team scooped out a winter court, opening the living area to the landscape, facilitating a seamless line of sight</span>-from the winter court to the lawns on the north.',
-      subImage:
-        "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
     },
     "kimera-wellness": {
-      mainImage:
-        "https://lh3.googleusercontent.com/d/1mCyJWWhHkdC4GBaDsXDlr9iOKe7XlqGJ=w1000",
-      title: "Kimera Wellness",
-      caption: "Where you train your soul to ‘aspire’",
-      subtitle: ["Homes", "New Delhi"],
-      info: [
-        {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
-        },
-        {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
-        },
-      ],
-      sectionImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      sectionCarouselImage: [
-        {
-          image:
-            "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
-        },
-        {
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-        },
-      ],
-      body: 'A driveaway leads visitors to the entrance porch, shaded by a ten metre-long cantilevered volume resting on a load-bearing rammed earth wall and a pair of V-shaped columns. The site zoning is derived from the principles of Vastu. <span class="text-primary-red">To let in the south sun and bring the outdoors in, the design team scooped out a winter court, opening the living area to the landscape, facilitating a seamless line of sight</span>-from the winter court to the lawns on the north.',
-      subImage:
-        "https://lh3.googleusercontent.com/d/1mCyJWWhHkdC4GBaDsXDlr9iOKe7XlqGJ=w1000",
+      comingSoon: true,
     },
     "new-york-loft": {
-      mainImage:
-        "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
-      title: "The New York Loft",
-      caption: "Moonlight in NY city, the charm",
-      subtitle: ["Homes", "New Delhi"],
-      info: [
-        {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
-        },
-        {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
-        },
-      ],
-      sectionImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      sectionCarouselImage: [
-        {
-          image:
-            "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
-        },
-        {
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-        },
-      ],
-      body: 'A driveaway leads visitors to the entrance porch, shaded by a ten metre-long cantilevered volume resting on a load-bearing rammed earth wall and a pair of V-shaped columns. The site zoning is derived from the principles of Vastu. <span class="text-primary-red">To let in the south sun and bring the outdoors in, the design team scooped out a winter court, opening the living area to the landscape, facilitating a seamless line of sight</span>-from the winter court to the lawns on the north.',
-      subImage:
-        "https://lh3.googleusercontent.com/d/1oQE93ux2ToLxBWwWpSZBSiH1o68SY-8e=w1000",
+      comingSoon: true,
     },
     "a-closet": {
-      mainImage:
-        "https://lh3.googleusercontent.com/d/1OfC7Jd6Gvvgk3tC4PbR6cDmorQwZVeEv=w1000",
-      title: "For the ‘Joy of Dressing’- A Closet",
-      caption: "It’s a charmed world in there!",
-      subtitle: ["Homes", "New Delhi"],
-      info: [
-        {
-          main: "AREA(SITE)",
-          subtitle: "2.5 ACRE (BUILT-UP) 20,000 SQ FT",
-        },
-        {
-          main: "STATUS",
-          subtitle: "COMPLETED",
-        },
-        {
-          main: "PHOTOGRAPHER",
-          subtitle: "NIVEDITAA GUPTA",
-        },
-      ],
-      sectionImage:
-        "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-      sectionCarouselImage: [
-        {
-          image:
-            "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
-        },
-        {
-          image:
-            "https://lh3.googleusercontent.com/d/1xs5xT6ANuJY7JrQ1EL7l0x_20uIqOvBe=w1000",
-        },
-      ],
-      body: 'A driveaway leads visitors to the entrance porch, shaded by a ten metre-long cantilevered volume resting on a load-bearing rammed earth wall and a pair of V-shaped columns. The site zoning is derived from the principles of Vastu. <span class="text-primary-red">To let in the south sun and bring the outdoors in, the design team scooped out a winter court, opening the living area to the landscape, facilitating a seamless line of sight</span>-from the winter court to the lawns on the north.',
-      subImage:
-        "https://lh3.googleusercontent.com/d/1OfC7Jd6Gvvgk3tC4PbR6cDmorQwZVeEv=w1000",
+      comingSoon: true,
     },
   },
   blockFourCards: [
