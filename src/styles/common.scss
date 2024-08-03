@@ -1,0 +1,50 @@
+html * {
+  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
+  line-height: 1.2 !important;
+}
+.header-font {
+  font-family: "Roboto", sans-serif !important;
+  font-size: rem-calc(32) !important;
+  @media (max-width: 960px) {
+    font-size: rem-calc(24) !important;
+  }
+}
+.body-font {
+  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
+  font-size: rem-calc(18) !important;
+  @media (max-width: 960px) {
+    font-size: rem-calc(14) !important;
+  }
+}
+.base-black {
+  background: #000 !important;
+  color: #fafafa !important;
+}
+.base-primry-black {
+  background: #1d1d1d !important;
+  color: #fafafa !important;
+}
+.base-primry-white {
+  background: #fafafa !important;
+  color: #1d1d1d !important;
+}
+.text-primary-green {
+  color: #003d33 !important;
+}
+.text-primary-red {
+  color: #1d1d1d !important;
+}
+.text-gray {
+  color: #9a9a9a !important;
+}
+.router-btn {
+  color: inherit !important;
+}
+.section-header-font {
+  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
+  font-size: 25px !important;
+}
+.section-body-font {
+  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
+  font-size: 18px !important;
+}

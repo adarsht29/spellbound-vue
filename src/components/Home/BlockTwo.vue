@@ -1,9 +1,14 @@
 <template>
-  <v-container fluid class="pa-10 block-two base-black">
-    <v-row justify="center" class="custom-width">
-      <v-col cols="10" v-for="it in items" :key="it.id">
-        <div class="my-text parallax-content text-left">
-          <div class="text-h4 font-weight-medium mb-4 header-font">
+  <div class="block-two base-black">
+    <v-row dense justify="center" class="custom-width">
+      <v-col
+        cols="10"
+        v-for="(it, index) in items"
+        :key="it.id"
+        :class="index !== 0 ? 'mt-10' : ''"
+      >
+        <div class="parallax-content text-left">
+          <div class="font-weight-medium mb-4 header-font">
             {{ it.sLabel }}
             <span class="header-font" :class="`text-${it.id}`">{{
               it.mLabel
@@ -19,7 +24,7 @@
         </div>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -155,11 +160,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.my-text {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 20px;
-}
 .parallax-content {
   color: white !important;
 }
@@ -169,6 +169,10 @@ export default {
 .block-two {
   padding-top: 85px !important;
   padding-bottom: 85px !important;
+  @media (max-width: 960px) {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
 }
 .custom-width {
   max-height: 1100px !important;

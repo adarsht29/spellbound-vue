@@ -1,0 +1,4 @@
+@function rem-calc($number) {
+  $rem-base: 16;
+  @return #{$number / $rem-base}rem;
+}

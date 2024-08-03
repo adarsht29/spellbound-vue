@@ -52,52 +52,8 @@ export default {
 </script>
 
 <style lang="scss">
-html * {
-  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
-}
-.header-font {
-  font-family: "Roboto", sans-serif !important;
-  font-size: 32px !important;
-}
-.base-black {
-  background: #000 !important;
-  color: #fafafa !important;
-}
-.base-primry-black {
-  background: #1d1d1d !important;
-  color: #fafafa !important;
-}
-.base-primry-white {
-  background: #fafafa !important;
-  color: #1d1d1d !important;
-}
-.inter-font {
-  font-family: "Inter" !important;
-}
-.text-primary-green {
-  color: #003d33 !important;
-}
-.text-primary-red {
-  color: #1d1d1d !important;
-}
-.text-gray {
-  color: #9a9a9a !important;
-}
-.router-btn {
-  color: inherit !important;
-}
-.section-header-font {
-  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
-  font-size: 25px !important;
-}
-.section-body-font {
-  font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
-  font-size: 18px !important;
-}
-.text-content {
-  padding-left: 60px !important;
-  padding-right: 60px !important;
-}
+@import "@/styles/mixins.scss";
+@import "@/styles/common.scss";
 </style>
 
 <style lang="scss" scoped>
