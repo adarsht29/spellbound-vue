@@ -34,6 +34,7 @@
                 >
                   <router-link :to="card.url" class="text-decoration-none">
                     <v-img :src="card.image" cover height="100%">
+                      <div class="text-overlay"></div>
                       <v-row class="fill-height ma-0" align="end">
                         <div
                           class="text-title-1 text-white ma-12 mb-8 pa-1 pl-2 pr-2 custom-title"
@@ -96,14 +97,15 @@ export default {
   font-family: "Allura" !important;
   font-size: 50px !important;
 }
-.custom-card {
-  opacity: 0.7 !important;
-}
 .hovered {
-  opacity: 1 !important;
   cursor: pointer;
   transform: scale(1.05);
   overflow: visible;
+  transition: transform 0.5s ease-in-out;
+  .text-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 }
 .custom-slide-group {
   :deep(.v-slide-group__prev),
@@ -113,5 +115,15 @@ export default {
 }
 .custom-title {
   background: #000000b6;
+}
+.text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0000008a;
+  box-sizing: border-box;
+  opacity: 1;
 }
 </style>

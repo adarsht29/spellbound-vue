@@ -30,7 +30,9 @@
                     isHovering ? 'hovered' : '',
                   ]"
                 >
-                  <v-img :src="card.image" cover></v-img>
+                  <v-img :src="card.image" cover>
+                    <div class="text-overlay"></div>
+                  </v-img>
                   <div class="pa-4 pl-0 pr-6">
                     <p class="font-weight-black small-text">
                       {{ card.smallText }}
@@ -92,19 +94,30 @@ export default {
 .custom-container {
   background-color: #fff;
 }
-.custom-card {
-  opacity: 0.7 !important;
-}
 .hovered {
-  opacity: 1 !important;
   cursor: pointer;
-  transform: scale(1.03);
+  transform: scale(1.05);
   overflow: visible;
+  transition: transform 0.5s ease-in-out;
+  .text-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 }
 .custom-slide-group {
   :deep(.v-slide-group__prev),
   :deep(.v-slide-group__next) {
     display: none;
   }
+}
+.text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0000008a;
+  box-sizing: border-box;
+  opacity: 1;
 }
 </style>
