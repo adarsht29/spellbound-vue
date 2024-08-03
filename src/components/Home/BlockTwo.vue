@@ -8,16 +8,19 @@
         :class="index !== 0 ? 'mt-10' : ''"
       >
         <div class="parallax-content text-left">
-          <div class="font-weight-medium mb-4 header-font">
+          <div
+            class="font-weight-medium mb-4 header-font"
+            :class="index === 0 ? 'one' : 'two'"
+          >
             {{ it.sLabel }}
-            <span class="header-font" :class="`text-${it.id}`">{{
+            <span class="header-font change-text" :class="`text-${it.id}`">{{
               it.mLabel
             }}</span>
           </div>
           <p
             v-for="sIt in it.subItems"
             :key="sIt.id"
-            class="font-weight-regular mb-1 custom-p"
+            class="font-weight-regular body-font"
           >
             {{ sIt.label }}
           </p>
@@ -163,9 +166,6 @@ export default {
 .parallax-content {
   color: white !important;
 }
-.custom-p {
-  font-size: 18px;
-}
 .block-two {
   padding-top: 85px !important;
   padding-bottom: 85px !important;
@@ -176,5 +176,33 @@ export default {
 }
 .custom-width {
   max-height: 1100px !important;
+}
+.header-font.one {
+  @media (max-width: 351px) {
+    height: rem-calc(90);
+  }
+  @media (min-width: 352px) and (max-width: 665px) {
+    height: rem-calc(61);
+  }
+}
+.header-font.two {
+  @media (max-width: 382px) {
+    height: rem-calc(147);
+  }
+  @media (min-width: 383px) and (max-width: 476px) {
+    height: rem-calc(119);
+  }
+  @media (min-width: 477px) and (max-width: 694px) {
+    height: rem-calc(90);
+  }
+}
+.change-text {
+  display: inline-flex;
+  @media (max-width: 960px) {
+    height: rem-calc(28);
+  }
+  @media (min-width: 961px) {
+    height: rem-calc(38);
+  }
 }
 </style>
