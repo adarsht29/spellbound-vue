@@ -1,8 +1,12 @@
 <template>
   <div class="right-image-text-block">
-    <v-row no-gutters justify="space-between">
+    <v-row justify="center" no-gutters>
       <!-- Text Column -->
-      <v-col cols="12" md="4" class="d-flex align-center justify-center">
+      <v-col
+        cols="8"
+        md="4"
+        class="d-flex align-center justify-center pl-md-12 pr-md-12"
+      >
         <div class="text-content">
           <div class="section-header-font">
             {{ block.body }}
@@ -14,7 +18,7 @@
       </v-col>
 
       <!-- Image Column -->
-      <v-col cols="12" md="7">
+      <v-col cols="12" md="8">
         <v-img :src="block.image" :alt="block.title"></v-img>
         <div class="mt-2">
           <div class="text-h6 font-weight-bold">{{ block.title }}</div>

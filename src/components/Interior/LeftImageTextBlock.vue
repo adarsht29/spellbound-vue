@@ -1,6 +1,6 @@
 <template>
   <div class="left-image-text-block">
-    <v-row no-gutters>
+    <v-row justify="center" no-gutters>
       <!-- Image Column -->
       <v-col cols="12" md="8">
         <v-img :src="block.image" :alt="block.title"></v-img>
@@ -25,7 +25,11 @@
       </v-col>
 
       <!-- Text Column -->
-      <v-col cols="12" md="4" class="d-flex align-center justify-center">
+      <v-col
+        cols="8"
+        md="4"
+        class="d-flex align-center justify-center pl-md-12 pr-md-12"
+      >
         <div class="text-content">
           <div class="section-header-font">
             {{ block.body }}

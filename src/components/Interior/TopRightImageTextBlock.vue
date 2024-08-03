@@ -29,7 +29,11 @@
 
     <!-- Row for Text -->
     <v-row class="justify-start mt-16" no-gutters>
-      <v-col cols="12" md="6" class="d-flex align-end justify-start">
+      <v-col
+        cols="8"
+        md="6"
+        class="d-flex align-end justify-start pl-md-12 pr-md-12"
+      >
         <div class="text-content">
           <div class="section-header-font">
             {{ block.body }}

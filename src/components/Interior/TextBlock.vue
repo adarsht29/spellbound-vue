@@ -1,10 +1,11 @@
 <template>
   <div class="text-block">
-    <v-row no-gutters>
+    <v-row no-gutters class="mt-15 mb-8">
       <v-col
         cols="8"
         md="5"
         offset-md="2"
+        offset="2"
         class="d-flex align-center justify-start"
       >
         <div class="section-header-font">

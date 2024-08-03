@@ -95,14 +95,16 @@
               </v-expansion-panel-title>
               <v-expansion-panel-text class="base-primry-black">
                 <v-list class="text-left pa-0">
-                  <v-list-item
+                  <router-link
                     v-for="item in link.menuItems"
                     :key="item.id"
-                    link
-                    class="text-caption pa-0"
+                    :to="item.url"
+                    class="text-caption text-decoration-none text-white"
                   >
-                    {{ item.label }}
-                  </v-list-item>
+                    <v-list-item link class="text-caption pa-0">
+                      {{ item.label }}
+                    </v-list-item>
+                  </router-link>
                 </v-list>
               </v-expansion-panel-text>
             </v-expansion-panel>
