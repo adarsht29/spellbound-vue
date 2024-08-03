@@ -1,23 +1,33 @@
 <template>
   <v-container fluid>
     <v-row
-      class="d-flex align-center h-screen justify-center text-center"
+      class="d-flex align-center h-90 justify-center text-center"
       no-gutters
     >
       <v-col>
         <v-icon
           large
-          color="grey lighten-1"
+          color="#003D33"
           class="spin-animation bounce animated-icon"
           >mdi-emoticon-sad-outline</v-icon
         >
 
-        <h1 class="display-3 fade-in">404</h1>
-        <h2 class="fade-in-delayed">Oops! Page not found</h2>
-        <p class="fade-in-more">The page you are looking for does not exist.</p>
-        <v-btn color="primary" class="mt-5 pulse" @click="goHome"
-          >Go to Home</v-btn
-        >
+        <div class="display-3 fade-in text-h2 font-weight-bold">404</div>
+        <div class="fade-in-delayed text-h5">Oops! Page not found</div>
+        <p class="fade-in-more mt-6">
+          The page you are looking for does not exist.
+        </p>
+        <v-hover>
+          <template v-slot:default="{ isHovering, props }">
+            <v-btn
+              class="mt-10 pulse"
+              :color="isHovering ? '' : '#003D33'"
+              v-bind="props"
+              @click="goHome"
+              >Go to Home</v-btn
+            >
+          </template>
+        </v-hover>
       </v-col>
     </v-row>
   </v-container>
@@ -101,17 +111,14 @@ export default {
   }
 }
 .display-3 {
-  font-size: 6rem;
   color: #555;
-  margin: 20px 0;
-}
-h2 {
-  font-weight: normal;
-  color: #888;
-  margin-bottom: 30px;
+  margin: rem-calc(20) 0;
 }
 p {
   font-size: 1.2rem;
   color: #777;
+}
+.h-90 {
+  height: 90vh;
 }
 </style>

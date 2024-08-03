@@ -43,7 +43,13 @@ const routes = [
     component: () => import("../views/ContactView.vue"),
   },
   {
+    path: "/whoops",
+    name: "error",
+    component: () => import("../views/PageNotFoundView.vue"),
+  },
+  {
     path: "/:catchAll(.*)",
+    redirect: "/whoops",
     component: () => import("../views/PageNotFoundView.vue"),
   },
 ];

@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="mt-10">
+  <v-container v-if="block" fluid class="mt-10">
     <v-row class="justify-center">
       <v-col cols="12" md="9">
         <div class="text-left">
@@ -115,8 +115,8 @@
 </template>
 
 <script>
-import { computed } from "vue";
-import { useRoute } from "vue-router";
+import { ref } from "vue";
+import { useRoute, useRouter } from "vue-router";
 import { chronicesBlogs } from "@/config";
 
 export default {
@@ -124,14 +124,22 @@ export default {
   components: {},
   setup() {
     const route = useRoute();
-    const segment = computed(() => {
+    const router = useRouter();
+    const block = ref(null);
+
+    const checkRoute = () => {
       const pathSegments = route.path.split("/");
-      return pathSegments[pathSegments.length - 1];
-    });
-    const block = computed(() => chronicesBlogs[segment.value]);
+      const segment = pathSegments[pathSegments.length - 1];
+      if (!chronicesBlogs[segment]) {
+        router.push("/whoops");
+      } else {
+        block.value = chronicesBlogs[segment];
+      }
+    };
+
+    checkRoute();
 
     return {
-      segment,
       chronicesBlogs,
       block,
     };

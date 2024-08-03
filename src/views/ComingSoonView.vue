@@ -1,24 +1,34 @@
 <template>
   <v-container fluid>
     <v-row
-      class="d-flex align-center h-screen justify-center text-center"
+      class="d-flex align-center h-90 justify-center text-center"
       no-gutters
     >
       <v-col>
         <v-icon
           large
-          color="grey lighten-1"
+          color="#003D33"
           class="spin-animation bounce animated-icon"
           >mdi-rocket</v-icon
         >
 
-        <h1 class="display-3 fade-in">Coming Soon</h1>
-        <h2 class="fade-in-delayed">
+        <div class="display-3 fade-in text-h2 font-weight-bold">
+          Coming Soon
+        </div>
+        <div class="fade-in-delayed text-h5">
           We're working hard to launch our new product. Stay tuned!
-        </h2>
-        <v-btn color="primary" class="mt-5 pulse" @click="notifyMe"
-          >Notify Me</v-btn
-        >
+        </div>
+        <v-hover>
+          <template v-slot:default="{ isHovering, props }">
+            <v-btn
+              class="mt-10 pulse"
+              :color="isHovering ? '' : '#003D33'"
+              v-bind="props"
+              @click="notifyMe"
+              >Notify Me</v-btn
+            >
+          </template>
+        </v-hover>
       </v-col>
     </v-row>
   </v-container>
@@ -105,17 +115,14 @@ export default {
   }
 }
 .display-3 {
-  font-size: 3rem;
   color: #555;
-  margin: 20px 0;
-}
-h2 {
-  font-weight: normal;
-  color: #888;
-  margin-bottom: 30px;
+  margin: rem-calc(20) 0;
 }
 p {
   font-size: 1.2rem;
   color: #777;
+}
+.h-90 {
+  height: 90vh;
 }
 </style>

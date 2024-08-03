@@ -216,7 +216,7 @@ module.exports = {
       subtitle: ["Luxury Residence", "Bangalore"],
       info: [
         {
-          main: "Area(Site)",
+          main: "AREA (Site)",
           subtitle: "2600 sq. ft.",
         },
         {
@@ -298,7 +298,7 @@ module.exports = {
       subtitle: ["Luxury Residence", "Bangalore"],
       info: [
         {
-          main: "Area(Site)",
+          main: "AREA (Site)",
           subtitle: "2600 sq. ft.",
         },
         {
@@ -378,7 +378,7 @@ module.exports = {
       subtitle: ["Luxury Residence", "ECR, Chennai"],
       info: [
         {
-          main: "Area(Site)",
+          main: "AREA (Site)",
           subtitle: "10,000 sq. ft.",
         },
         {
@@ -455,7 +455,7 @@ module.exports = {
       subtitle: ["Luxury Wellness", "Basavangudi, Bangalore"],
       info: [
         {
-          main: "Area(Site)",
+          main: "AREA (Site)",
           subtitle: "1600 sq. ft.",
         },
         {
@@ -530,7 +530,7 @@ module.exports = {
       subtitle: ["Row Villa", "Bangalore"],
       info: [
         {
-          main: "Area(Site)",
+          main: "AREA (Site)",
           subtitle: "5500 sq. ft.",
         },
         {
