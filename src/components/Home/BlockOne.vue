@@ -1,6 +1,15 @@
 <template>
   <v-container fluid class="ma-0 pa-0">
-    <video ref="videoPlayer" controls playsinline autoplay muted loop>
+    <video
+      :key="require(`@/assets/${image}`)"
+      ref="videoPlayer"
+      autoplay
+      muted="true"
+      width="100%"
+      class="d-block video"
+      loop
+      @canplay="handleCanPlay"
+    >
       <source :src="require(`@/assets/${image}`)" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
@@ -32,7 +41,6 @@ export default {
   },
   methods: {
     handleCanPlay() {
-      // Try to play the video once it is ready
       const video = this.$refs.videoPlayer;
       if (!video.playing) {
         video.play().catch((error) => {
