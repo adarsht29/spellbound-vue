@@ -67,15 +67,18 @@
           ></v-img>
         </v-col>
       </v-row>
+
+      <CombinedBlock />
     </v-container>
   </div>
 </template>
 
 <script>
 import { valuesBlocks } from "@/config";
+import CombinedBlock from "@/components/CombinedBlock.vue";
 export default {
   name: "SpellboundView",
-  components: {},
+  components: { CombinedBlock },
   setup() {
     return {
       valuesBlocks,

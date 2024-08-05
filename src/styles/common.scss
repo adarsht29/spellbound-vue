@@ -1,6 +1,13 @@
 html * {
   font-family: "Calibri Light", "Calibri", "Arial", sans-serif !important;
-  line-height: 1.2 !important;
+}
+html {
+  div {
+    line-height: 1.2 !important;
+  }
+  span {
+    line-height: 1.2 !important;
+  }
 }
 .header-font {
   font-family: "Roboto", sans-serif !important;

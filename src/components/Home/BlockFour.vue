@@ -30,15 +30,17 @@
                     isHovering ? 'hovered' : '',
                   ]"
                 >
-                  <v-img :src="card.image" cover>
-                    <div class="text-overlay"></div>
-                  </v-img>
-                  <div class="pa-4 pl-0 pr-6">
-                    <p class="font-weight-black small-text">
-                      {{ card.smallText }}
-                    </p>
-                    <p class="large-text">{{ card.largeText }}</p>
-                  </div>
+                  <router-link :to="card.url" class="text-decoration-none">
+                    <v-img :src="card.image" cover>
+                      <div class="text-overlay"></div>
+                    </v-img>
+                    <div class="pa-4 pl-0 pr-6">
+                      <p class="font-weight-black small-text">
+                        {{ card.smallText }}
+                      </p>
+                      <p class="large-text">{{ card.largeText }}</p>
+                    </div>
+                  </router-link>
                 </v-card>
               </template>
             </v-hover>
@@ -87,9 +89,6 @@ export default {
 }
 .large-text {
   font-size: 20px;
-}
-.custom-slide-group {
-  margin: 0 10px;
 }
 .custom-container {
   background-color: #fff;

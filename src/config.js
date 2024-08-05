@@ -526,7 +526,7 @@ module.exports = {
       mainImage:
         "https://lh3.googleusercontent.com/d/1YYW19VEkzwq6uzZ_Q4eYpKrlRkweit1y=w1000",
       title: "Our Ode to Timber at Villa N 17",
-      caption: "A tribute to timber–  through its beauty and versatility.",
+      caption: "Manifesting timber and its subtle charm.",
       subtitle: ["Row Villa", "Bangalore"],
       info: [
         {
@@ -546,7 +546,7 @@ module.exports = {
             "https://lh3.googleusercontent.com/d/1oFckUcMAPllPSy_RlvS6yFMgryHkJPzT=w1000",
             "https://lh3.googleusercontent.com/d/1Ap9ydJdkVaFR8JozPucv9BLcWq1uRc5z=w1000",
           ],
-          body: "At Villa N17, the goal was to pick the apt design approach, infusing authenticity and warmth into every corner of the home. The materials here connect honestly to the client’s aspirations, revealing his decade-long passion for timber. This deep reverence influenced every design decision for this 5500 sq. ft sanctuary.",
+          body: "Each home demands a unique identity—characterized by its owner's personality. At Villa N 17, the spaces connect honestly to the client’s aspiration. As one steps inside, the home reveals his decade-long passion for timber. Every design decision for this 5,500 sq. ft. sanctuary infuses authenticity and warmth into the house.",
         },
         {
           id: 3,
@@ -554,7 +554,7 @@ module.exports = {
           images: [
             "https://lh3.googleusercontent.com/d/1isdrm2r5upb6TE9pejEp10N1ey6v5z-C=w1000",
           ],
-          body: "An unplastered bare shell– this was the starting point for our ode to timber. What followed was a celebration of the art of adding meaning to spaces. Timber, a deliberate design choice, became the elegant statement of this home.<br /><br />This personal sanctuary hints at the simplicity yet versatility of timber through Indian contemporary style. Interspersing wood and veneer throughout the house, a warm and elegant design language emerges as the defining feature.",
+          body: "An unplastered bare shell– this was the starting point of our ode to timber. What followed was the charming playfulness of wood in its many forms. Every art, texture, accessory, and design element overlaps with a distinct design flavor celebrating timber.<br /><br />This personal sanctuary hints at timber's simplicity, warmth, and versatility through contemporary Indian aesthetics. The elegance in spaces pays homage to the owner’s passion, and every element tells a story.",
         },
         {
           id: 4,
@@ -570,7 +570,7 @@ module.exports = {
           images: [
             "https://lh3.googleusercontent.com/d/1h8BpsRMwJShVqteayKYTNCDDLy2NOpnf=w1000",
           ],
-          body: "From bold and impressive to subtle and harmonious, each space in the home is carefully crafted to suit the context. Anchored Indian contemporary aesthetics, however, tie the spaces together visually and through materials. Along with the spatial aesthetics, ergonomic furniture helps elevate everyday luxury.<br /><br />Our uniquely creative vision allowed us to introduce nature-inspired furniture design as a testament to function and aesthetics.",
+          body: "From bold to subtle, each space expresses timber in a unique language. Indian contemporary charm allows the wood to sit in peaceful cohesion with neutral tones. Along with timber entering the spotlight, nature-inspired furniture comes into play—as a testament to function and aesthetics.<br /><br />The exceptional form results in a visually stunning and equally comfortable design.",
         },
         {
           id: 6,
@@ -578,7 +578,7 @@ module.exports = {
           images: [
             "https://lh3.googleusercontent.com/d/1u4hgTZnbd-9uV7VSdcZw-FuH2hTQ6ost=w1000",
           ],
-          body: "The timber story begins as one steps into the living area, talking all about grandeur. A timber wall paneling adorning the double-height space narrates an intricate, interlaced tale of elegance. While this wall marks a bold impression, the family area, on the other hand, keeps timber understated through its ceiling design. This room is enlivened by a feature wall with an interplay of stone quietly complemented by a wooden ceiling.",
+          body: "The timber story unfolds as one steps into the living area—a double-height space that speaks all about grandeur. The wall paneling adorning the height narrates an intricate, interlaced tale of elegance. While the living area makes a bold impression, the family room, on the other hand, balances it out.<br /><br />Staying true to the overall decor, the family room is enlivened by a feature wall with an interplay of stone, quietly complemented by a wooden ceiling.",
         },
         {
           id: 7,
@@ -586,7 +586,7 @@ module.exports = {
           images: [
             "https://lh3.googleusercontent.com/d/1yuP3Qt7N7tuw5r96k6u9V7HMG9xijZGy=w1000",
           ],
-          body: "One of the most impressive elements sitting in the family room is a sculptural leaf chaise. Carved out of solid timber, the organic design reminiscent of veins and branches of a leaf imparts sophistication without compromising comfort.<br /><br />With myriad natural influences– through materials and form blended lovingly into the house– elegance takes center stage. A play of wood, tones, and textures adds unique character to every room while constantly crafting sentiments that resonate deeply with the residents.",
+          body: "This space allows regular chairs to be replaced by sculptural leaf chaises. Carved out of solid timber, the organic design reminiscent of veins and branches of a leaf imparts a sense of sophistication to the room while keeping comfort uncompromised.<br /><br />This unique silhouette fits beautifully into the family room, adding a touch of natural elegance and sophistication. With myriad natural influences—through materials and form—blending lovingly into the house, elegance takes center stage.",
         },
         {
           id: 8,
@@ -594,7 +594,7 @@ module.exports = {
           images: [
             "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
           ],
-          body: "Blurring the boundaries between inside and outside is an open-to-the-sky bar in the backyard. At the heart of this bar sits its most defining feature—a concrete bar counter. Crafted by Nuance Studio, the counter is a visual delight, featuring Glenfiddich's logo.<br /><br />The feature solidifies the personal touch in the room. This bar serves as the epicenter for the residents to interact and socialize. It’s an oasis of tranquility, with cascading water features adding to the dynamicity and unwinding quotient.",
+          body: "Tucked in the backyard is an open-to-sky bar that evokes allure and fosters a connection with nature. The concrete bar counter, crafted by Nuance Studio, solidifies the personal touch through the carved Glenfiddich logo. It reflects the client’s personal taste through thoughtful craftsmanship.<br /><br />The bar features a cascading water feature, which creates a sense of dynamicity and unwinding quotient. This oasis of tranquility enables a simple visit to transform into an experience with a collection of moments and memories.",
         },
         {
           id: 9,
@@ -603,15 +603,16 @@ module.exports = {
             "https://lh3.googleusercontent.com/d/1BT3KYSjKtBiGyWLB4Jy-aWa2ALnuD8Mm=w1000",
             "https://lh3.googleusercontent.com/d/16G7NYLggfs-I24iBTe_KZGm_EA-L8a__=w1000",
           ],
-          body: "As one steps into the master bedroom, warmth unfolds. A fine veneer bed back and a tan-brown leather headboard are the perfect elements to warm the bedroom. A sense of luxury crafted through a clever selection of materials treats the residents with a stylish and comfortable retreat.<br /><br />Feature lighting on the headboard highlights the bed area and the sophisticated mood board. The ensuite washroom showcases contemporary aesthetics with the latest Gessi fittings. A large glass panel, doubling as a partial mirror, keeps the design visually striking while connecting the bathroom and bedroom.",
+          body: "As one steps into the master bedroom, seeking a retreat from the everyday hustle, warmth welcomes them. A fine veneer bed back and tan-brown leather headboard offer a posh retreat that’s comfortable, stylish, and exudes luxury.<br /><br />Echoing the contemporary spirits, the ensuite washroom showcases the latest Gessi fittings. A large glass panel doubling as a partial mirror keeps the design visually appealing, connected, and secure.",
         },
         {
           id: 10,
           imageTop: false,
           images: [
             "https://lh3.googleusercontent.com/d/1wQEGKRI4P28tTJzEYCNKPeLWiYurrA2s=w1000",
+            "https://lh3.googleusercontent.com/d/1YYW19VEkzwq6uzZ_Q4eYpKrlRkweit1y=w1000",
           ],
-          body: "The generous use of wood in the guest room, through sleek slatted ceiling sections, imparts a distinctively warm feel. From wood on walls to wood as art, the presence of timber results in the curation of a timeless home. Each space, from the luxurious living room to the refreshing backyard bar, tells a story of natural elegance and the client’s taste. Villa N17 embodies the art of making the mood board and, hence, spaces meaningful.",
+          body: "The generous use of wood in the guest room offers quality hibernation. A sleek slatted ceiling design keeps the design simple yet classy.<br /><br />From wood on walls to wood as art, the presence of timber weaves a story for this timeless home. Villa N17 nails the art of leaving an enduring impression and offers a glimpse into the client’s taste at every corner.",
         },
       ],
     },
@@ -632,6 +633,7 @@ module.exports = {
         "https://lh3.googleusercontent.com/d/11a6MjgBH4kB2vY5I5OVBHd0iauL_VZCh=w1000",
       smallText: "Our Chronicles",
       largeText: "7 Luxury Interior Design Trends that will be leading in 2025",
+      url: "/chronicles/interior-design-trends",
     },
     {
       title: "Card 2",
@@ -639,6 +641,7 @@ module.exports = {
         "https://lh3.googleusercontent.com/d/1ywV4bYAuxAxiOCPGJjuDl-HN1RQI7L92=w1000",
       smallText: "Our Chronicles",
       largeText: "A Day in the Life of an Interior Designer",
+      url: "/chronicles/life-at-spellbound",
     },
     {
       title: "Card 3",
@@ -646,6 +649,7 @@ module.exports = {
         "https://lh3.googleusercontent.com/d/1wQxQ9xibWoH7vG8JwAT1YvrMAat2Cyz8=w1000",
       smallText: "Our Chronicles",
       largeText: "Curating the Art of Space: Top 5 Signature Projects",
+      url: "/chronicles/signature-projects",
     },
     {
       title: "Card 4",
@@ -653,6 +657,7 @@ module.exports = {
         "https://lh3.googleusercontent.com/d/1ilmlg1ETgC5xnGy9HwBAi-vpMDayDpzo=w1000",
       smallText: "Our Chronicles",
       largeText: "Designing for All Senses",
+      url: "/chronicles/sensory-design",
     },
   ],
   blockThreeSlides: [
@@ -1104,6 +1109,78 @@ module.exports = {
       body: "Curiosity is our design fuel. We dive into the project, analytics, and brief to uncover every space's hidden potential. Our curiosity to know better and design innovation allows us to infuse intentionality into our works.",
       image:
         "https://lh3.googleusercontent.com/d/1OfC7Jd6Gvvgk3tC4PbR6cDmorQwZVeEv=w1000",
+    },
+  ],
+  combinedBlockSlides: [
+    {
+      url: "/interior/ishavasya",
+      title: "Ishavasya",
+      image:
+        "https://lh3.googleusercontent.com/d/1padtLRouIN6lLQlg1BSUXKQvkqkNr-lZ=w1000",
+      showText: true,
+    },
+    {
+      title: "7 Luxury Interior Design Trends that will be leading in 2025",
+      image:
+        "https://lh3.googleusercontent.com/d/11a6MjgBH4kB2vY5I5OVBHd0iauL_VZCh=w1000",
+      url: "/chronicles/interior-design-trends",
+      showText: false,
+    },
+    {
+      url: "/interior/the-pavilion",
+      title: "The Pavilion",
+      image:
+        "https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000",
+      showText: true,
+    },
+    {
+      title: "A Day in the Life of an Interior Designer",
+      image:
+        "https://lh3.googleusercontent.com/d/1ywV4bYAuxAxiOCPGJjuDl-HN1RQI7L92=w1000",
+      url: "/chronicles/life-at-spellbound",
+      showText: false,
+    },
+    {
+      url: "/interior/ishavasya",
+      title: "The Holy Abode",
+      image:
+        "https://lh3.googleusercontent.com/d/1nYLppCs29wcI0vyB1bURULXa8kbrAeH0=w1000",
+      showText: true,
+    },
+    {
+      title: "Curating the Art of Space: Top 5 Signature Projects",
+      image:
+        "https://lh3.googleusercontent.com/d/1wQxQ9xibWoH7vG8JwAT1YvrMAat2Cyz8=w1000",
+      url: "/chronicles/signature-projects",
+      showText: false,
+    },
+    {
+      url: "/interior/beach-house",
+      title: "Beach House",
+      image:
+        "https://lh3.googleusercontent.com/d/1zng5-SFU_VrVkCTlkKspkFjDwBckW3aZ=w1000",
+      showText: true,
+    },
+    {
+      title: "Designing for All Senses",
+      image:
+        "https://lh3.googleusercontent.com/d/1ilmlg1ETgC5xnGy9HwBAi-vpMDayDpzo=w1000",
+      url: "/chronicles/sensory-design",
+      showText: false,
+    },
+    {
+      url: "/interior/ode-to-timber",
+      title: "Godrej N17",
+      image:
+        "https://lh3.googleusercontent.com/d/1zP0zxxrDwKg6eXfEyFyyc008htLl7hK7=w1000",
+      showText: true,
+    },
+    {
+      url: "/interior/essencia",
+      title: "Essentia Wellness",
+      image:
+        "https://lh3.googleusercontent.com/d/1HwwWvxFX6Qc2mpnaI_19zWBTSfiuYYi5=w1000",
+      showText: false,
     },
   ],
 };

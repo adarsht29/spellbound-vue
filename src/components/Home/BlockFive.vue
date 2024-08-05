@@ -7,7 +7,7 @@
         Let the magic slide into the DMs.
       </div>
       <div class="text-h6 ma-6 mt-2 mb-2 text-center font-weight-bold">
-        [ Instagram – @spellbound_homes ]
+        [ Instagram – @spellbound_india ]
       </div>
     </div>
     <div
@@ -26,6 +26,9 @@
   }
   .eapps-widget-toolbar {
     display: none;
+  }
+  a:not(.eapps-instagram-feed-posts-item-link) {
+    display: none !important;
   }
 }
 </style>

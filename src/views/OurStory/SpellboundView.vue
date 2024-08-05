@@ -71,16 +71,20 @@
           </div>
         </v-col>
       </v-row>
+
+      <CombinedBlock />
     </v-container>
   </div>
 </template>
 
 <script>
 import BlockOne from "@/components/Home/BlockOne.vue";
+import CombinedBlock from "@/components/CombinedBlock.vue";
 export default {
   name: "SpellboundView",
   components: {
     BlockOne,
+    CombinedBlock,
   },
 };
 </script>

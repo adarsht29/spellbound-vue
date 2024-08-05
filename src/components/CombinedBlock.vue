@@ -1,18 +1,5 @@
 <template>
-  <v-container fluid class="block-three">
-    <v-row>
-      <v-col cols="12">
-        <div
-          class="text-h4 ma-6 mt-2 mb-3 text-center font-weight-medium header-font"
-        >
-          Interior Narratives
-        </div>
-        <div class="text-h5 ma-6 mt-2 mb-3 text-center">
-          The Stories of Spaces
-        </div>
-      </v-col>
-    </v-row>
-
+  <v-container fluid class="combined-block">
     <div ref="slider">
       <v-sheet elevation="0">
         <v-slide-group
@@ -35,13 +22,15 @@
                   <router-link :to="card.url" class="text-decoration-none">
                     <v-img :src="card.image" cover height="100%">
                       <div class="text-overlay"></div>
-                      <v-row class="fill-height ma-0" align="end">
-                        <div
-                          class="text-title-1 text-white ma-12 mb-8 pa-1 pl-2 pr-2 custom-title"
-                        >
-                          {{ card.title }}
-                        </div>
-                      </v-row>
+                      <template v-if="card.showText">
+                        <v-row class="fill-height ma-0" align="end">
+                          <div
+                            class="text-title-1 text-white ma-12 mb-8 pa-1 pl-2 pr-2 custom-title"
+                          >
+                            {{ card.title }}
+                          </div>
+                        </v-row>
+                      </template>
                     </v-img>
                   </router-link>
                 </v-card>
@@ -57,9 +46,9 @@
 <script>
 import { useDisplay } from "vuetify";
 import { ref, computed } from "vue";
-import { blockThreeSlides as slides } from "@/config";
+import { combinedBlockSlides as slides } from "@/config";
 export default {
-  name: "BlockThree",
+  name: "CombinedBlock",
   setup() {
     const { smAndUp } = useDisplay();
     const slider = ref(null);
