@@ -4,11 +4,11 @@
       <!-- Image Column -->
       <v-col cols="12" md="6">
         <v-img :src="block.image" :alt="block.title"></v-img>
-        <div class="mt-2 text-right">
+        <div class="mt-2 text-right pl-4 pr-4 pl-md-0 pr-md-0">
           <div class="text-h6 font-weight-bold">{{ block.title }}</div>
           <div v-html="block.subtitle" class="text-subtitle-1"></div>
         </div>
-        <div class="mt-3 text-right">
+        <div class="mt-3 text-right pl-4 pr-4 pl-md-0 pr-md-0">
           <router-link
             :to="block.url"
             class="text-decoration-none router-btn text-black"
@@ -28,7 +28,7 @@
       <v-col
         cols="8"
         md="6"
-        class="d-flex align-center justify-center pl-md-12 pr-md-12"
+        class="d-flex align-center justify-center pl-md-12 pr-md-12 mt-16 mt-md-0"
       >
         <div class="text-content">
           <div class="section-header-font">

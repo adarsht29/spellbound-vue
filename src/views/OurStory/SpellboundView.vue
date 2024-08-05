@@ -1,13 +1,13 @@
 <template>
   <div class="spellbound-view">
-    <v-container fluid class="ma-0 pa-0 pb-10">
+    <v-container fluid class="ma-0 pa-0 pb-0">
       <BlockOne image="Spellbound_video.mp4" />
 
       <v-row dense justify="space-between" class="pt-12">
         <v-col
           cols="12"
           md="6"
-          class="justify-center align-center d-flex pl-2 pr-2 pl-md-16 pr-md-16"
+          class="justify-center align-center d-flex pl-13 pr-13 pl-md-16 pr-md-16"
         >
           <div class="text-content">
             <div class="section-header-font">
@@ -19,7 +19,7 @@
           </div>
         </v-col>
 
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="6" class="mt-12 mt-md-0">
           <v-img
             src="https://lh3.googleusercontent.com/d/1l3aHsUmz-iT7x27p8y-VTAlWLF7wiFtw=w1000"
           ></v-img>
@@ -110,7 +110,7 @@ export default {
   color: #fff;
 }
 p {
-  font-size: 18px;
+  font-size: rem-calc(15);
   line-height: 1.5;
 }
 .text-name {
@@ -126,7 +126,10 @@ p {
     position: static;
     width: 100%;
     background-color: transparent;
-    padding: 1rem;
+    padding: 2rem;
+    color: #000;
+    padding-left: rem-calc(48);
+    padding-bottom: rem-calc(48);
   }
   .full-width-image {
     position: relative;
