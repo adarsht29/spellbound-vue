@@ -1,6 +1,6 @@
 <template>
   <div class="text-block">
-    <v-row no-gutters class="mt-15 mb-8">
+    <v-row no-gutters class="text-block">
       <v-col
         cols="8"
         md="5"
@@ -11,9 +11,6 @@
         <div class="section-header-font">
           {{ block.body }}
         </div>
-      </v-col>
-      <v-col cols="12" md="6">
-        <!-- Blank column to leave right side blank -->
       </v-col>
     </v-row>
   </div>
@@ -39,4 +36,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.text-block {
+  margin-top: rem-calc(100);
+  margin-bottom: rem-calc(50);
+}
+</style>

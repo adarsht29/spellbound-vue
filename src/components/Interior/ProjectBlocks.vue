@@ -1,12 +1,12 @@
 <template>
-  <v-container fluid class="ma-0 pa-0 project-blocks pb-12">
+  <v-container fluid class="ma-0 pa-0 project-blocks-container pb-12">
     <component
       v-for="block in projectBlocks"
       :key="block.id"
       :is="block.component"
       :blocks="block.subBlocks"
       :class="{
-        'mt-15 mb-15':
+        'project-blocks':
           block.component !== 'FullImageBlock' &&
           block.component !== 'TextBlock',
       }"
@@ -44,4 +44,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.project-blocks {
+  margin-top: rem-calc(120);
+  margin-bottom: rem-calc(120);
+}
+</style>

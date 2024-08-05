@@ -1,6 +1,6 @@
 <template>
   <v-footer class="pa-0">
-    <v-container fluid class="custom-footer base-primry-black pt-16">
+    <v-container fluid class="custom-footer base-primry-black pa-0 pt-12">
       <v-row class="hidden-sm-and-down">
         <v-col cols="2" class="text-left d-flex pl-10">
           <img
@@ -122,23 +122,32 @@
       </v-expansion-panels>
 
       <v-row class="ma-0 mt-10">
-        <v-col cols="3" class="pa-0 d-flex align-end">
+        <v-col cols="12" class="pa-0 d-flex align-end justify-center">
+          <div class="text-subtitle-2">
+            <template v-for="(info, index) in infoLinks" :key="index">
+              <span v-if="index !== 0" class="ml-2 mr-2">|</span
+              >{{ info.label }}
+            </template>
+          </div>
+        </v-col>
+      </v-row>
+      <v-row class="ma-0 mt-4">
+        <v-col cols="12" class="pa-0 d-flex align-end justify-center">
           <div class="text-subtitle-2">
             © 2024 Spellbound. All rights reserved.
           </div>
         </v-col>
+      </v-row>
+      <v-row class="ma-0 mt-4">
         <v-col
-          cols="6"
-          class="pa-0 d-flex align-end justify-center text-center"
+          cols="12"
+          class="pa-0 d-flex align-end justify-center text-center pt-2 pb-6 pb-md-2"
         >
           <div class="text-subtitle-2 text-gray">
-            Site Crafted and Maintained by SS Communications<br />For support or
+            Site Crafted and Managed by SS Communications<br />For support or
             inquiries, contact us at hellosscommunications@gmail.com |
             +91-7303262306
           </div>
-        </v-col>
-        <v-col cols="3" class="pa-0 d-flex align-end justify-end">
-          <div class="text-subtitle-2">Privacy Policy</div>
         </v-col>
       </v-row>
     </v-container>
@@ -147,6 +156,7 @@
 
 <script>
 import { links } from "@/config";
+import { useDisplay } from "vuetify";
 
 export default {
   setup() {
@@ -160,9 +170,27 @@ export default {
         url: "https://www.instagram.com/spellbound_india",
       },
     ];
+    const infoLinks = [
+      {
+        label: "Privacy Policy",
+        url: "/",
+      },
+      {
+        label: "Cookie Preference",
+        url: "/",
+      },
+      {
+        label: "Terms of Use",
+        url: "/",
+      },
+    ];
+    const { mdAndUp } = useDisplay();
+
     return {
       links,
       socials,
+      mdAndUp,
+      infoLinks,
     };
   },
 };

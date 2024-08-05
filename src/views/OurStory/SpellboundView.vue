@@ -4,7 +4,11 @@
       <BlockOne image="Spellbound_video.mp4" />
 
       <v-row dense justify="space-between" class="pt-12">
-        <v-col cols="12" md="6" class="justify-center">
+        <v-col
+          cols="12"
+          md="6"
+          class="justify-center align-center d-flex pl-2 pr-2 pl-md-16 pr-md-16"
+        >
           <div class="text-content">
             <div class="section-header-font">
               Spellbound is an interior design firm founded by Kavitha Kasargod,

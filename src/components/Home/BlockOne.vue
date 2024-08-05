@@ -42,7 +42,7 @@ export default {
   methods: {
     handleCanPlay() {
       const video = this.$refs.videoPlayer;
-      if (!video.playing) {
+      if (video && !video.playing) {
         video.play().catch((error) => {
           console.error("Video autoplay failed:", error);
         });

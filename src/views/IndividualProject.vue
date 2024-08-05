@@ -46,7 +46,7 @@
         cols="12"
         :md="section.images.length === 2 ? '6' : '12'"
       >
-        <v-img :src="image"> </v-img>
+        <v-img :src="image" height="100%" cover> </v-img>
       </v-col>
       <v-col v-if="section.body" cols="10" md="8" class="mt-14">
         <div class="text-h6" v-html="section.body"></div>

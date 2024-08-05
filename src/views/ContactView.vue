@@ -27,22 +27,28 @@
                               v-model="firstName.value.value"
                               :counter="10"
                               :error-messages="firstName.errorMessage.value"
-                              label="First Name"
                               variant="underlined"
                               density="compact"
                               class="custom-input"
-                            ></v-text-field>
+                              ><template v-slot:label>
+                                First Name
+                                <span class="required-asterisk">*</span>
+                              </template></v-text-field
+                            >
                           </v-col>
                           <v-col cols="12" md="6" class="pt-0 pb-0">
                             <v-text-field
                               v-model="lastName.value.value"
                               :counter="10"
                               :error-messages="lastName.errorMessage.value"
-                              label="Last Name"
                               variant="underlined"
                               density="compact"
                               class="custom-input"
-                            ></v-text-field>
+                              ><template v-slot:label>
+                                Last Name
+                                <span class="required-asterisk">*</span>
+                              </template></v-text-field
+                            >
                           </v-col>
                         </v-row>
 
@@ -51,11 +57,14 @@
                             <v-text-field
                               v-model="email.value.value"
                               :error-messages="email.errorMessage.value"
-                              label="E-mail ID"
                               variant="underlined"
                               density="compact"
                               class="custom-input"
-                            ></v-text-field>
+                              ><template v-slot:label>
+                                E-mail ID
+                                <span class="required-asterisk">*</span>
+                              </template></v-text-field
+                            >
                           </v-col>
                           <v-col cols="12" md="6" class="pt-0 pb-0">
                             <v-text-field
@@ -85,11 +94,14 @@
                               v-model="phone.value.value"
                               :counter="7"
                               :error-messages="phone.errorMessage.value"
-                              label="Phone No"
                               variant="underlined"
                               density="compact"
                               class="custom-input"
-                            ></v-text-field>
+                              ><template v-slot:label>
+                                Phone No
+                                <span class="required-asterisk">*</span>
+                              </template></v-text-field
+                            >
                           </v-col>
                         </v-row>
 
@@ -101,7 +113,11 @@
                           variant="underlined"
                           density="compact"
                           class="custom-input"
-                        ></v-text-field>
+                          ><template v-slot:label>
+                            Type your message here
+                            <span class="required-asterisk">*</span>
+                          </template></v-text-field
+                        >
 
                         <v-select
                           v-model="purpose.value.value"
@@ -111,7 +127,11 @@
                           variant="underlined"
                           density="compact"
                           class="custom-input"
-                        ></v-select>
+                          ><template v-slot:label>
+                            Select
+                            <span class="required-asterisk">*</span>
+                          </template></v-select
+                        >
 
                         <div class="pt-3 pb-3">
                           <v-hover>
@@ -220,32 +240,23 @@ export default {
   setup() {
     // Define validation functions
     const validateFirstName = (value) =>
-      value?.length >= 2
-        ? true
-        : "First name needs to be at least 2 characters.";
+      value?.length >= 1 ? true : "We’d love to know your first name!";
     const validateLastName = (value) =>
-      value?.length >= 2
-        ? true
-        : "Last name needs to be at least 2 characters.";
-    const validateCompanyName = (value) =>
-      value?.length >= 2
-        ? true
-        : "Company name needs to be at least 2 characters.";
-    const validateDesignation = (value) =>
-      value?.length >= 2
-        ? true
-        : "Designation needs to be at least 2 characters.";
+      value?.length >= 1 ? true : "We’d love to know your last name!";
+    const validateCompanyName = () => true;
+    const validateDesignation = () => true;
     const validateMessage = (value) =>
-      value?.length >= 2 ? true : "Message needs to be at least 2 characters.";
+      value?.length >= 1 ? true : "Please provide your message.";
     const validatePhone = (value) =>
-      value?.length > 9 && /^[0-9-]+$/.test(value)
+      value?.length >= 10 && /^[0-9-]+$/.test(value)
         ? true
-        : "Phone number needs to be at least 9 digits.";
+        : "Please provide a valid phone number.";
     const validateEmail = (value) =>
-      /^[a-z.-]+@[a-z.-]+\.[a-z]+$/i.test(value)
+      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)
         ? true
-        : "Must be a valid e-mail.";
-    const validatePurpose = (value) => (value ? true : "Select an item.");
+        : "Please provide a valid e-mail.";
+    const validatePurpose = (value) =>
+      value ? true : "Please select an item.";
 
     // Initialize the form with validation functions
     const { handleSubmit, handleReset } = useForm({
@@ -366,5 +377,9 @@ export default {
 }
 .text-subtitle {
   font-size: 18px;
+}
+.required-asterisk {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
 }
 </style>

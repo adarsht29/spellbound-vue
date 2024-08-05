@@ -2,7 +2,7 @@
   <div class="left-image-text-block">
     <v-row justify="center" no-gutters>
       <!-- Image Column -->
-      <v-col cols="12" md="8">
+      <v-col cols="12" md="6">
         <v-img :src="block.image" :alt="block.title"></v-img>
         <div class="mt-2 text-right">
           <div class="text-h6 font-weight-bold">{{ block.title }}</div>
@@ -27,7 +27,7 @@
       <!-- Text Column -->
       <v-col
         cols="8"
-        md="4"
+        md="6"
         class="d-flex align-center justify-center pl-md-12 pr-md-12"
       >
         <div class="text-content">

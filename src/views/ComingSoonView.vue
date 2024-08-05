@@ -16,7 +16,7 @@
           Coming Soon
         </div>
         <div class="fade-in-delayed text-h5">
-          We're working hard to launch our new product. Stay tuned!
+          We're working hard to launch our new projects. Stay tuned!
         </div>
         <v-hover>
           <template v-slot:default="{ isHovering, props }">

@@ -173,4 +173,8 @@ export default {
   position: fixed !important;
   z-index: 9999 !important;
 }
+.custom-nav-drawer {
+  position: fixed !important;
+  z-index: 9998 !important;
+}
 </style>

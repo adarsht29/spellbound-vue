@@ -75,7 +75,7 @@ module.exports = {
           id: 21,
           title: "",
           subtitle: "",
-          body: "We aspire to create places where humanity thrives in harmony with nature. Our future depends on it.",
+          body: "Design is a powerful genre that has the power to touch lives, ​make memories, and build togetherness. ​Our work is purposeful, adding beauty ​and joy to your world.",
           bodySubtitle: "",
           url: "",
           image: "",
@@ -629,7 +629,7 @@ module.exports = {
     {
       title: "Card 1",
       image:
-        "https://lh3.googleusercontent.com/d/1wnHi_yiRx_mH_OuHDEcTD7l4UmDf9Pvw=w1000",
+        "https://lh3.googleusercontent.com/d/11a6MjgBH4kB2vY5I5OVBHd0iauL_VZCh=w1000",
       smallText: "Our Chronicles",
       largeText: "7 Luxury Interior Design Trends that will be leading in 2025",
     },
