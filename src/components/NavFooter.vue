@@ -112,7 +112,10 @@
                 :key="item.id"
                 :to="item.url"
                 class="text-decoration-none text-black"
-                ><v-list-item link class="text-caption pa-0 base-primry-black">
+                ><v-list-item
+                  link
+                  class="text-caption pa-0 base-primry-black pl-6 pr-6"
+                >
                   {{ item.label }}
                 </v-list-item></router-link
               >
@@ -120,6 +123,48 @@
           </v-expansion-panel-text>
         </v-expansion-panel>
       </v-expansion-panels>
+
+      <v-row class="pl-2 pr-2">
+        <v-col cols="12" class="pb-0">
+          <template v-for="social in socials" :key="social.icon">
+            <a
+              :href="social.url"
+              target="_blank"
+              class="text-decoration-none text-white"
+            >
+              <v-btn
+                :icon="social.icon"
+                class="rounded-0"
+                variant="text"
+              ></v-btn>
+            </a>
+          </template>
+        </v-col>
+        <v-col cols="12">
+          <div class="d-flex pa-0 pr-4 pl-4">
+            <v-text-field
+              label="E-mail ID"
+              variant="underlined"
+              density="compact"
+              class="custom-input"
+            ></v-text-field>
+
+            <v-hover>
+              <template v-slot:default="{ isHovering, props }">
+                <v-btn
+                  class="elevation-1 ml-8"
+                  type="submit"
+                  density="comfortable"
+                  v-bind="props"
+                  :color="isHovering ? '#003D33' : ''"
+                >
+                  submit
+                </v-btn>
+              </template>
+            </v-hover>
+          </div>
+        </v-col>
+      </v-row>
 
       <v-row class="ma-0 mt-10">
         <v-col cols="12" class="pa-0 d-flex align-end justify-center">
@@ -217,6 +262,10 @@ export default {
   :deep(.v-expansion-panel-title--active) {
     background-color: #1d1d1d !important;
     color: #fafafa !important;
+  }
+  :deep(.v-expansion-panel-text__wrapper) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 </style>
