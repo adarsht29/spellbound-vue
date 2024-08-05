@@ -101,7 +101,7 @@
                     :to="item.url"
                     class="text-caption text-decoration-none text-white"
                   >
-                    <v-list-item link class="text-caption pa-0">
+                    <v-list-item link class="text-caption pa-0 pl-6 pr-6">
                       {{ item.label }}
                     </v-list-item>
                   </router-link>
@@ -167,6 +167,10 @@ export default {
   :deep(.v-expansion-panel-title--active) {
     background-color: #1d1d1d !important;
     color: #fafafa !important;
+  }
+  :deep(.v-expansion-panel-text__wrapper) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 .v-app-bar {

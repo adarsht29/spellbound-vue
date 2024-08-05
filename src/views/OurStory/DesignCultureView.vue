@@ -46,7 +46,7 @@
       </v-row>
 
       <v-row no-gutters class="mt-12">
-        <v-col cols="12" md="6" class="base-primry-black">
+        <v-col cols="12" md="6" class="base-primry-black pl-10 pr-10">
           <div class="text-content pt-8">
             <p>
               “Curating threads and synergies between thoughts and visuals from
@@ -55,7 +55,7 @@
               simmer down to visual concepts for my interiors, creating
               interesting outcomes.”
             </p>
-            <p class="text-right">
+            <p class="text-right mt-2">
               - Kavitha Kasargod, Principal Architect, Spellbound
             </p>
           </div>
@@ -108,7 +108,7 @@ export default {
   color: #fff;
 }
 p {
-  font-size: 18px;
+  font-size: rem-calc(15);
   line-height: 1.5;
 }
 .text-name {
