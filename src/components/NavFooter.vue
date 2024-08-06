@@ -61,19 +61,25 @@
           <div class="d-flex text-subtitle-2 mb-4 mt-3">
             Let’s bring your story to life.
           </div>
-          <form @submit.prevent="submit">
+          <!-- Desktop Form -->
+          <v-form @submit.prevent="submitDesktopForm" ref="desktopForm">
             <div class="d-flex">
               <v-text-field
+                v-model="emailDesktop"
+                :error-messages="emailDesktopError"
+                label="E-mail ID"
                 variant="underlined"
                 density="compact"
                 class="custom-input"
-                ><template v-slot:label>
-                  E-mail ID
-                  <span class="required-asterisk">*</span></template
-                ></v-text-field
+                @input="validateEmailDesktop"
               >
+                <template v-slot:label>
+                  E-mail ID
+                  <span class="required-asterisk">*</span>
+                </template>
+              </v-text-field>
             </div>
-            <div class="d-flex">
+            <div class="d-flex mt-2">
               <v-hover>
                 <template v-slot:default="{ isHovering, props }">
                   <v-btn
@@ -87,7 +93,7 @@
                 </template>
               </v-hover>
             </div>
-          </form>
+          </v-form>
         </v-col>
       </v-row>
 
@@ -145,20 +151,26 @@
           </template>
         </v-col>
         <v-col cols="12">
-          <div class="d-flex text-subtitle-2 mb-4 mt-3">
+          <div class="d-flex text-subtitle-2 mb-4 mt-3 pr-4 pl-4">
             Let’s bring your story to life.
           </div>
-          <form @submit.prevent="submit">
+          <!-- Mobile Form -->
+          <v-form @submit.prevent="submitMobileForm" ref="mobileForm">
             <div class="d-flex pa-0 pr-4 pl-4">
               <v-text-field
+                v-model="emailMobile"
+                :error-messages="emailMobileError"
+                label="E-mail ID"
                 variant="underlined"
                 density="compact"
                 class="custom-input"
-                ><template v-slot:label>
-                  E-mail ID
-                  <span class="required-asterisk">*</span></template
-                ></v-text-field
+                @input="validateEmailMobile"
               >
+                <template v-slot:label>
+                  E-mail ID
+                  <span class="required-asterisk">*</span>
+                </template>
+              </v-text-field>
 
               <v-hover>
                 <template v-slot:default="{ isHovering, props }">
@@ -174,7 +186,7 @@
                 </template>
               </v-hover>
             </div>
-          </form>
+          </v-form>
         </v-col>
       </v-row>
 
@@ -212,6 +224,7 @@
 </template>
 
 <script>
+import { ref } from "vue";
 import { links } from "@/config";
 import { useDisplay } from "vuetify";
 
@@ -243,11 +256,99 @@ export default {
     ];
     const { mdAndUp } = useDisplay();
 
+    // State and validation for desktop form
+    const emailDesktop = ref("");
+    const emailDesktopError = ref("");
+
+    const validateEmailDesktop = () => {
+      emailDesktopError.value =
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(
+          emailDesktop.value
+        )
+          ? ""
+          : "Please provide a valid e-mail.";
+    };
+
+    const submitDesktopForm = async () => {
+      validateEmailDesktop();
+      if (!emailDesktopError.value) {
+        const form = new FormData();
+        form.append("entry.1669803056", emailDesktop.value.value);
+
+        try {
+          await fetch(
+            "https://docs.google.com/forms/d/e/1FAIpQLSe7Aj6EuAJ2r5fNoI7jTlE1J6BAC2dQMTlEVu6bnyx2rMYR3w/formResponse",
+            {
+              method: "POST",
+              mode: "no-cors",
+              body: form,
+            }
+          );
+
+          // Provide feedback to the user
+          alert("Form submitted successfully!");
+
+          // Optionally reset the form data
+          emailDesktop.value = "";
+        } catch (error) {
+          alert("An error occurred while submitting the form.");
+        }
+      }
+    };
+
+    // State and validation for mobile form
+    const emailMobile = ref("");
+    const emailMobileError = ref("");
+
+    const validateEmailMobile = () => {
+      emailMobileError.value =
+        /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(
+          emailMobile.value
+        )
+          ? ""
+          : "Please provide a valid e-mail.";
+    };
+
+    const submitMobileForm = async () => {
+      validateEmailMobile();
+      if (!emailMobileError.value) {
+        const form = new FormData();
+        form.append("entry.1669803056", emailMobile.value);
+
+        try {
+          await fetch(
+            "https://docs.google.com/forms/d/e/1FAIpQLSe7Aj6EuAJ2r5fNoI7jTlE1J6BAC2dQMTlEVu6bnyx2rMYR3w/formResponse",
+            {
+              method: "POST",
+              mode: "no-cors",
+              body: form,
+            }
+          );
+
+          // Provide feedback to the user
+          alert("Form submitted successfully!");
+
+          // Optionally reset the form data
+          emailMobile.value = "";
+        } catch (error) {
+          alert("An error occurred while submitting the form.");
+        }
+      }
+    };
+
     return {
       links,
       socials,
       mdAndUp,
       infoLinks,
+      emailDesktop,
+      emailDesktopError,
+      validateEmailDesktop,
+      submitDesktopForm,
+      emailMobile,
+      emailMobileError,
+      validateEmailMobile,
+      submitMobileForm,
     };
   },
 };
