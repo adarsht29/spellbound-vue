@@ -1,5 +1,14 @@
 <template>
   <v-container fluid class="combined-block">
+    <v-row>
+      <v-col cols="12">
+        <div
+          class="text-h4 ma-6 mt-8 mb-2 text-center font-weight-medium header-font"
+        >
+          Spellbound Stories: What’s brewing now
+        </div>
+      </v-col>
+    </v-row>
     <div ref="slider">
       <v-sheet elevation="0">
         <v-slide-group
@@ -19,8 +28,11 @@
                     isHovering ? 'hovered' : '',
                   ]"
                 >
-                  <router-link :to="card.url" class="text-decoration-none">
-                    <v-img :src="card.image" cover height="100%">
+                  <router-link
+                    :to="card.url"
+                    class="text-decoration-none text-black"
+                  >
+                    <v-img :src="card.image" cover>
                       <div v-if="mdAndUp" class="text-overlay"></div>
                       <template v-if="card.showText">
                         <v-row class="fill-height ma-0" align="end">
@@ -32,6 +44,12 @@
                         </v-row>
                       </template>
                     </v-img>
+                    <div class="pa-1 pl-0 pr-6 font-weight-bold">
+                      <p class="large-text" v-if="card.showText">
+                        Interior Narratives’
+                      </p>
+                      <p class="large-text" v-else>Our Chronicles</p>
+                    </div>
                   </router-link>
                 </v-card>
               </template>

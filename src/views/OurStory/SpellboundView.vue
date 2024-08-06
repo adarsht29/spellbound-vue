@@ -38,7 +38,7 @@
               <div class="text-name font-weight-bold">
                 That’s Kavitha, our Creative Director
               </div>
-              <div class="mt-8">
+              <div class="mt-16">
                 <p class="font-italic">
                   “I wrote a lot of poetry until I discovered design. The
                   indulgence of the clever play of words has simply given way to
@@ -48,7 +48,7 @@
                 </p>
                 <p class="text-right">– Kavitha Kasargod</p>
               </div>
-              <div class="mt-8">
+              <div class="mt-16">
                 <p>
                   Kavitha holds a degree in Architecture and a diploma in
                   Journalism and attended The Creative and Cultural Business
@@ -59,7 +59,7 @@
                   of execution of projects in these sectors.
                 </p>
               </div>
-              <div class="mt-8">
+              <div class="mt-16">
                 <p>
                   Her purpose through design is to translate spaces into
                   compelling spatial expressions. Kavitha brings an approach
