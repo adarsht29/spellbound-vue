@@ -59,7 +59,7 @@ export default {
 <style lang="scss" scoped>
 .whatsapp-widget {
   position: fixed;
-  bottom: 16px;
+  bottom: 40px;
   right: 16px;
   z-index: 1000;
   background-color: #25d366;

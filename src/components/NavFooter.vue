@@ -61,29 +61,33 @@
           <div class="d-flex text-subtitle-2 mb-4 mt-3">
             Let’s bring your story to life.
           </div>
-
-          <div class="d-flex">
-            <v-text-field
-              label="E-mail ID"
-              variant="underlined"
-              density="compact"
-              class="custom-input"
-            ></v-text-field>
-          </div>
-          <div class="d-flex">
-            <v-hover>
-              <template v-slot:default="{ isHovering, props }">
-                <v-btn
-                  class="me-4 elevation-1"
-                  type="submit"
-                  v-bind="props"
-                  :color="isHovering ? '#003D33' : ''"
-                >
-                  submit
-                </v-btn>
-              </template>
-            </v-hover>
-          </div>
+          <form @submit.prevent="submit">
+            <div class="d-flex">
+              <v-text-field
+                variant="underlined"
+                density="compact"
+                class="custom-input"
+                ><template v-slot:label>
+                  E-mail ID
+                  <span class="required-asterisk">*</span></template
+                ></v-text-field
+              >
+            </div>
+            <div class="d-flex">
+              <v-hover>
+                <template v-slot:default="{ isHovering, props }">
+                  <v-btn
+                    class="me-4 elevation-1"
+                    type="submit"
+                    v-bind="props"
+                    :color="isHovering ? '#003D33' : ''"
+                  >
+                    submit
+                  </v-btn>
+                </template>
+              </v-hover>
+            </div>
+          </form>
         </v-col>
       </v-row>
 
@@ -124,7 +128,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
 
-      <v-row class="pl-2 pr-2">
+      <v-row v-if="!mdAndUp" class="pl-2 pr-2">
         <v-col cols="12" class="pb-0">
           <template v-for="social in socials" :key="social.icon">
             <a
@@ -141,28 +145,36 @@
           </template>
         </v-col>
         <v-col cols="12">
-          <div class="d-flex pa-0 pr-4 pl-4">
-            <v-text-field
-              label="E-mail ID"
-              variant="underlined"
-              density="compact"
-              class="custom-input"
-            ></v-text-field>
-
-            <v-hover>
-              <template v-slot:default="{ isHovering, props }">
-                <v-btn
-                  class="elevation-1 ml-8"
-                  type="submit"
-                  density="comfortable"
-                  v-bind="props"
-                  :color="isHovering ? '#003D33' : ''"
-                >
-                  submit
-                </v-btn>
-              </template>
-            </v-hover>
+          <div class="d-flex text-subtitle-2 mb-4 mt-3">
+            Let’s bring your story to life.
           </div>
+          <form @submit.prevent="submit">
+            <div class="d-flex pa-0 pr-4 pl-4">
+              <v-text-field
+                variant="underlined"
+                density="compact"
+                class="custom-input"
+                ><template v-slot:label>
+                  E-mail ID
+                  <span class="required-asterisk">*</span></template
+                ></v-text-field
+              >
+
+              <v-hover>
+                <template v-slot:default="{ isHovering, props }">
+                  <v-btn
+                    class="elevation-1 ml-8"
+                    type="submit"
+                    density="comfortable"
+                    v-bind="props"
+                    :color="isHovering ? '#003D33' : ''"
+                  >
+                    submit
+                  </v-btn>
+                </template>
+              </v-hover>
+            </div>
+          </form>
         </v-col>
       </v-row>
 
@@ -267,5 +279,9 @@ export default {
     padding-left: 0;
     padding-right: 0;
   }
+}
+.required-asterisk {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
 }
 </style>
