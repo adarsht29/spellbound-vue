@@ -21,7 +21,7 @@
                 >
                   <router-link :to="card.url" class="text-decoration-none">
                     <v-img :src="card.image" cover height="100%">
-                      <div class="text-overlay"></div>
+                      <div v-if="mdAndUp" class="text-overlay"></div>
                       <template v-if="card.showText">
                         <v-row class="fill-height ma-0" align="end">
                           <div
@@ -50,7 +50,7 @@ import { combinedBlockSlides as slides } from "@/config";
 export default {
   name: "CombinedBlock",
   setup() {
-    const { smAndUp } = useDisplay();
+    const { smAndUp, mdAndUp } = useDisplay();
     const slider = ref(null);
     const customWidth = computed(() => {
       const width = slider.value
@@ -69,6 +69,7 @@ export default {
       slides,
       customWidth,
       smAndUp,
+      mdAndUp,
     };
   },
 };

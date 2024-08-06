@@ -34,7 +34,7 @@
                 >
                   <router-link :to="card.url" class="text-decoration-none">
                     <v-img :src="card.image" cover height="100%">
-                      <div class="text-overlay"></div>
+                      <div v-if="mdAndUp" class="text-overlay"></div>
                       <v-row class="fill-height ma-0" align="end">
                         <div
                           class="text-title-1 text-white ma-12 mb-8 pa-1 pl-2 pr-2 custom-title"
@@ -61,7 +61,7 @@ import { blockThreeSlides as slides } from "@/config";
 export default {
   name: "BlockThree",
   setup() {
-    const { smAndUp } = useDisplay();
+    const { smAndUp, mdAndUp } = useDisplay();
     const slider = ref(null);
     const customWidth = computed(() => {
       const width = slider.value
@@ -80,6 +80,7 @@ export default {
       slides,
       customWidth,
       smAndUp,
+      mdAndUp,
     };
   },
 };

@@ -35,7 +35,7 @@
                     class="text-decoration-none text-black"
                   >
                     <v-img :src="card.image" cover>
-                      <div class="text-overlay"></div>
+                      <div v-if="mdAndUp" class="text-overlay"></div>
                     </v-img>
                     <div class="pa-4 pl-0 pr-6">
                       <p class="font-weight-black small-text">
@@ -61,7 +61,7 @@ import { blockFourCards as cards } from "@/config";
 export default {
   name: "BlockFour",
   setup() {
-    const { smAndUp } = useDisplay();
+    const { smAndUp, mdAndUp } = useDisplay();
     const slider = ref(null);
 
     const customWidth = computed(() => {
@@ -81,6 +81,7 @@ export default {
       cards,
       customWidth,
       smAndUp,
+      mdAndUp,
     };
   },
 };

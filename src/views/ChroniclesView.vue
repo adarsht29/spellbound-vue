@@ -43,6 +43,7 @@
                   class="rounded-0 h-100 chronicles-block"
                   :class="[isHovering ? 'hovered' : '']"
                 >
+                  <div v-if="mdAndUp" class="text-overlay"></div>
                   <v-img :src="block.image" cover class="h-100"></v-img>
                 </v-card>
               </router-link>
@@ -56,12 +57,15 @@
 
 <script>
 import { chroniclesBlock as blocks } from "@/config";
+import { useDisplay } from "vuetify";
 export default {
   name: "ChroniclesView",
   components: {},
   setup() {
+    const { mdAndUp } = useDisplay();
     return {
       blocks,
+      mdAndUp,
     };
   },
 };
@@ -82,13 +86,25 @@ export default {
   background-color: black;
   margin: 6px auto 0;
 }
-.chronicles-block {
-  opacity: 0.7 !important;
-}
 .hovered {
-  opacity: 1 !important;
   cursor: pointer;
-  transform: scale(1.03);
+  transform: scale(1.05);
   overflow: visible;
+  transition: transform 0.5s ease-in-out;
+  .text-overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+.text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0000008a;
+  box-sizing: border-box;
+  opacity: 1;
+  z-index: 1;
 }
 </style>
