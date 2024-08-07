@@ -228,6 +228,30 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </v-container>
+      <v-dialog v-model="showSuccessDialog" max-width="400">
+        <v-card>
+          <v-card-title class="headline">Success</v-card-title>
+          <v-card-text> Form submitted successfully! </v-card-text>
+          <v-card-actions>
+            <v-btn color="primary" text @click="showSuccessDialog = false">
+              Close
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+      <v-dialog v-model="showErrorDialog" max-width="400">
+        <v-card>
+          <v-card-title class="headline">Error</v-card-title>
+          <v-card-text>
+            An error occurred while submitting the form.
+          </v-card-text>
+          <v-card-actions>
+            <v-btn color="primary" text @click="showErrorDialog = false">
+              Close
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
     </v-container>
   </div>
 </template>
@@ -285,6 +309,9 @@ export default {
     // Sample items for the select dropdown
     const items = ref(["Business", "Media"]);
 
+    const showSuccessDialog = ref(false);
+    const showErrorDialog = ref(false);
+
     // Define the submit function
     const submit = handleSubmit(async () => {
       // Create a FormData object and append form data
@@ -309,7 +336,7 @@ export default {
         );
 
         // Provide feedback to the user
-        alert("Form submitted successfully!");
+        showSuccessDialog.value = true;
 
         // Optionally reset the form data
         firstName.value.value = "";
@@ -321,7 +348,7 @@ export default {
         message.value.value = "";
         purpose.value.value = "";
       } catch (error) {
-        alert("An error occurred while submitting the form.");
+        showErrorDialog.value = true;
       }
     });
 
@@ -338,6 +365,8 @@ export default {
       items,
       submit,
       handleReset,
+      showSuccessDialog,
+      showErrorDialog,
     };
   },
 };
