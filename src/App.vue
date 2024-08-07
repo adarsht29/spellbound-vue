@@ -14,8 +14,8 @@
       @click="openWhatsApp()"
     >
       <v-icon>mdi-whatsapp</v-icon>
-      <CookieDialog />
     </v-btn>
+    <CookieDialog />
   </v-app>
 </template>
 

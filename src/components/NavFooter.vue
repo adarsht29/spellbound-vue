@@ -250,8 +250,8 @@ export default {
         url: "/privacy-policy",
       },
       {
-        label: "Cookie Preference",
-        url: "/cookie-preference",
+        label: "Cookie Policy",
+        url: "/cookie-policy",
       },
       {
         label: "Terms of Use",

@@ -53,6 +53,16 @@ const routes = [
     component: () => import("../views/PrivacyPolicyView.vue"),
   },
   {
+    path: "/cookie-policy",
+    name: "cookie",
+    component: () => import("../views/CookiePolicyView.vue"),
+  },
+  {
+    path: "/terms-of-use",
+    name: "terms",
+    component: () => import("../views/TermsOfUseView.vue"),
+  },
+  {
     path: "/:catchAll(.*)",
     redirect: "/whoops",
     component: () => import("../views/PageNotFoundView.vue"),

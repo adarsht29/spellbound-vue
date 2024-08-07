@@ -49,9 +49,7 @@
                 >
                   {{ section1.title }}
                 </div>
-                <ul
-                  class="text-subtitle-2 text-md-subtitle-1 mt-3 ml-8 ml-md-9"
-                >
+                <ul class="text-subtitle-1 text-md-h6 mt-3 ml-8 ml-md-9">
                   <li v-for="(section2, index2) in section1.body" :key="index2">
                     <span class="font-weight-bold">{{ section2.title }}</span>
                     <span v-if="section2.title">:</span>

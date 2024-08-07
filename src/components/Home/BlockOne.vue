@@ -1,15 +1,6 @@
 <template>
   <v-container fluid class="ma-0 pa-0">
-    <video
-      :key="require(`@/assets/${image}`)"
-      ref="videoPlayer"
-      autoplay
-      muted="true"
-      width="100%"
-      class="d-block video"
-      loop
-      @canplay="handleCanPlay"
-    >
+    <video autoplay muted loop class="d-block video">
       <source :src="require(`@/assets/${image}`)" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
@@ -52,4 +43,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+video {
+  width: 100%;
+}
+</style>
