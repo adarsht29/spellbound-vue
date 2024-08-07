@@ -54,10 +54,10 @@ export default {
   },
   methods: {
     checkCookiePreference() {
-      // const cookiePreference = localStorage.getItem("cookieAccepted");
-      // if (!cookiePreference) {
-      this.showCookieDialog = true;
-      // }
+      const cookiePreference = localStorage.getItem("cookieAccepted");
+      if (!cookiePreference) {
+        this.showCookieDialog = true;
+      }
     },
     acceptCookies() {
       localStorage.setItem("cookieAccepted", "true");
