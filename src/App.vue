@@ -14,6 +14,7 @@
       @click="openWhatsApp()"
     >
       <v-icon>mdi-whatsapp</v-icon>
+      <CookieDialog />
     </v-btn>
   </v-app>
 </template>
@@ -22,12 +23,14 @@
 import { ref } from "vue";
 import NavHeader from "@/components/NavHeader.vue";
 import NavFooter from "@/components/NavFooter.vue";
+import CookieDialog from "@/components/CookieDialog.vue";
 
 export default {
   name: "App",
   components: {
     NavHeader,
     NavFooter,
+    CookieDialog,
   },
   setup() {
     const phoneNumber = ref("+919897882511");

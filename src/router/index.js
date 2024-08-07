@@ -48,6 +48,11 @@ const routes = [
     component: () => import("../views/PageNotFoundView.vue"),
   },
   {
+    path: "/privacy-policy",
+    name: "privacy",
+    component: () => import("../views/PrivacyPolicyView.vue"),
+  },
+  {
     path: "/:catchAll(.*)",
     redirect: "/whoops",
     component: () => import("../views/PageNotFoundView.vue"),

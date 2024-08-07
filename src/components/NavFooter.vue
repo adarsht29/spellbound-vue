@@ -195,7 +195,11 @@
           <div class="text-subtitle-2">
             <template v-for="(info, index) in infoLinks" :key="index">
               <span v-if="index !== 0" class="ml-2 mr-2">|</span
-              >{{ info.label }}
+              ><router-link
+                :to="info.url"
+                class="text-decoration-none text-white"
+                >{{ info.label }}</router-link
+              >
             </template>
           </div>
         </v-col>
@@ -243,15 +247,15 @@ export default {
     const infoLinks = [
       {
         label: "Privacy Policy",
-        url: "/",
+        url: "/privacy-policy",
       },
       {
         label: "Cookie Preference",
-        url: "/",
+        url: "/cookie-preference",
       },
       {
         label: "Terms of Use",
-        url: "/",
+        url: "/terms-of-use",
       },
     ];
     const { mdAndUp } = useDisplay();

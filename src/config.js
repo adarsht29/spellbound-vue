@@ -468,7 +468,8 @@ module.exports = {
           id: 2,
           imageTop: false,
           images: [
-            "https://lh3.googleusercontent.com/d/1QXvE7Hy7VivNBUlLlaQObAOOy_csO-iB=w1000",
+            "https://lh3.googleusercontent.com/d/1ZvdjaOVm9Yre8MiYyh_ZCP4LkvSHbOjQ=w1000",
+            "https://lh3.googleusercontent.com/d/1IxBZKH1PazRybVtwUSLy92MIIrCiQEqM=w1000",
           ],
           body: "Striking the right balance between the traditional and luxury is more complicated than it appears. This luxury wellness space, sprawling across 1600 sq. ft. in Basavangudi, Bangalore, however, flawlessly manages it through an opulent and modern Indian theme– Shringhar. Nestling in a neighborhood rich in culture, Essencia establishes itself as a landmark through its visual narratives.",
         },
