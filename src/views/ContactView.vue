@@ -219,7 +219,7 @@
       </v-container>
       <v-container class="mt-3">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9784841113146!2d77.60633057431886!3d12.97322791484408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae175c7f4aeb63%3A0x51c9981a194ab271!2sSpellbound!5e0!3m2!1sen!2sin!4v1721598665099!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124443.76347721029!2d77.51254171572288!3d12.91622950073752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15ea9feb8229%3A0x4607ddab07b8528!2sSpellbound%20Atelier%20Private%20Limited!5e0!3m2!1sen!2sin!4v1723065572772!5m2!1sen!2sin"
           width="100%"
           height="450"
           style="border: 0"
