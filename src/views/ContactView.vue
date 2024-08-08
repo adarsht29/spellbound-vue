@@ -177,34 +177,36 @@
                     <v-divider class="mt-6 mb-6"></v-divider>
                     <v-row>
                       <v-col cols="12">
+                        <p class="mb-2">For general enquiries:</p>
                         <p>
                           <a
-                            href="tel:+91-11-4057-0808"
+                            href="tel:+919844033222"
                             class="text-decoration-none text-white"
                             >Phone: +91 9844033222</a
                           >
                         </p>
-                        <p>
-                          <a
-                            href="tel:+91-11-4052-7979"
-                            class="text-decoration-none text-white"
-                            >Phone: +91 9844033222</a
-                          >
-                        </p>
-                      </v-col>
-                      <v-col cols="12">
                         <p>
                           <a
                             href="mailto:business@spellbound.in"
                             class="text-decoration-none text-white"
-                            >For general enquiries: contact@spellbound.homes
+                            >contact@spellbound.homes
                           </a>
+                        </p>
+                      </v-col>
+                      <v-col cols="12">
+                        <p class="mb-2">For media and other enquiries:</p>
+                        <p>
+                          <a
+                            href="tel:+919844133222"
+                            class="text-decoration-none text-white"
+                            >Phone: +91 9844133222</a
+                          >
                         </p>
                         <p>
                           <a
                             href="mailto:media@spellbound.in"
                             class="text-decoration-none text-white"
-                            >For media and other enquiries:
+                          >
                             info@spellbound.homes</a
                           >
                         </p>
