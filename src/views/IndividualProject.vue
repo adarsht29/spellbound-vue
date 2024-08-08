@@ -46,8 +46,12 @@
         cols="12"
         :md="section.images.length === 2 ? '6' : '12'"
         :class="[
-          section.images.length === 2 && i === 0 ? 'pr-0 pr-md-6' : '',
-          section.images.length === 2 && i === 1 ? 'pl-0 pl-md-6' : '',
+          section.images.length === 2 && i === 0
+            ? 'pr-0 pr-md-12 pl-md-16'
+            : '',
+          section.images.length === 2 && i === 1
+            ? 'pl-0 pl-md-12 pr-md-16'
+            : '',
         ]"
       >
         <v-img :src="image" height="100%" cover> </v-img>

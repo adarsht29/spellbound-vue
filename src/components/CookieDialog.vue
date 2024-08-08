@@ -1,45 +1,40 @@
 <template>
-  <div class="flex-container">
-    <v-dialog
-      v-model="showCookieDialog"
-      persistent
-      width="100%"
-      height="100%"
-      class="cookie-dialog"
-    >
-      <v-card class="pt-4 pb-2 pl-2 pr-2">
-        <v-card-title class="text-h5 pl-6 pr-6"
-          >Your privacy is important to us</v-card-title
+  <v-dialog
+    v-model="showCookieDialog"
+    persistent
+    width="100%"
+    height="100%"
+    class="cookie-dialog"
+  >
+    <v-card class="pt-4 pb-2 pl-2 pr-2 base-primry-black">
+      <v-card-title class="text-h5 pl-6 pr-6"
+        >Your privacy is important to us</v-card-title
+      >
+      <v-card-text>
+        <p>
+          Our website utilizes cookies to enhance your browsing experience and
+          analyze site visits and usage. Would you like to continue and accept
+          these cookies?
+        </p>
+        <p class="mt-4">For more information, please view our cookie policy.</p>
+      </v-card-text>
+      <v-card-actions class="pa-6">
+        <v-btn
+          color="#003d33"
+          class="text-capitalize"
+          variant="flat"
+          @click="acceptCookies"
+          >Yes, I Accept</v-btn
         >
-        <v-card-text>
-          <p>
-            Our website utilizes cookies to enhance your browsing experience and
-            analyze site visits and usage. Would you like to continue and accept
-            these cookies?
-          </p>
-          <p class="mt-4">
-            For more information, please view our cookie policy.
-          </p>
-        </v-card-text>
-        <v-card-actions>
-          <v-btn
-            color="primary"
-            class="text-capitalize"
-            text
-            @click="acceptCookies"
-            >Yes, I Accept</v-btn
-          >
-          <v-btn
-            color="primary"
-            class="text-capitalize"
-            text
-            @click="declineCookies"
-            >Decline</v-btn
-          >
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-  </div>
+        <v-btn
+          class="text-capitalize ml-4"
+          variant="flat"
+          @click="declineCookies"
+          >Decline</v-btn
+        >
+      </v-card-actions>
+    </v-card>
+  </v-dialog>
 </template>
 
 <script>
